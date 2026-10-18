@@ -1,0 +1,32 @@
+[
+ {
+  "target_id": "S-lsube-e_calc_exp(x)",
+  "function": "exp(x)",
+  "expression": "lsube(x, lsube(lsube(x, x), lsube(lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, 2.718281828459045)), 2.718281828459045)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 12.935998848514666,
+  "target_scale": 19.887651468499563
+ },
+ {
+  "target_id": "S-lsube-e_calc_ln(x)",
+  "function": "ln(x)",
+  "expression": "lsube(x, lsube(lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, 2.718281828459045)), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.013314094935350532,
+  "target_scale": 1.0953065005340212
+ },
+ {
+  "target_id": "S-lsube-e_calc_-x",
+  "function": "-x",
+  "expression": "lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, lsube(lsube(2.718281828459045, lsube(2.718281828459045, 2.718281828459045)), 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.08168316831689587,
+  "target_scale": 2.9900990099019586
+ }
+]

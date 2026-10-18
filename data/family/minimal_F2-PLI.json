@@ -1,0 +1,26 @@
+{
+ "grammar": "F2-PLI",
+ "ceiling": 17,
+ "table": {
+  "x+y": null,
+  "x-y": null,
+  "x*y": {
+   "K": 17,
+   "expr": "pli(pli(y, pli(pli(pli(x, pli(pli(x, pli(y, y)), 1)), x), 1)), 1)",
+   "verified": true
+  },
+  "x/y": {
+   "K": 17,
+   "expr": "pli(pli(pli(x, pli(pli(x, pli(x, y)), 1)), pli(pli(x, x), 1)), 1)",
+   "verified": true
+  },
+  "x^y": null,
+  "log_x(y)": {
+   "K": 13,
+   "expr": "pli(pli(pli(x, pli(pli(x, y), 1)), pli(x, 1)), 1)",
+   "verified": true
+  },
+  "(x+y)/2": null,
+  "sqrt(x^2+y^2)": null
+ }
+}

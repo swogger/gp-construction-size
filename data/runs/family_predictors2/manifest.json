@@ -1,0 +1,163 @@
+{
+ "phase": "family_predictors2",
+ "description": "EML-family round 2: enumeration-only predictors (incl. locality) for targets_fam2.",
+ "created": "2026-10-13 10:12:20",
+ "git": "03cd756",
+ "n_tasks": 7,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-EML",
+    "--targets",
+    "targets_fam2",
+    "--suffix",
+    "_v2",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EDL",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-EDL",
+    "--targets",
+    "targets_fam2",
+    "--suffix",
+    "_v2",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-EDL"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-NEML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-NEML",
+    "--targets",
+    "targets_fam2",
+    "--suffix",
+    "_v2",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-NEML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-LDE0",
+    "--targets",
+    "targets_fam2",
+    "--suffix",
+    "_v2",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-LDE1",
+    "--targets",
+    "targets_fam2",
+    "--suffix",
+    "_v2",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-LDE1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLI",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-PLI",
+    "--targets",
+    "targets_fam2",
+    "--suffix",
+    "_v2",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-PLI"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLM",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-PLM",
+    "--targets",
+    "targets_fam2",
+    "--suffix",
+    "_v2",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-PLM"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "form": "lsube",
+ "const": "e",
+ "one": {
+  "exp(x)": {
+   "K": 17,
+   "expr": "lsube(x, lsube(lsube(x, x), lsube(lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, 2.718281828459045)), 2.718281828459045)))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": {
+   "K": 13,
+   "expr": "lsube(x, lsube(lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, 2.718281828459045)), 2.718281828459045))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "-x": {
+   "K": 15,
+   "expr": "lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, lsube(lsube(2.718281828459045, lsube(2.718281828459045, 2.718281828459045)), 2.718281828459045)))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  }
+ },
+ "enum1": {
+  "k_reached": 19,
+  "state": "budget_exhausted"
+ },
+ "two": {
+  "x-y": null,
+  "x/y": null,
+  "x+y": null
+ },
+ "enum2": {
+  "k_reached": 17,
+  "state": "budget_exhausted"
+ },
+ "passed": false
+}

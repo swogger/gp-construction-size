@@ -1,0 +1,12 @@
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 0, "exact": false, "best": "x", "error": "", "wall_s": 31.38}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 1, "exact": false, "best": "pli(c, pli(pli(c, c), x))", "error": "", "wall_s": 2.28}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 2, "exact": false, "best": "x", "error": "", "wall_s": 956.95}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 3, "exact": true, "best": "pli(x, pli(pli(x, x), c))", "error": "", "wall_s": 3.1}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 4, "exact": false, "best": "c", "error": "", "wall_s": 6.54}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 5, "exact": false, "best": "x", "error": "", "wall_s": 2.23}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 6, "exact": false, "best": "x", "error": "", "wall_s": 2.21}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 7, "exact": false, "best": "c", "error": "", "wall_s": 1257.84}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 8, "exact": false, "best": "pli(x, pli(pli(x, x), x))", "error": "", "wall_s": 1260.9}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 20000, "seed": 9, "exact": false, "best": "x", "error": "", "wall_s": 31.71}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 320000, "seed": 0, "exact": true, "best": "pli(x, pli(pli(x, x), c))", "error": "", "wall_s": 1594.0}
+{"grammar": "F-PLI", "target_set": "calc", "target_id": "F-PLI_calc_exp(x)", "function": "exp(x)", "K": 7, "budget": 320000, "seed": 1, "exact": false, "best": "c", "error": "", "wall_s": 23.24}

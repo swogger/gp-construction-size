@@ -1,0 +1,52 @@
+{
+ "grammar": "S-esubl-e",
+ "ceiling": 21,
+ "table": {
+  "exp(x)": {
+   "K": 15,
+   "expr": "esubl(x, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x)))))",
+   "verified": true
+  },
+  "ln(x)": {
+   "K": 13,
+   "expr": "esubl(2.718281828459045, esubl(esubl(2.718281828459045, x), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), 2.718281828459045))))",
+   "verified": true
+  },
+  "-x": null,
+  "1/x": null,
+  "x^2": null,
+  "sqrt(x)": null,
+  "x+1": null,
+  "x-1": {
+   "K": 15,
+   "expr": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, x), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), 2.718281828459045)))), 2.718281828459045)",
+   "verified": true
+  },
+  "2x": null,
+  "x/2": null,
+  "exp(-x)": null,
+  "x^x": null,
+  "exp(exp(x))": null,
+  "ln(ln(x))": null,
+  "0": null,
+  "1": {
+   "K": 13,
+   "expr": "esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x))))",
+   "verified": true
+  },
+  "-1": {
+   "K": 19,
+   "expr": "esubl(esubl(2.718281828459045, esubl(esubl(esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x)), 2.718281828459045), x), x), x)), 2.718281828459045)",
+   "verified": true
+  },
+  "2": null,
+  "1/2": null,
+  "e": {
+   "K": 1,
+   "expr": "2.718281828459045",
+   "verified": true
+  },
+  "pi": null,
+  "i": null
+ }
+}

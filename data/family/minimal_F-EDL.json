@@ -1,0 +1,68 @@
+{
+ "grammar": "F-EDL",
+ "ceiling": 21,
+ "table": {
+  "exp(x)": {
+   "K": 3,
+   "expr": "edl(x, 2.718281828459045)",
+   "verified": true
+  },
+  "ln(x)": {
+   "K": 7,
+   "expr": "edl(x, edl(edl(x, x), 2.718281828459045))",
+   "verified": true
+  },
+  "-x": null,
+  "1/x": {
+   "K": 17,
+   "expr": "edl(edl(x, edl(edl(x, edl(2.718281828459045, edl(x, 2.718281828459045))), 2.718281828459045)), edl(edl(2.718281828459045, 2.718281828459045), 2.718281828459045))",
+   "verified": true
+  },
+  "x^2": {
+   "K": 19,
+   "expr": "edl(x, edl(edl(edl(x, edl(edl(x, edl(x, edl(x, 2.718281828459045))), 2.718281828459045)), edl(x, 2.718281828459045)), 2.718281828459045))",
+   "verified": true
+  },
+  "sqrt(x)": null,
+  "x+1": null,
+  "x-1": {
+   "K": 11,
+   "expr": "edl(x, edl(edl(x, edl(x, edl(2.718281828459045, 2.718281828459045))), 2.718281828459045))",
+   "verified": true
+  },
+  "2x": null,
+  "x/2": null,
+  "exp(-x)": null,
+  "x^x": {
+   "K": 19,
+   "expr": "edl(edl(x, edl(edl(edl(x, edl(edl(x, edl(x, x)), 2.718281828459045)), edl(x, 2.718281828459045)), 2.718281828459045)), 2.718281828459045)",
+   "verified": true
+  },
+  "exp(exp(x))": {
+   "K": 5,
+   "expr": "edl(edl(x, 2.718281828459045), 2.718281828459045)",
+   "verified": true
+  },
+  "ln(ln(x))": null,
+  "0": {
+   "K": 17,
+   "expr": "edl(edl(2.718281828459045, edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(x, edl(edl(x, x), x))))), x)",
+   "verified": false
+  },
+  "1": {
+   "K": 7,
+   "expr": "edl(x, edl(edl(x, 2.718281828459045), 2.718281828459045))",
+   "verified": true
+  },
+  "-1": null,
+  "2": null,
+  "1/2": null,
+  "e": {
+   "K": 1,
+   "expr": "2.718281828459045",
+   "verified": true
+  },
+  "pi": null,
+  "i": null
+ }
+}

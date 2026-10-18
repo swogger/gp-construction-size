@@ -1,0 +1,22 @@
+{
+ "form": "epowl",
+ "const": "e",
+ "one": {
+  "exp(x)": {
+   "K": 3,
+   "expr": "epowl(x, 2.718281828459045)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": null,
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

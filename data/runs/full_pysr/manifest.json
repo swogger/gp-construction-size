@@ -1,0 +1,105 @@
+{
+ "phase": "full_pysr",
+ "description": "Full study, exploratory: PySR 2.7 (Julia; .venv-pysr) on the calculator targets (one and two variables) of 6 operators (-EML excluded: PySR rejects a -inf input column); 10 seeds at E0 and 16x E0.",
+ "created": "2026-10-13 12:19:11",
+ "git": "a37e564+dirty",
+ "n_tasks": 6,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "cwd": ".",
+   "argv": [
+    ".venv-pysr/bin/python",
+    "-m",
+    "reach.tasks.pysr_check",
+    "--grammar",
+    "F-EML"
+   ],
+   "cpu_limit": 21600,
+   "weight": 30.0,
+   "meta": {
+    "grammar": "F-EML"
+   }
+  },
+  {
+   "key": "F-EDL",
+   "cwd": ".",
+   "argv": [
+    ".venv-pysr/bin/python",
+    "-m",
+    "reach.tasks.pysr_check",
+    "--grammar",
+    "F-EDL"
+   ],
+   "cpu_limit": 21600,
+   "weight": 30.0,
+   "meta": {
+    "grammar": "F-EDL"
+   }
+  },
+  {
+   "key": "F-LDE0",
+   "cwd": ".",
+   "argv": [
+    ".venv-pysr/bin/python",
+    "-m",
+    "reach.tasks.pysr_check",
+    "--grammar",
+    "F-LDE0"
+   ],
+   "cpu_limit": 21600,
+   "weight": 30.0,
+   "meta": {
+    "grammar": "F-LDE0"
+   }
+  },
+  {
+   "key": "F-LDE1",
+   "cwd": ".",
+   "argv": [
+    ".venv-pysr/bin/python",
+    "-m",
+    "reach.tasks.pysr_check",
+    "--grammar",
+    "F-LDE1"
+   ],
+   "cpu_limit": 21600,
+   "weight": 30.0,
+   "meta": {
+    "grammar": "F-LDE1"
+   }
+  },
+  {
+   "key": "F-PLI",
+   "cwd": ".",
+   "argv": [
+    ".venv-pysr/bin/python",
+    "-m",
+    "reach.tasks.pysr_check",
+    "--grammar",
+    "F-PLI"
+   ],
+   "cpu_limit": 21600,
+   "weight": 30.0,
+   "meta": {
+    "grammar": "F-PLI"
+   }
+  },
+  {
+   "key": "F-PLM",
+   "cwd": ".",
+   "argv": [
+    ".venv-pysr/bin/python",
+    "-m",
+    "reach.tasks.pysr_check",
+    "--grammar",
+    "F-PLM"
+   ],
+   "cpu_limit": 21600,
+   "weight": 30.0,
+   "meta": {
+    "grammar": "F-PLM"
+   }
+  }
+ ]
+}

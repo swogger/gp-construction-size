@@ -1,0 +1,82 @@
+[
+ {
+  "target_id": "F-PLI_calc_exp(x)",
+  "function": "exp(x)",
+  "expression": "pli(x, pli(pli(x, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.93599884850246,
+  "target_scale": 19.887651468491683
+ },
+ {
+  "target_id": "F-PLI_calc_ln(x)",
+  "function": "ln(x)",
+  "expression": "pli(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.01331409493534148,
+  "target_scale": 1.0953065005336102
+ },
+ {
+  "target_id": "F-PLI_calc_1/x",
+  "function": "1/x",
+  "expression": "pli(pli(pli(x, pli(pli(x, pli(x, x)), 1)), pli(pli(x, 1), 1)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.0022171706603239917,
+  "target_scale": 1.0
+ },
+ {
+  "target_id": "F-PLI_calc_x^2",
+  "function": "x^2",
+  "expression": "pli(pli(x, pli(pli(pli(x, pli(pli(x, pli(x, x)), 1)), x), 1)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 2.0474153184355113,
+  "target_scale": 8.940692089011089
+ },
+ {
+  "target_id": "F-PLI_calc_x-1",
+  "function": "x-1",
+  "expression": "pli(pli(pli(x, pli(pli(x, 1), x)), pli(pli(pli(x, 1), x), 1)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.08168316831683162,
+  "target_scale": 1.99009900990099
+ },
+ {
+  "target_id": "F-PLI_calc_exp(-x)",
+  "function": "exp(-x)",
+  "expression": "pli(pli(x, pli(x, 1)), pli(pli(pli(pli(x, pli(pli(x, x), 1)), pli(pli(x, 1), 1)), x), 1))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 8,
+  "var_target": 0.0005872934391296001,
+  "target_scale": 1.0
+ },
+ {
+  "target_id": "F-PLI_calc_x^x",
+  "function": "x^x",
+  "expression": "pli(pli(x, 1), pli(pli(pli(x, pli(pli(x, pli(pli(x, 1), x)), 1)), pli(x, 1)), 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 9,
+  "var_target": 39.663997335259545,
+  "target_scale": 26.445205697037025
+ },
+ {
+  "target_id": "F-PLI_calc_ln(ln(x))",
+  "function": "ln(ln(x))",
+  "expression": "pli(pli(x, 1), 1)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.016768306075898066,
+  "target_scale": 1.0
+ }
+]

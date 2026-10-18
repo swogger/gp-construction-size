@@ -1,0 +1,22 @@
+{
+ "form": "emule",
+ "const": "0",
+ "one": {
+  "exp(x)": {
+   "K": 3,
+   "expr": "emule(x, 0)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": null,
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 15,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

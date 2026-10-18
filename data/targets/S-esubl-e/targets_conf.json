@@ -1,0 +1,1838 @@
+[
+ {
+  "expression": "esubl(2.718281828459045, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.013314094935341502,
+  "target_scale": 14.456176779278735,
+  "target_id": "S-esubl-e_c_K03_00"
+ },
+ {
+  "expression": "esubl(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 12.132399420784443,
+  "target_scale": 18.792344967958226,
+  "target_id": "S-esubl-e_c_K03_01"
+ },
+ {
+  "expression": "esubl(x, 2.718281828459045)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 12.935998848502534,
+  "target_scale": 18.887651468491836,
+  "target_id": "S-esubl-e_c_K03_02"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.01331409493485841,
+  "target_scale": 1403194.1674456347,
+  "target_id": "S-esubl-e_c_K05_00"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, 2.718281828459045))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.09747021424762137,
+  "target_scale": 13.288233863755103,
+  "target_id": "S-esubl-e_c_K05_01"
+ },
+ {
+  "expression": "esubl(x, esubl(2.718281828459045, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 12.993420611089588,
+  "target_scale": 17.244391856493078,
+  "target_id": "S-esubl-e_c_K05_02"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 6.554865081664845e-05,
+  "target_scale": 12.511002629480505,
+  "target_id": "S-esubl-e_c_K05_03"
+ },
+ {
+  "expression": "esubl(x, esubl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 12.935998848502528,
+  "target_scale": 17.237635671280668,
+  "target_id": "S-esubl-e_c_K05_04"
+ },
+ {
+  "expression": "esubl(x, esubl(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 10.896148759065026,
+  "target_scale": 16.95420186413267,
+  "target_id": "S-esubl-e_c_K05_05"
+ },
+ {
+  "expression": "esubl(x, esubl(x, 2.718281828459045))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 10.809129620791062,
+  "target_scale": 16.949143121415307,
+  "target_id": "S-esubl-e_c_K05_06"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.0889906905540189,
+  "target_scale": 13.242574930279837,
+  "target_id": "S-esubl-e_c_K05_07"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.08899069055379184,
+  "target_scale": 1403192.9538437857,
+  "target_id": "S-esubl-e_c_K07_00"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, 2.718281828459045)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.000600195561886517,
+  "target_scale": 12.651535819934603,
+  "target_id": "S-esubl-e_c_K07_01"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, 2.718281828459045))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.09747021425575428,
+  "target_scale": 1403192.9995027191,
+  "target_id": "S-esubl-e_c_K07_02"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.013314094935432962,
+  "target_scale": 269478.49056362314,
+  "target_id": "S-esubl-e_c_K07_03"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(2.718281828459045, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.13753202403105047,
+  "target_scale": 13.58742777198822,
+  "target_id": "S-esubl-e_c_K07_04"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 4.1968647425557106e-07,
+  "target_scale": 12.629883270812314,
+  "target_id": "S-esubl-e_c_K07_05"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 1.2911199734120558e-07,
+  "target_scale": 1.0015619854376006,
+  "target_id": "S-esubl-e_c_K07_06"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.13658627278509755,
+  "target_scale": 13.58303252493678,
+  "target_id": "S-esubl-e_c_K07_07"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.000549395908458805,
+  "target_scale": 12.65112178936422,
+  "target_id": "S-esubl-e_c_K07_08"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, 2.718281828459045), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 6.661746583047378e-08,
+  "target_scale": 1.0010901421645482,
+  "target_id": "S-esubl-e_c_K07_09"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 6.554865083370737e-05,
+  "target_scale": 1403192.222271485,
+  "target_id": "S-esubl-e_c_K07_10"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.10613022305324893,
+  "target_scale": 13.440303762576026,
+  "target_id": "S-esubl-e_c_K07_11"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(x, 2.718281828459045)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.10477147024226052,
+  "target_scale": 13.432111893605482,
+  "target_id": "S-esubl-e_c_K07_12"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045)), 2.718281828459045)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 9.55136596161643e-07,
+  "target_scale": 1.7225310628475707,
+  "target_id": "S-esubl-e_c_K09_00"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, 2.718281828459045), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 6.656263413634044e-08,
+  "target_scale": 15.154262234612805,
+  "target_id": "S-esubl-e_c_K09_01"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 4.936099636805695e-07,
+  "target_scale": 1.0029881569866506,
+  "target_id": "S-esubl-e_c_K09_02"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, esubl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.13658627278826754,
+  "target_scale": 1403193.2943013804,
+  "target_id": "S-esubl-e_c_K09_03"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.013441787421987357,
+  "target_scale": 2.023161295698515,
+  "target_id": "S-esubl-e_c_K09_04"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.0005493959083024645,
+  "target_scale": 1403192.3623906448,
+  "target_id": "S-esubl-e_c_K09_05"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 3.518059315347404e-06,
+  "target_scale": 2.6581760077120045,
+  "target_id": "S-esubl-e_c_K09_06"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(x, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.08899069055288944,
+  "target_scale": 269477.27696177416,
+  "target_id": "S-esubl-e_c_K09_07"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 9.084602388609279e-07,
+  "target_scale": 1.00414463214892,
+  "target_id": "S-esubl-e_c_K09_08"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(2.718281828459045, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 4.1968646600981665e-07,
+  "target_scale": 1403192.3411521262,
+  "target_id": "S-esubl-e_c_K09_09"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, 2.718281828459045)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 4.7325553966095035e-07,
+  "target_scale": 1.002916683358814,
+  "target_id": "S-esubl-e_c_K09_10"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(x, 2.718281828459045))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.09747021424902462,
+  "target_scale": 269477.3226207076,
+  "target_id": "S-esubl-e_c_K09_11"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), 2.718281828459045))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 9.28986877444343e-05,
+  "target_scale": 2.6794567795579,
+  "target_id": "S-esubl-e_c_K09_12"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, esubl(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.10613022304741088,
+  "target_scale": 1403193.151572618,
+  "target_id": "S-esubl-e_c_K09_13"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.2896060172548726e-07,
+  "target_scale": 15.154262235210279,
+  "target_id": "S-esubl-e_c_K09_14"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(2.718281828459045, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0008229722187320398,
+  "target_scale": 12.644112296556795,
+  "target_id": "S-esubl-e_c_K09_15"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 2.6315084158298617e-09,
+  "target_scale": 12.618373088488289,
+  "target_id": "S-esubl-e_c_K09_16"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, 2.718281828459045))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 3.774859181688537e-06,
+  "target_scale": 12.62315741320494,
+  "target_id": "S-esubl-e_c_K09_17"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, esubl(x, 2.718281828459045)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.10477147025023856,
+  "target_scale": 1403193.143380749,
+  "target_id": "S-esubl-e_c_K09_18"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 3.454664231705218e-06,
+  "target_scale": 12.622883570376452,
+  "target_id": "S-esubl-e_c_K09_19"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), 2.718281828459045)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 4.926458870003471e-07,
+  "target_scale": 1.721246757899043,
+  "target_id": "S-esubl-e_c_K09_20"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.013314094935432962,
+  "target_scale": 305038.0039075446,
+  "target_id": "S-esubl-e_c_K09_21"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 9.220630238244814e-07,
+  "target_scale": 1.004177711016883,
+  "target_id": "S-esubl-e_c_K09_22"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0006402647077128323,
+  "target_scale": 12.642734227267155,
+  "target_id": "S-esubl-e_c_K09_23"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(2.718281828459045, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 6.554865084018787e-05,
+  "target_scale": 269476.5453894734,
+  "target_id": "S-esubl-e_c_K09_24"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(x, 2.718281828459045)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.0006001955624814072,
+  "target_scale": 1403192.3628046755,
+  "target_id": "S-esubl-e_c_K09_25"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 8.48239631880448e-05,
+  "target_scale": 2.676932993521473,
+  "target_id": "S-esubl-e_c_K09_26"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.812515307698245e-06,
+  "target_scale": 2.6557052967546646,
+  "target_id": "S-esubl-e_c_K09_27"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(2.718281828459045, 2.718281828459045))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0008175119114877648,
+  "target_scale": 12.644080455492944,
+  "target_id": "S-esubl-e_c_K09_28"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, esubl(2.718281828459045, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.13753202403121173,
+  "target_scale": 1403193.2986966274,
+  "target_id": "S-esubl-e_c_K09_29"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, esubl(esubl(x, 2.718281828459045), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 6.65626417148212e-08,
+  "target_scale": 1403194.8655310902,
+  "target_id": "S-esubl-e_c_K11_00"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(2.718281828459045, 2.718281828459045)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 5.15318152080147e-06,
+  "target_scale": 12.624904921894935,
+  "target_id": "S-esubl-e_c_K11_01"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), esubl(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.00012686932756994312,
+  "target_scale": 2.6871167102009377,
+  "target_id": "S-esubl-e_c_K11_02"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, 2.718281828459045)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 2.3702525312213173e-08,
+  "target_scale": 12.619258058296392,
+  "target_id": "S-esubl-e_c_K11_03"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), 2.718281828459045)), 2.718281828459045)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.01897611682063215,
+  "target_scale": 13.577172526609203,
+  "target_id": "S-esubl-e_c_K11_04"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), 2.718281828459045))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 2.743675380743473e-06,
+  "target_scale": 2.5332738101355083,
+  "target_id": "S-esubl-e_c_K11_05"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 2.169235249516267e-08,
+  "target_scale": 12.619255464371635,
+  "target_id": "S-esubl-e_c_K11_06"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), esubl(x, 2.718281828459045)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.000125393099792575,
+  "target_scale": 2.6867316882633885,
+  "target_id": "S-esubl-e_c_K11_07"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), 2.718281828459045))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.013314094938636289,
+  "target_scale": 3814275.6883938895,
+  "target_id": "S-esubl-e_c_K11_08"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), x)), 2.718281828459045)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.017298025697045246,
+  "target_scale": 13.540429247726058,
+  "target_id": "S-esubl-e_c_K11_09"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(x, 2.718281828459045))), 2.718281828459045))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.0006665549359729161,
+  "target_scale": 2.5945379828329083,
+  "target_id": "S-esubl-e_c_K11_10"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), esubl(x, 2.718281828459045)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 1.2951673497966288e-05,
+  "target_scale": 2.6652971896979674,
+  "target_id": "S-esubl-e_c_K11_11"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, x))), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 6.241360215743358e-07,
+  "target_scale": 2.5293950521880513,
+  "target_id": "S-esubl-e_c_K11_12"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(x, esubl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 0.13658627278383306,
+  "target_scale": 269477.6174193688,
+  "target_id": "S-esubl-e_c_K11_13"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, 2.718281828459045))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 9.056392960415773e-07,
+  "target_scale": 15.154262224866354,
+  "target_id": "S-esubl-e_c_K11_14"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(x, esubl(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 0.10613022305382612,
+  "target_scale": 269477.47469060647,
+  "target_id": "S-esubl-e_c_K11_15"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, x)))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 236.49210534059446,
+  "target_scale": 302056.5294141435,
+  "target_id": "S-esubl-e_c_K11_16"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 1.413853314262392e-06,
+  "target_scale": 2.5310928860090236,
+  "target_id": "S-esubl-e_c_K11_17"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 2.6315096343101312e-09,
+  "target_scale": 1403192.329641944,
+  "target_id": "S-esubl-e_c_K11_18"
+ },
+ {
+  "expression": "esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), x), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.6938255266615456,
+  "target_scale": 6.864108053593068,
+  "target_id": "S-esubl-e_c_K11_19"
+ },
+ {
+  "expression": "esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x)), 2.718281828459045), 2.718281828459045)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 1.5529157876880844e-12,
+  "target_scale": 4.574953353903733,
+  "target_id": "S-esubl-e_c_K11_20"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(x, 2.718281828459045)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 3.983454976816937e-06,
+  "target_scale": 12.624014703459142,
+  "target_id": "S-esubl-e_c_K11_21"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 9.191773039534381e-07,
+  "target_scale": 15.15426222490871,
+  "target_id": "S-esubl-e_c_K11_22"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), x)), 2.718281828459045)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 3.673173775306579e-11,
+  "target_scale": 13.154319772149943,
+  "target_id": "S-esubl-e_c_K11_23"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, x)))), 2.718281828459045)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 240.05430184561126,
+  "target_scale": 302056.62472064403,
+  "target_id": "S-esubl-e_c_K11_24"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(2.718281828459045, x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 5.187699100573511e-06,
+  "target_scale": 12.624930710981989,
+  "target_id": "S-esubl-e_c_K11_25"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, x))), 2.718281828459045)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 3.6555458768257592e-06,
+  "target_scale": 1.7264166292743615,
+  "target_id": "S-esubl-e_c_K11_26"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, x), x)), esubl(x, x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.00016449608362038463,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K11_27"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 5.615922091181372e-10,
+  "target_scale": 12.436083410260268,
+  "target_id": "S-esubl-e_c_K11_28"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(x, x))), 2.718281828459045))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.0006122095255423414,
+  "target_scale": 2.5910696064206586,
+  "target_id": "S-esubl-e_c_K11_29"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), esubl(2.718281828459045, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 2.188487205721951e-05,
+  "target_scale": 14.18224935200023,
+  "target_id": "S-esubl-e_c_K13_00"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045)), esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 9.55136596161643e-07,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K13_01"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, 2.718281828459045))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 1.4884873920121873e-10,
+  "target_scale": 12.619080084805718,
+  "target_id": "S-esubl-e_c_K13_02"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, 2.718281828459045))), esubl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 3.504622551630989e-06,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K13_03"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 4.924996563290455e-07,
+  "target_scale": 1403194.8655310785,
+  "target_id": "S-esubl-e_c_K13_04"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), 2.718281828459045), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 7.311928674424434e-07,
+  "target_scale": 13.6336683015617,
+  "target_id": "S-esubl-e_c_K13_05"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), esubl(2.718281828459045, 2.718281828459045))), 2.718281828459045)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.03190162073920133,
+  "target_scale": 13.781307592175333,
+  "target_id": "S-esubl-e_c_K13_06"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 1.9301174733431507e-05,
+  "target_scale": 12.48359544283649,
+  "target_id": "S-esubl-e_c_K13_07"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, 2.718281828459045)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 2.3702525946204244e-08,
+  "target_scale": 1403192.3305269137,
+  "target_id": "S-esubl-e_c_K13_08"
+ },
+ {
+  "expression": "esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), 2.718281828459045), esubl(2.718281828459045, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 3.122013788913137e-05,
+  "target_scale": 2.9316820168182245,
+  "target_id": "S-esubl-e_c_K13_09"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(x, x))), 2.718281828459045)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 2.4551849041041506e-10,
+  "target_scale": 13.15441632115854,
+  "target_id": "S-esubl-e_c_K13_10"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045)), esubl(x, 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.11055795134103137,
+  "target_scale": 12.404208166942256,
+  "target_id": "S-esubl-e_c_K13_11"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), esubl(2.718281828459045, x))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.03116613513290235,
+  "target_scale": 13.770258834065592,
+  "target_id": "S-esubl-e_c_K13_12"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), esubl(x, 2.718281828459045))), 2.718281828459045)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.02575602071842553,
+  "target_scale": 13.683606806345677,
+  "target_id": "S-esubl-e_c_K13_13"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, x)))), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 2.9332743231850653e-06,
+  "target_scale": 2.543343863755724,
+  "target_id": "S-esubl-e_c_K13_14"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, x))), esubl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 3.6555458768257592e-06,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K13_15"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.013314094934858411,
+  "target_scale": 1439339.311726051,
+  "target_id": "S-esubl-e_c_K13_16"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, x))), esubl(2.718281828459045, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 3.998775545439933e-05,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K13_17"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), esubl(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 1.915503667410846e-06,
+  "target_scale": 14.179696604152799,
+  "target_id": "S-esubl-e_c_K13_18"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(x, x))), 2.718281828459045)), 2.718281828459045)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.09964345799539975,
+  "target_scale": 12.344036840223003,
+  "target_id": "S-esubl-e_c_K13_19"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 1.2254709345817932e-12,
+  "target_scale": 1403182.3612955383,
+  "target_id": "S-esubl-e_c_K13_20"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045)), esubl(2.718281828459045, esubl(x, 2.718281828459045)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.0005657735962534221,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K13_21"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), 2.718281828459045)), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.00010740373829863597,
+  "target_scale": 12.584788044501778,
+  "target_id": "S-esubl-e_c_K13_22"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(x, 2.718281828459045))), 2.718281828459045)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 2.6891277849383933e-10,
+  "target_scale": 13.154416586872298,
+  "target_id": "S-esubl-e_c_K13_23"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045))), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 2.414778709617851e-07,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K13_24"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 2.4862188997119097e-09,
+  "target_scale": 12.50266796699919,
+  "target_id": "S-esubl-e_c_K13_25"
+ },
+ {
+  "expression": "esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), x)), 2.718281828459045), 2.718281828459045)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 9.788803736623873,
+  "target_scale": 516235.24154912576,
+  "target_id": "S-esubl-e_c_K13_26"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, x), x)), esubl(x, esubl(x, 2.718281828459045)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.0014602350225140972,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K13_27"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, 2.718281828459045))), esubl(2.718281828459045, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 4.536224035514803e-05,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K13_28"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x))), esubl(2.718281828459045, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.09336524143898578,
+  "target_scale": 3814274.5360458824,
+  "target_id": "S-esubl-e_c_K13_29"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, x))), esubl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 7.165253373691542e-11,
+  "target_scale": 17.83855097667712,
+  "target_id": "S-esubl-e_c_K15_00"
+ },
+ {
+  "expression": "esubl(esubl(esubl(x, esubl(esubl(x, x), 2.718281828459045)), esubl(x, esubl(x, 2.718281828459045))), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.002301772853520613,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K15_01"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(2.718281828459045, x)), x), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.058675391542375444,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K15_02"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), esubl(2.718281828459045, x))), esubl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.005160300794115704,
+  "target_scale": 11.818328499054951,
+  "target_id": "S-esubl-e_c_K15_03"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, x))))), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 9.183620634679583e-09,
+  "target_scale": 251695.81790579582,
+  "target_id": "S-esubl-e_c_K15_04"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x)), esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 1.1473974427488556e-11,
+  "target_scale": 17.80425754519939,
+  "target_id": "S-esubl-e_c_K15_05"
+ },
+ {
+  "expression": "esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x)), 2.718281828459045), esubl(2.718281828459045, esubl(2.718281828459045, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 4.1807343067646935e-07,
+  "target_scale": 3.050570093305217,
+  "target_id": "S-esubl-e_c_K15_06"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(x, x)), 2.718281828459045), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.5238107687551006,
+  "target_scale": 2.4796018680439396,
+  "target_id": "S-esubl-e_c_K15_07"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(x, esubl(x, 2.718281828459045)))), x)), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.11336951932358781,
+  "target_scale": 12.504820374148169,
+  "target_id": "S-esubl-e_c_K15_08"
+ },
+ {
+  "expression": "esubl(x, esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x))), x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 12.04697091301781,
+  "target_scale": 33.63761754208819,
+  "target_id": "S-esubl-e_c_K15_09"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, x), x)), esubl(x, x)), 2.718281828459045), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.00022653766641327064,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K15_10"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(x, 2.718281828459045)))))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 2273.3562936664757,
+  "target_scale": 302307.2381361098,
+  "target_id": "S-esubl-e_c_K15_11"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045)), esubl(2.718281828459045, esubl(2.718281828459045, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 4.1968647425557106e-07,
+  "target_scale": 11.629935795516857,
+  "target_id": "S-esubl-e_c_K15_12"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), x)), esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 3.673173775278837e-11,
+  "target_scale": 11.628251469990499,
+  "target_id": "S-esubl-e_c_K15_13"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, x)))), esubl(x, 2.718281828459045))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.08422185191074216,
+  "target_scale": 3814269.977876944,
+  "target_id": "S-esubl-e_c_K15_14"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), x)), esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.017298025697045256,
+  "target_scale": 12.014360945566615,
+  "target_id": "S-esubl-e_c_K15_15"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045)), x), esubl(2.718281828459045, 2.718281828459045)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 1068.0349328558539,
+  "target_scale": 136.56454762383166,
+  "target_id": "S-esubl-e_c_K15_16"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(x, 2.718281828459045)))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.5543769746121905,
+  "target_scale": 1439337.5662133966,
+  "target_id": "S-esubl-e_c_K15_17"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, x))), esubl(2.718281828459045, esubl(2.718281828459045, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 6.00767749166854e-06,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K15_18"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), 2.718281828459045), esubl(2.718281828459045, x)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.0025663759043074463,
+  "target_scale": 17.850129933989134,
+  "target_id": "S-esubl-e_c_K15_19"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, 2.718281828459045))), 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 5.540749566510033e-09,
+  "target_scale": 12.472670521271828,
+  "target_id": "S-esubl-e_c_K15_20"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), 2.718281828459045)))), esubl(x, 2.718281828459045))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.09747021424746731,
+  "target_scale": 251694.93209710953,
+  "target_id": "S-esubl-e_c_K15_21"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, x)))), esubl(2.718281828459045, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 1.1276397238771518e-05,
+  "target_scale": 2.5508466740915345,
+  "target_id": "S-esubl-e_c_K15_22"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045)), esubl(2.718281828459045, esubl(x, esubl(2.718281828459045, 2.718281828459045))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.0007763714459925106,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K15_23"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)))), 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 4.3422299956520693e-07,
+  "target_scale": 14.223701035870608,
+  "target_id": "S-esubl-e_c_K15_24"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, 2.718281828459045))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 3.7748591779095254e-06,
+  "target_scale": 305036.1708881785,
+  "target_id": "S-esubl-e_c_K15_25"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, x)))), esubl(x, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 1.1009000757528005e-05,
+  "target_scale": 2.5500257584215253,
+  "target_id": "S-esubl-e_c_K15_26"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045)), x), esubl(2.718281828459045, x)), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 1014.0456140358782,
+  "target_scale": 133.39592876593082,
+  "target_id": "S-esubl-e_c_K15_27"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, x))), x)), esubl(2.718281828459045, x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.0001061464086610825,
+  "target_scale": 9.874792435190058,
+  "target_id": "S-esubl-e_c_K15_28"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 1.4085547852964404e-12,
+  "target_scale": 1.000006506868786,
+  "target_id": "S-esubl-e_c_K15_29"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(2.718281828459045, 2.718281828459045)), esubl(x, 2.718281828459045)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.059732879908081314,
+  "target_scale": 15.704638564090821,
+  "target_id": "S-esubl-e_c_K17_00"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(2.718281828459045, x)), 2.718281828459045)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 4.9682411597457184e-05,
+  "target_scale": 12.280331151425118,
+  "target_id": "S-esubl-e_c_K17_01"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(x, x))), esubl(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 5.183782113941654e-07,
+  "target_scale": 12.50105620651662,
+  "target_id": "S-esubl-e_c_K17_02"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045)), esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 3.454664231705218e-06,
+  "target_scale": 11.622936095080995,
+  "target_id": "S-esubl-e_c_K17_03"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, x)))), 2.718281828459045))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 1.3057103528387134e-09,
+  "target_scale": 12.499427141101787,
+  "target_id": "S-esubl-e_c_K17_04"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), x)), 2.718281828459045)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.06335543807466415,
+  "target_scale": 331552.4927681406,
+  "target_id": "S-esubl-e_c_K17_05"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(2.718281828459045, esubl(x, 2.718281828459045))), 2.718281828459045), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.0065634415478341345,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K17_06"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), 2.718281828459045), 2.718281828459045)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1.1110236514800483e-06,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K17_07"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045)), 2.718281828459045), 2.718281828459045), esubl(2.718281828459045, esubl(2.718281828459045, x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.28592265635760034,
+  "target_scale": 96.82881924880265,
+  "target_id": "S-esubl-e_c_K17_08"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))))), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 2.2368911023773387e-07,
+  "target_scale": 14.224009207619346,
+  "target_id": "S-esubl-e_c_K17_09"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 5.970479194487157e-08,
+  "target_scale": 269476.53755093063,
+  "target_id": "S-esubl-e_c_K17_10"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), 2.718281828459045)), 2.718281828459045), 2.718281828459045), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 3.734017477792978e-07,
+  "target_scale": 12.796939734496695,
+  "target_id": "S-esubl-e_c_K17_11"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, x))), 2.718281828459045))), 2.718281828459045)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 735.4254748068611,
+  "target_scale": 261137.66009245836,
+  "target_id": "S-esubl-e_c_K17_12"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, x))), 2.718281828459045), 2.718281828459045), esubl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 2.116424784098984,
+  "target_scale": 100.76461436242481,
+  "target_id": "S-esubl-e_c_K17_13"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), esubl(x, 2.718281828459045)))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.5286770598677746,
+  "target_scale": 1509962.3795159108,
+  "target_id": "S-esubl-e_c_K17_14"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(2.718281828459045, esubl(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.017425075722784643,
+  "target_scale": 1403196.8474123003,
+  "target_id": "S-esubl-e_c_K17_15"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, esubl(x, x)))), 2.718281828459045)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.865984231659147,
+  "target_scale": 2219816.604947713,
+  "target_id": "S-esubl-e_c_K17_16"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(x, 2.718281828459045))))), x)), 2.718281828459045)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.00029084022823192045,
+  "target_scale": 11.64271041615935,
+  "target_id": "S-esubl-e_c_K17_17"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), x)), esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 3.2900400597897578e-09,
+  "target_scale": 11.61843061915897,
+  "target_id": "S-esubl-e_c_K17_18"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(2.718281828459045, x)), esubl(x, x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.04887963137777354,
+  "target_scale": 15.623863136005731,
+  "target_id": "S-esubl-e_c_K17_19"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045))), esubl(x, esubl(x, x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.10613022304741088,
+  "target_scale": 1439338.2958530341,
+  "target_id": "S-esubl-e_c_K17_20"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), x)), esubl(2.718281828459045, esubl(x, esubl(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.01135442857814066,
+  "target_scale": 11.942171311504318,
+  "target_id": "S-esubl-e_c_K17_21"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, x))), esubl(2.718281828459045, esubl(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 2.267481826830443e-06,
+  "target_scale": 14.227721004247158,
+  "target_id": "S-esubl-e_c_K17_22"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(esubl(x, esubl(x, esubl(esubl(x, x), x))), 2.718281828459045)), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 48.31547307153685,
+  "target_scale": 38.27684789995,
+  "target_id": "S-esubl-e_c_K17_23"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(x, 2.718281828459045)), 2.718281828459045), esubl(2.718281828459045, x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.6495196515623085,
+  "target_scale": 1.8226132081768465,
+  "target_id": "S-esubl-e_c_K17_24"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), esubl(x, 2.718281828459045))), 2.718281828459045))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 1.1915069470604808e-05,
+  "target_scale": 12.71154592613927,
+  "target_id": "S-esubl-e_c_K17_25"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(esubl(x, esubl(esubl(x, esubl(x, x)), x)), 2.718281828459045), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.0039674123553083826,
+  "target_scale": 14.634369698244,
+  "target_id": "S-esubl-e_c_K17_26"
+ },
+ {
+  "expression": "esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, esubl(2.718281828459045, 2.718281828459045)))), 2.718281828459045), esubl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1.5931151357447024e-11,
+  "target_scale": 2.9249564758324786,
+  "target_id": "S-esubl-e_c_K17_27"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, 2.718281828459045))))), 2.718281828459045)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1.0250103117093594e-11,
+  "target_scale": 1.7182993762590373,
+  "target_id": "S-esubl-e_c_K17_28"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), 2.718281828459045))), esubl(2.718281828459045, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 2.2687413840326863e-06,
+  "target_scale": 28.62927244451144,
+  "target_id": "S-esubl-e_c_K17_29"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(2.718281828459045, 2.718281828459045))))), x)), esubl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.0003811955016908618,
+  "target_scale": 9.994065062125117,
+  "target_id": "S-esubl-e_c_K19_00"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(x, x))))), x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 2.8754786959397307e-07,
+  "target_scale": 1403193.9362715923,
+  "target_id": "S-esubl-e_c_K19_01"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(x, x)))), 2.718281828459045)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.011617456563629358,
+  "target_scale": 1403208.1958076928,
+  "target_id": "S-esubl-e_c_K19_02"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, x))), esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.00019633183136284537,
+  "target_scale": 16.85608990458444,
+  "target_id": "S-esubl-e_c_K19_03"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, 2.718281828459045))))), esubl(x, x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 1.7841918762972914e-06,
+  "target_scale": 14.224066920596885,
+  "target_id": "S-esubl-e_c_K19_04"
+ },
+ {
+  "expression": "esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x)), 2.718281828459045), esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 1.6744095752747497e-07,
+  "target_scale": 5.0336284884282385,
+  "target_id": "S-esubl-e_c_K19_05"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045)), x)), esubl(x, 2.718281828459045)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.00017810584774628175,
+  "target_scale": 2.6226682794915925,
+  "target_id": "S-esubl-e_c_K19_06"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, x)), esubl(x, 2.718281828459045))))), 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 8.804160574902139e-08,
+  "target_scale": 2.6519948549653662,
+  "target_id": "S-esubl-e_c_K19_07"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), esubl(x, 2.718281828459045))), 2.718281828459045), 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 1.6379458517248403e-10,
+  "target_scale": 3.6499493903436075,
+  "target_id": "S-esubl-e_c_K19_08"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), x)), esubl(2.718281828459045, x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 8.770896284912457e-09,
+  "target_scale": 1403192.3234273389,
+  "target_id": "S-esubl-e_c_K19_09"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x)), 2.718281828459045), esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.3927792199092194,
+  "target_scale": 1251041.7016482765,
+  "target_id": "S-esubl-e_c_K19_10"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), x))))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 10,
+  "var_target": 0.013373462681149372,
+  "target_scale": 305164.12233208,
+  "target_id": "S-esubl-e_c_K19_11"
+ },
+ {
+  "expression": "esubl(esubl(esubl(2.718281828459045, esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), x)), 2.718281828459045), 2.718281828459045)), 2.718281828459045), 2.718281828459045)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 10,
+  "var_target": 0.0007101559521930879,
+  "target_scale": 594.1416740093666,
+  "target_id": "S-esubl-e_c_K19_12"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, x)))))), 2.718281828459045)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 6.791825656876159e-06,
+  "target_scale": 3814278.1047601732,
+  "target_id": "S-esubl-e_c_K19_13"
+ },
+ {
+  "expression": "esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), esubl(2.718281828459045, esubl(x, x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.0005202211486316217,
+  "target_scale": 1.3679091276753277,
+  "target_id": "S-esubl-e_c_K19_14"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), esubl(2.718281828459045, x))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 9.727165449568125e-11,
+  "target_scale": 12.628607309365256,
+  "target_id": "S-esubl-e_c_K19_15"
+ },
+ {
+  "expression": "esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), x)), esubl(2.718281828459045, 2.718281828459045)), esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 6.116577914683631e-06,
+  "target_scale": 1.4670957732821408,
+  "target_id": "S-esubl-e_c_K19_16"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(x, 2.718281828459045)), x)), 2.718281828459045), x)), esubl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 2.819622840362561e-05,
+  "target_scale": 4.7609326524894335,
+  "target_id": "S-esubl-e_c_K19_17"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)))), 2.718281828459045)), esubl(2.718281828459045, esubl(x, 2.718281828459045)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.00028271725609956455,
+  "target_scale": 10.133547958579534,
+  "target_id": "S-esubl-e_c_K19_18"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(x, esubl(2.718281828459045, 2.718281828459045))), x)), esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 1.226441630875899e-05,
+  "target_scale": 1.6500150300661751,
+  "target_id": "S-esubl-e_c_K19_19"
+ },
+ {
+  "expression": "esubl(esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045))), esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)))), 2.718281828459045), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.013314094935377552,
+  "target_scale": 99145.42131871327,
+  "target_id": "S-esubl-e_c_K19_20"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, x))), esubl(2.718281828459045, x)), 2.718281828459045), 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.012770906189170032,
+  "target_scale": 18.01000431646672,
+  "target_id": "S-esubl-e_c_K19_21"
+ },
+ {
+  "expression": "esubl(x, esubl(esubl(x, 2.718281828459045), esubl(esubl(x, esubl(esubl(x, x), x)), esubl(x, esubl(2.718281828459045, 2.718281828459045)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 9.843189780981788e-08,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K19_22"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(x, 2.718281828459045))), 2.718281828459045))), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 5.5925574023343545e-09,
+  "target_scale": 2.681911452986114,
+  "target_id": "S-esubl-e_c_K19_23"
+ },
+ {
+  "expression": "esubl(esubl(esubl(esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, x))), esubl(2.718281828459045, x)), 2.718281828459045), 2.718281828459045), 2.718281828459045)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 5.9622878230425936e-05,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K19_24"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, esubl(2.718281828459045, 2.718281828459045)), 2.718281828459045)), esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 4.033413770502312e-06,
+  "target_scale": 11.624115784319677,
+  "target_id": "S-esubl-e_c_K19_25"
+ },
+ {
+  "expression": "esubl(esubl(x, esubl(esubl(x, esubl(esubl(x, esubl(esubl(x, 2.718281828459045), esubl(2.718281828459045, 2.718281828459045))), 2.718281828459045)), x)), 2.718281828459045)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 8.282077822309448e-06,
+  "target_scale": 1.0,
+  "target_id": "S-esubl-e_c_K19_26"
+ },
+ {
+  "expression": "esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(esubl(x, esubl(esubl(x, esubl(2.718281828459045, 2.718281828459045)), x)), esubl(x, 2.718281828459045))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 4.794795820932339e-06,
+  "target_scale": 1403192.328738336,
+  "target_id": "S-esubl-e_c_K19_27"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x))), 2.718281828459045)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 10,
+  "var_target": 0.00042267626628310915,
+  "target_scale": 12.700722910585284,
+  "target_id": "S-esubl-e_c_K19_28"
+ },
+ {
+  "expression": "esubl(2.718281828459045, esubl(2.718281828459045, esubl(x, esubl(esubl(x, esubl(2.718281828459045, esubl(2.718281828459045, esubl(2.718281828459045, x)))), esubl(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 8.428666552625092e-09,
+  "target_scale": 12.499742306428605,
+  "target_id": "S-esubl-e_c_K19_29"
+ }
+]

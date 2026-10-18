@@ -1,0 +1,34 @@
+{
+ "form": "edivl",
+ "const": "e",
+ "one": {
+  "exp(x)": {
+   "K": 3,
+   "expr": "edivl(x, 2.718281828459045)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": {
+   "K": 7,
+   "expr": "edivl(x, edivl(edivl(x, x), 2.718281828459045))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "budget_exhausted"
+ },
+ "two": {
+  "x-y": null,
+  "x+y": null
+ },
+ "enum2": {
+  "k_reached": 17,
+  "state": "budget_exhausted"
+ },
+ "passed": false
+}

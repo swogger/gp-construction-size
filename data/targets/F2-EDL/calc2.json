@@ -1,0 +1,22 @@
+[
+ {
+  "target_id": "F2-EDL_calc_x/y",
+  "function": "x/y",
+  "expression": "edl(edl(x, edl(edl(x, x), 2.718281828459045)), edl(y, 2.718281828459045))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.02272221941527074,
+  "target_scale": 1.3913043478260871
+ },
+ {
+  "target_id": "F2-EDL_calc_log_x(y)",
+  "function": "log_x(y)",
+  "expression": "edl(edl(x, edl(edl(x, edl(2.718281828459045, x)), 2.718281828459045)), edl(edl(2.718281828459045, y), 2.718281828459045))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.0285121770349312,
+  "target_scale": 1.4477252712278141
+ }
+]

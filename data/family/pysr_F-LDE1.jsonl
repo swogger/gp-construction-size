@@ -1,0 +1,18 @@
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 0, "exact": false, "best": "lde(x, lde(lde(x, x), x))", "error": "", "wall_s": 29.75}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 1, "exact": false, "best": "lde(c, lde(lde(x, x), c))", "error": "", "wall_s": 3.19}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 2, "exact": false, "best": "x", "error": "", "wall_s": 2.18}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 3, "exact": false, "best": "lde(x, lde(lde(x, x), c))", "error": "", "wall_s": 2.4}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 4, "exact": false, "best": "lde(x, c)", "error": "", "wall_s": 2.51}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 5, "exact": false, "best": "x", "error": "", "wall_s": 2.37}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 6, "exact": false, "best": "lde(x, lde(c, lde(c, x)))", "error": "", "wall_s": 3.42}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 7, "exact": false, "best": "x", "error": "", "wall_s": 2.36}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 8, "exact": false, "best": "lde(x, lde(lde(x, x), x))", "error": "", "wall_s": 4.38}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 20000, "seed": 9, "exact": false, "best": "lde(c, lde(c, lde(x, c)))", "error": "", "wall_s": 3.9}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 320000, "seed": 0, "exact": false, "best": "lde(x, lde(lde(x, x), x))", "error": "", "wall_s": 9.8}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 320000, "seed": 1, "exact": false, "best": "lde(x, c)", "error": "", "wall_s": 11.55}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 320000, "seed": 2, "exact": false, "best": "x", "error": "", "wall_s": 13.1}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 320000, "seed": 3, "exact": false, "best": "x", "error": "", "wall_s": 20.74}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 320000, "seed": 4, "exact": false, "best": "x", "error": "", "wall_s": 14.39}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 320000, "seed": 5, "exact": false, "best": "x", "error": "", "wall_s": 14.23}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 320000, "seed": 6, "exact": false, "best": "lde(x, lde(c, lde(c, x)))", "error": "", "wall_s": 13.86}
+{"grammar": "F-LDE1", "target_set": "calc", "target_id": "F-LDE1_calc_exp(x)", "function": "exp(x)", "K": 9, "budget": 320000, "seed": 7, "exact": true, "best": "lde(x, lde(lde(x, x), lde(c, c)))", "error": "", "wall_s": 5318.08}

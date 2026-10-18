@@ -1,0 +1,16 @@
+[
+ "calc+stop_on+exact|F-NEML_calc_-x|A|200|1255772671",
+ "calc+stop_on+exact|F-NEML_calc_-x|A|200|261045082",
+ "calc+stop_on+exact|F-PLI_calc_1/x|A|200|1250301191",
+ "calc+stop_on+exact|F-PLI_calc_x^x|A|200|1256056108",
+ "calc+stop_on+exact|F-PLI_calc_x^x|A|200|1359998899",
+ "calc+stop_on+exact|F-PLI_calc_x^x|A|200|145576581",
+ "calc+stop_on+exact|F-PLI_calc_x^x|A|200|1678899513",
+ "calc+stop_on+exact|F-PLI_calc_x^x|A|200|377620559",
+ "calc+stop_on+exact|F-PLM_calc_exp(x)|A|200|1262197780",
+ "calc+stop_on+exact|F-PLM_calc_exp(x)|A|200|173399188",
+ "calc+stop_on+exact|F-PLM_calc_x^x|A|200|2007404132",
+ "calc+stop_on+exact|F-PLM_calc_x^x|A|200|268686632",
+ "calc+stop_on+exact|F-PLM_calc_x^x|A|200|457054819",
+ "calc2+stop_on+exact|F2-PLM_calc_x^y|A|200|1936764466"
+]

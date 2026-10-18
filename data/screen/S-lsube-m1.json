@@ -1,0 +1,28 @@
+{
+ "form": "lsube",
+ "const": "m1",
+ "one": {
+  "exp(x)": {
+   "K": 17,
+   "expr": "lsube(x, lsube(lsube(x, x), lsube(x, lsube(x, lsube(-1, lsube(-1, lsube(-1, x)))))))",
+   "grid_ok": true,
+   "ext_ok": false,
+   "ext_finite": 1.0
+  },
+  "ln(x)": {
+   "K": 13,
+   "expr": "lsube(x, lsube(x, lsube(x, lsube(-1, lsube(-1, lsube(-1, x))))))",
+   "grid_ok": true,
+   "ext_ok": false,
+   "ext_finite": 1.0
+  },
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 19,
+  "state": "budget_exhausted"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

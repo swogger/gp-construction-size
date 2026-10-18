@@ -1,0 +1,22 @@
+{
+ "grammar": "F2-LDE1",
+ "ceiling": 17,
+ "table": {
+  "x+y": null,
+  "x-y": null,
+  "x*y": null,
+  "x/y": {
+   "K": 15,
+   "expr": "lde(lde(x, lde(lde(x, x), lde(1, x))), lde(y, lde(1, x)))",
+   "verified": true
+  },
+  "x^y": null,
+  "log_x(y)": {
+   "K": 11,
+   "expr": "lde(y, lde(lde(x, lde(1, x)), lde(1, x)))",
+   "verified": true
+  },
+  "(x+y)/2": null,
+  "sqrt(x^2+y^2)": null
+ }
+}

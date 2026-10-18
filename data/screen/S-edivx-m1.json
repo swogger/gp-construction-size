@@ -1,0 +1,16 @@
+{
+ "form": "edivx",
+ "const": "m1",
+ "one": {
+  "exp(x)": null,
+  "ln(x)": null,
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "budget_exhausted"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

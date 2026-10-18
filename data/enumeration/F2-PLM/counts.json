@@ -1,0 +1,177 @@
+{
+ "grammar": "F2-PLM",
+ "levels": [
+  {
+   "K": 1,
+   "N_syntactic": 3,
+   "candidates": 3,
+   "U": 3,
+   "U_cum": 3,
+   "U_finite_nonconst": 2,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 2,
+   "N_syntactic": 0,
+   "candidates": 0,
+   "U": 0,
+   "U_cum": 3,
+   "U_finite_nonconst": 0,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 3,
+   "N_syntactic": 9,
+   "candidates": 9,
+   "U": 7,
+   "U_cum": 10,
+   "U_finite_nonconst": 6,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 4,
+   "N_syntactic": 0,
+   "candidates": 0,
+   "U": 0,
+   "U_cum": 10,
+   "U_finite_nonconst": 0,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 5,
+   "N_syntactic": 54,
+   "candidates": 42,
+   "U": 31,
+   "U_cum": 41,
+   "U_finite_nonconst": 30,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 6,
+   "N_syntactic": 0,
+   "candidates": 0,
+   "U": 0,
+   "U_cum": 41,
+   "U_finite_nonconst": 0,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 7,
+   "N_syntactic": 405,
+   "candidates": 235,
+   "U": 187,
+   "U_cum": 228,
+   "U_finite_nonconst": 158,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 8,
+   "N_syntactic": 0,
+   "candidates": 0,
+   "U": 0,
+   "U_cum": 228,
+   "U_finite_nonconst": 0,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 9,
+   "N_syntactic": 3402,
+   "candidates": 1556,
+   "U": 1306,
+   "U_cum": 1534,
+   "U_finite_nonconst": 988,
+   "cpu_s": 0.01,
+   "vals_stored": true
+  },
+  {
+   "K": 10,
+   "N_syntactic": 0,
+   "candidates": 0,
+   "U": 0,
+   "U_cum": 1534,
+   "U_finite_nonconst": 0,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 11,
+   "N_syntactic": 30618,
+   "candidates": 11415,
+   "U": 9828,
+   "U_cum": 11362,
+   "U_finite_nonconst": 6526,
+   "cpu_s": 0.06,
+   "vals_stored": true
+  },
+  {
+   "K": 12,
+   "N_syntactic": 0,
+   "candidates": 0,
+   "U": 0,
+   "U_cum": 11362,
+   "U_finite_nonconst": 0,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 13,
+   "N_syntactic": 288684,
+   "candidates": 88846,
+   "U": 76786,
+   "U_cum": 88148,
+   "U_finite_nonconst": 45172,
+   "cpu_s": 0.49,
+   "vals_stored": true
+  },
+  {
+   "K": 14,
+   "N_syntactic": 0,
+   "candidates": 0,
+   "U": 0,
+   "U_cum": 88148,
+   "U_finite_nonconst": 0,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 15,
+   "N_syntactic": 2814669,
+   "candidates": 714249,
+   "U": 617909,
+   "U_cum": 706057,
+   "U_finite_nonconst": 323055,
+   "cpu_s": 3.96,
+   "vals_stored": true
+  },
+  {
+   "K": 16,
+   "N_syntactic": 0,
+   "candidates": 0,
+   "U": 0,
+   "U_cum": 706057,
+   "U_finite_nonconst": 0,
+   "cpu_s": 0.03,
+   "vals_stored": true
+  },
+  {
+   "K": 17,
+   "N_syntactic": 28146690,
+   "candidates": 5880238,
+   "U": 5076329,
+   "U_cum": 5782386,
+   "U_finite_nonconst": 2367149,
+   "cpu_s": 27.48,
+   "vals_stored": false
+  }
+ ],
+ "hash_precision": 9,
+ "sample": "grid (2,3) 100 points"
+}

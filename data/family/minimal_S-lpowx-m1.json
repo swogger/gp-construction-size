@@ -1,0 +1,60 @@
+{
+ "grammar": "S-lpowx-m1",
+ "ceiling": 19,
+ "table": {
+  "exp(x)": {
+   "K": 15,
+   "expr": "lpowx(lpowx(x, lpowx(lpowx(x, lpowx(x, lpowx(lpowx(x, -1), -1))), -1)), x)",
+   "verified": true
+  },
+  "ln(x)": {
+   "K": 13,
+   "expr": "lpowx(x, lpowx(x, lpowx(-1, lpowx(-1, lpowx(-1, lpowx(-1, -1))))))",
+   "verified": true
+  },
+  "-x": null,
+  "1/x": {
+   "K": 17,
+   "expr": "lpowx(lpowx(lpowx(x, lpowx(lpowx(x, lpowx(x, x)), -1)), lpowx(lpowx(x, -1), -1)), -1)",
+   "verified": true
+  },
+  "x^2": null,
+  "sqrt(x)": null,
+  "x+1": null,
+  "x-1": null,
+  "2x": null,
+  "x/2": null,
+  "exp(-x)": null,
+  "x^x": {
+   "K": 17,
+   "expr": "lpowx(lpowx(lpowx(x, lpowx(lpowx(x, lpowx(x, x)), -1)), lpowx(lpowx(x, -1), -1)), x)",
+   "verified": true
+  },
+  "exp(exp(x))": null,
+  "ln(ln(x))": null,
+  "0": {
+   "K": 9,
+   "expr": "lpowx(-1, lpowx(-1, lpowx(-1, lpowx(-1, -1))))",
+   "verified": false
+  },
+  "1": {
+   "K": 11,
+   "expr": "lpowx(x, lpowx(-1, lpowx(-1, lpowx(-1, lpowx(-1, -1)))))",
+   "verified": true
+  },
+  "-1": {
+   "K": 1,
+   "expr": "-1",
+   "verified": true
+  },
+  "2": null,
+  "1/2": null,
+  "e": {
+   "K": 17,
+   "expr": "lpowx(x, lpowx(lpowx(x, lpowx(x, lpowx(-1, lpowx(-1, lpowx(-1, lpowx(-1, -1)))))), -1))",
+   "verified": true
+  },
+  "pi": null,
+  "i": null
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "form": "ldive",
+ "const": "m1",
+ "one": {
+  "exp(x)": null,
+  "ln(x)": {
+   "K": 19,
+   "expr": "ldive(x, ldive(x, ldive(ldive(ldive(-1, x), -1), ldive(ldive(x, ldive(x, -1)), ldive(-1, x)))))",
+   "grid_ok": true,
+   "ext_ok": false,
+   "ext_finite": 1.0
+  },
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 19,
+  "state": "budget_exhausted"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

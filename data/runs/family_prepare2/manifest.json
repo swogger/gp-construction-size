@@ -1,0 +1,121 @@
+{
+ "phase": "family_prepare2",
+ "description": "EML-family round 2: targets_fam2 (sizes 3..19, near-duplicate filter). --workers 2.",
+ "created": "2026-10-13 10:11:58",
+ "git": "03cd756",
+ "n_tasks": 7,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_prepare2",
+    "--grammar",
+    "F-EML"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EDL",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_prepare2",
+    "--grammar",
+    "F-EDL"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-EDL"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-NEML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_prepare2",
+    "--grammar",
+    "F-NEML"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-NEML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_prepare2",
+    "--grammar",
+    "F-LDE0"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_prepare2",
+    "--grammar",
+    "F-LDE1"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-LDE1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLI",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_prepare2",
+    "--grammar",
+    "F-PLI"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-PLI"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLM",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_prepare2",
+    "--grammar",
+    "F-PLM"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-PLM"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

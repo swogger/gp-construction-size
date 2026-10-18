@@ -1,0 +1,42 @@
+[
+ {
+  "target_id": "F2-PLM_calc_x*y",
+  "function": "x*y",
+  "expression": "plm(plm(x, plm(plm(plm(x, plm(plm(x, plm(x, x)), 1)), y), 1)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.8569214876037836,
+  "target_scale": 8.462809917355395
+ },
+ {
+  "target_id": "F2-PLM_calc_x/y",
+  "function": "x/y",
+  "expression": "plm(plm(plm(x, plm(plm(x, plm(y, y)), 1)), plm(plm(y, x), 1)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.022722219415271274,
+  "target_scale": 1.3913043478260887
+ },
+ {
+  "target_id": "F2-PLM_calc_x^y",
+  "function": "x^y",
+  "expression": "plm(plm(x, plm(plm(x, x), 1)), y)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 14.755719429174592,
+  "target_scale": 22.341489579296503
+ },
+ {
+  "target_id": "F2-PLM_calc_log_x(y)",
+  "function": "log_x(y)",
+  "expression": "plm(plm(plm(x, plm(plm(x, x), 1)), plm(y, 1)), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.02851217703493131,
+  "target_scale": 1.4477252712278144
+ }
+]

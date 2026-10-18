@@ -1,0 +1,135 @@
+{
+ "phase": "family_predictors",
+ "description": "EML-family: target-level searchability predictors from the enumeration alone (nearest smaller function in nMSE, near-duplicate counts, subtree viability); targets with K <= 19. Run with --workers 2 (memory).",
+ "created": "2026-10-13 09:52:55",
+ "git": "c760cb0",
+ "n_tasks": 7,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-EML",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EDL",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-EDL",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-EDL"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-NEML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-NEML",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-NEML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-LDE0",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-LDE1",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-LDE1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLI",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-PLI",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-PLI"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLM",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.family_predictors",
+    "--grammar",
+    "F-PLM",
+    "--kmax",
+    "19"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-PLM"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

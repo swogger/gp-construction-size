@@ -1,0 +1,22 @@
+{
+ "form": "eaddl",
+ "const": "0",
+ "one": {
+  "exp(x)": null,
+  "ln(x)": {
+   "K": 5,
+   "expr": "eaddl(eaddl(x, 0), x)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

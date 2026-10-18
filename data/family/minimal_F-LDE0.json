@@ -1,0 +1,88 @@
+{
+ "grammar": "F-LDE0",
+ "ceiling": 23,
+ "table": {
+  "exp(x)": {
+   "K": 7,
+   "expr": "lde(x, lde(lde(x, x), 0))",
+   "verified": true
+  },
+  "ln(x)": {
+   "K": 3,
+   "expr": "lde(x, 0)",
+   "verified": true
+  },
+  "-x": {
+   "K": 17,
+   "expr": "lde(lde(lde(x, lde(lde(x, lde(x, x)), 0)), lde(lde(x, 0), 0)), 0)",
+   "verified": true
+  },
+  "1/x": {
+   "K": 17,
+   "expr": "lde(lde(x, lde(lde(x, lde(x, lde(x, 0))), 0)), lde(lde(x, 0), 0))",
+   "verified": true
+  },
+  "x^2": {
+   "K": 19,
+   "expr": "lde(x, lde(lde(lde(x, lde(lde(x, lde(x, lde(x, 0))), 0)), lde(x, 0)), 0))",
+   "verified": true
+  },
+  "sqrt(x)": null,
+  "x+1": {
+   "K": 23,
+   "expr": "lde(lde(x, lde(lde(lde(x, lde(lde(x, lde(x, x)), 0)), lde(x, lde(lde(x, 0), 0))), 0)), 0)",
+   "verified": true
+  },
+  "x-1": {
+   "K": 19,
+   "expr": "lde(lde(x, lde(lde(x, 0), lde(x, 0))), lde(lde(lde(x, 0), lde(x, 0)), 0))",
+   "verified": true
+  },
+  "2x": {
+   "K": 17,
+   "expr": "lde(lde(x, lde(lde(lde(x, lde(lde(x, lde(x, x)), 0)), x), 0)), 0)",
+   "verified": true
+  },
+  "x/2": null,
+  "exp(-x)": {
+   "K": 15,
+   "expr": "lde(lde(x, lde(lde(x, lde(x, x)), 0)), lde(lde(x, 0), 0))",
+   "verified": true
+  },
+  "x^x": null,
+  "exp(exp(x))": null,
+  "ln(ln(x))": {
+   "K": 5,
+   "expr": "lde(lde(x, 0), 0)",
+   "verified": true
+  },
+  "0": {
+   "K": 1,
+   "expr": "0",
+   "verified": true
+  },
+  "1": {
+   "K": 7,
+   "expr": "lde(x, lde(lde(x, 0), 0))",
+   "verified": true
+  },
+  "-1": {
+   "K": 19,
+   "expr": "lde(lde(lde(x, lde(lde(x, lde(x, x)), 0)), lde(lde(x, 0), 0)), lde(x, 0))",
+   "verified": true
+  },
+  "2": {
+   "K": 19,
+   "expr": "lde(lde(x, lde(lde(lde(x, lde(lde(x, lde(x, x)), 0)), x), 0)), lde(x, 0))",
+   "verified": true
+  },
+  "1/2": null,
+  "e": {
+   "K": 13,
+   "expr": "lde(x, lde(lde(x, lde(x, lde(lde(x, 0), 0))), 0))",
+   "verified": true
+  },
+  "pi": null,
+  "i": null
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "grammar": "F-NEML",
+ "ceiling": 23,
+ "table": {
+  "exp(x)": {
+   "K": 7,
+   "expr": "neml(x, neml(neml(x, x), -inf))",
+   "verified": true
+  },
+  "ln(x)": {
+   "K": 3,
+   "expr": "neml(x, -inf)",
+   "verified": true
+  },
+  "-x": {
+   "K": 17,
+   "expr": "neml(neml(x, neml(neml(x, neml(x, neml(x, -inf))), -inf)), neml(neml(x, -inf), -inf))",
+   "verified": true
+  },
+  "1/x": null,
+  "x^2": null,
+  "sqrt(x)": null,
+  "x+1": {
+   "K": 23,
+   "expr": "neml(x, neml(neml(neml(x, neml(neml(x, neml(x, neml(x, -inf))), -inf)), neml(x, neml(neml(x, -inf), -inf))), -inf))",
+   "verified": true
+  },
+  "x-1": {
+   "K": 15,
+   "expr": "neml(neml(x, neml(neml(x, x), -inf)), neml(x, neml(neml(x, -inf), -inf)))",
+   "verified": true
+  },
+  "2x": {
+   "K": 19,
+   "expr": "neml(x, neml(neml(neml(x, neml(neml(x, neml(x, neml(x, -inf))), -inf)), neml(x, -inf)), -inf))",
+   "verified": true
+  },
+  "x/2": null,
+  "exp(-x)": {
+   "K": 23,
+   "expr": "neml(x, neml(neml(x, neml(neml(x, neml(neml(x, neml(x, neml(x, -inf))), -inf)), neml(neml(x, -inf), -inf))), -inf))",
+   "verified": true
+  },
+  "x^x": null,
+  "exp(exp(x))": null,
+  "ln(ln(x))": {
+   "K": 5,
+   "expr": "neml(neml(x, -inf), -inf)",
+   "verified": true
+  },
+  "0": {
+   "K": 7,
+   "expr": "neml(x, neml(neml(x, -inf), -inf))",
+   "verified": true
+  },
+  "1": {
+   "K": 13,
+   "expr": "neml(x, neml(neml(x, neml(x, neml(neml(x, -inf), -inf))), -inf))",
+   "verified": true
+  },
+  "-1": {
+   "K": 21,
+   "expr": "neml(neml(x, neml(neml(x, neml(x, neml(neml(x, -inf), -inf))), -inf)), neml(x, neml(neml(x, -inf), -inf)))",
+   "verified": true
+  },
+  "2": null,
+  "1/2": null,
+  "e": {
+   "K": 19,
+   "expr": "neml(x, neml(neml(x, neml(x, neml(neml(x, neml(x, neml(neml(x, -inf), -inf))), -inf))), -inf))",
+   "verified": true
+  },
+  "pi": null,
+  "i": null
+ }
+}

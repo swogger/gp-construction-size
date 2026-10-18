@@ -1,0 +1,32 @@
+[
+ {
+  "target_id": "S-esubl-e_calc_exp(x)",
+  "function": "exp(x)",
+  "expression": "esubl(x, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 12.935998848502118,
+  "target_scale": 19.88765146849128
+ },
+ {
+  "target_id": "S-esubl-e_calc_ln(x)",
+  "function": "ln(x)",
+  "expression": "esubl(2.718281828459045, esubl(esubl(2.718281828459045, x), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), 2.718281828459045))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.013314094935353791,
+  "target_scale": 1.0953065005341696
+ },
+ {
+  "target_id": "S-esubl-e_calc_x-1",
+  "function": "x-1",
+  "expression": "esubl(esubl(2.718281828459045, esubl(esubl(2.718281828459045, x), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), 2.718281828459045)))), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.08168316831698426,
+  "target_scale": 1.9900990099026625
+ }
+]

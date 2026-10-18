@@ -1,0 +1,16 @@
+{
+ "form": "xdivl",
+ "const": "0",
+ "one": {
+  "exp(x)": null,
+  "ln(x)": null,
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

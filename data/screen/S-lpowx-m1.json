@@ -1,0 +1,35 @@
+{
+ "form": "lpowx",
+ "const": "m1",
+ "one": {
+  "exp(x)": {
+   "K": 15,
+   "expr": "lpowx(lpowx(x, lpowx(lpowx(x, lpowx(x, lpowx(lpowx(x, -1), -1))), -1)), x)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": {
+   "K": 13,
+   "expr": "lpowx(x, lpowx(x, lpowx(-1, lpowx(-1, lpowx(-1, lpowx(-1, -1))))))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 19,
+  "state": "budget_exhausted"
+ },
+ "two": {
+  "x-y": null,
+  "x/y": null,
+  "x+y": null
+ },
+ "enum2": {
+  "k_reached": 15,
+  "state": "budget_exhausted"
+ },
+ "passed": false
+}

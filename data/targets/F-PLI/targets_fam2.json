@@ -1,0 +1,704 @@
+[
+ {
+  "expression": "pli(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.01331409493534148,
+  "target_scale": 1.0953065005336102,
+  "target_id": "F-PLI_v2_K03_00"
+ },
+ {
+  "expression": "pli(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.0031093506771852617,
+  "target_scale": 1.0309134188872855,
+  "target_id": "F-PLI_v2_K03_01"
+ },
+ {
+  "expression": "pli(x, pli(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.019890683405824353,
+  "target_scale": 1.0866646186053261,
+  "target_id": "F-PLI_v2_K05_00"
+ },
+ {
+  "expression": "pli(pli(x, 1), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.06167820991314035,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K05_01"
+ },
+ {
+  "expression": "pli(pli(x, x), 1)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.003524533652898354,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K05_02"
+ },
+ {
+  "expression": "pli(pli(x, 1), 1)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.016768306075898066,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K05_03"
+ },
+ {
+  "expression": "pli(pli(x, x), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.03007776719529645,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K05_04"
+ },
+ {
+  "expression": "pli(x, pli(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.016112240817807807,
+  "target_scale": 1.0923206186897236,
+  "target_id": "F-PLI_v2_K05_05"
+ },
+ {
+  "expression": "pli(pli(x, 1), pli(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.0126177612091698,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K07_00"
+ },
+ {
+  "expression": "pli(pli(pli(x, 1), 1), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 3.28794275870265,
+  "target_scale": 6.966048343398781,
+  "target_id": "F-PLI_v2_K07_01"
+ },
+ {
+  "expression": "pli(pli(pli(x, x), 1), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 3.4955256988417314,
+  "target_scale": 7.869682300312298,
+  "target_id": "F-PLI_v2_K07_02"
+ },
+ {
+  "expression": "pli(x, pli(pli(x, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.1023374830712778,
+  "target_scale": 1.339995064168409,
+  "target_id": "F-PLI_v2_K07_03"
+ },
+ {
+  "expression": "pli(x, pli(pli(x, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.93599884850246,
+  "target_scale": 19.887651468491683,
+  "target_id": "F-PLI_v2_K07_04"
+ },
+ {
+  "expression": "pli(pli(pli(x, x), x), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.012974936695162042,
+  "target_scale": 1.4807914628430727,
+  "target_id": "F-PLI_v2_K07_05"
+ },
+ {
+  "expression": "pli(pli(x, pli(x, 1)), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.028094695715343763,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K07_06"
+ },
+ {
+  "expression": "pli(pli(x, pli(x, x)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.06688561740234572,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K07_07"
+ },
+ {
+  "expression": "pli(pli(pli(x, 1), 1), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.043472045638975255,
+  "target_scale": 2.0452005166541585,
+  "target_id": "F-PLI_v2_K07_08"
+ },
+ {
+  "expression": "pli(pli(x, pli(x, x)), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.021351225222963652,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K07_09"
+ },
+ {
+  "expression": "pli(pli(pli(x, x), pli(x, 1)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 1.9308345501870625,
+  "target_scale": 2.1403231582873543,
+  "target_id": "F-PLI_v2_K09_00"
+ },
+ {
+  "expression": "pli(pli(pli(x, x), x), pli(x, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.3240027813841567,
+  "target_scale": 2.903141265284483,
+  "target_id": "F-PLI_v2_K09_01"
+ },
+ {
+  "expression": "pli(pli(x, x), pli(x, pli(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.0008763429200427762,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K09_02"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, x), x), x), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.008559253381552456,
+  "target_scale": 1.210982517464165,
+  "target_id": "F-PLI_v2_K09_03"
+ },
+ {
+  "expression": "pli(pli(pli(x, 1), pli(x, 1)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 1.5451949402144398,
+  "target_scale": 2.046093986089495,
+  "target_id": "F-PLI_v2_K09_04"
+ },
+ {
+  "expression": "pli(pli(pli(x, 1), 1), pli(x, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 2.4385948083644253,
+  "target_scale": 6.975999534745875,
+  "target_id": "F-PLI_v2_K09_05"
+ },
+ {
+  "expression": "pli(x, pli(x, pli(pli(x, x), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.01447400934464021,
+  "target_scale": 1.0702970697424254,
+  "target_id": "F-PLI_v2_K09_06"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, x), x), x), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0031134319776823334,
+  "target_scale": 1.0728383104077317,
+  "target_id": "F-PLI_v2_K09_07"
+ },
+ {
+  "expression": "pli(x, pli(x, pli(pli(x, 1), 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0020780940656168175,
+  "target_scale": 1.0340567131200955,
+  "target_id": "F-PLI_v2_K09_08"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, 1), 1), 1), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.2662231013795377,
+  "target_scale": 3.6496258390074274,
+  "target_id": "F-PLI_v2_K09_09"
+ },
+ {
+  "expression": "pli(pli(x, pli(pli(pli(x, x), x), 1)), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.005461173765865313,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K11_00"
+ },
+ {
+  "expression": "pli(pli(x, 1), pli(x, pli(x, pli(x, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.007019036911910185,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K11_01"
+ },
+ {
+  "expression": "pli(pli(x, pli(pli(pli(x, x), 1), 1)), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.021841242528925508,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K11_02"
+ },
+ {
+  "expression": "pli(x, pli(pli(pli(pli(x, x), 1), x), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.011906577228897814,
+  "target_scale": 1.083846313446783,
+  "target_id": "F-PLI_v2_K11_03"
+ },
+ {
+  "expression": "pli(pli(x, 1), pli(pli(pli(x, x), 1), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 1.296159687165016,
+  "target_scale": 3.156536682617356,
+  "target_id": "F-PLI_v2_K11_04"
+ },
+ {
+  "expression": "pli(pli(pli(x, pli(pli(x, 1), x)), 1), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 1.2568695097127165,
+  "target_scale": 4.3982713992992295,
+  "target_id": "F-PLI_v2_K11_05"
+ },
+ {
+  "expression": "pli(x, pli(x, pli(x, pli(pli(x, 1), x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.01919119327682717,
+  "target_scale": 1.088188248093541,
+  "target_id": "F-PLI_v2_K11_06"
+ },
+ {
+  "expression": "pli(pli(pli(x, pli(x, pli(x, 1))), 1), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.04666362305953273,
+  "target_scale": 2.045007478863322,
+  "target_id": "F-PLI_v2_K11_07"
+ },
+ {
+  "expression": "pli(pli(x, pli(x, pli(x, pli(x, 1)))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.03792468974404623,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K11_08"
+ },
+ {
+  "expression": "pli(pli(pli(x, pli(x, x)), pli(x, x)), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 2.987841621313748,
+  "target_scale": 6.968431849120136,
+  "target_id": "F-PLI_v2_K11_09"
+ },
+ {
+  "expression": "pli(pli(x, 1), pli(x, pli(pli(pli(x, x), x), 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.04268756752620859,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K13_00"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, 1), 1), 1), pli(x, pli(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.21494777075176114,
+  "target_scale": 3.641852868290988,
+  "target_id": "F-PLI_v2_K13_01"
+ },
+ {
+  "expression": "pli(pli(x, pli(pli(pli(x, 1), pli(x, x)), x)), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.004357130202236113,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K13_02"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, pli(x, pli(x, 1))), x), x), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.003591357047650825,
+  "target_scale": 1.06790871654654,
+  "target_id": "F-PLI_v2_K13_03"
+ },
+ {
+  "expression": "pli(x, pli(pli(x, 1), pli(pli(pli(x, x), 1), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.007710162527745201,
+  "target_scale": 1.0407991605364681,
+  "target_id": "F-PLI_v2_K13_04"
+ },
+ {
+  "expression": "pli(pli(pli(x, pli(x, pli(pli(x, x), 1))), 1), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 3.842208488554944,
+  "target_scale": 9.466762005472885,
+  "target_id": "F-PLI_v2_K13_05"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, 1), 1), x), pli(x, pli(x, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.040238008991221014,
+  "target_scale": 1.3397621336943393,
+  "target_id": "F-PLI_v2_K13_06"
+ },
+ {
+  "expression": "pli(pli(x, 1), pli(pli(pli(x, pli(x, 1)), 1), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.010943885952509246,
+  "target_scale": 2.7888501243633406,
+  "target_id": "F-PLI_v2_K13_07"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, pli(pli(x, 1), x)), 1), x), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.013697350817164973,
+  "target_scale": 1.2631669000545704,
+  "target_id": "F-PLI_v2_K13_08"
+ },
+ {
+  "expression": "pli(pli(pli(pli(pli(x, 1), pli(x, 1)), 1), x), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.16487484540279737,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K13_09"
+ },
+ {
+  "expression": "pli(pli(x, pli(x, x)), pli(pli(pli(x, pli(x, 1)), 1), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.0031646636271224797,
+  "target_scale": 2.755973864231457,
+  "target_id": "F-PLI_v2_K15_00"
+ },
+ {
+  "expression": "pli(pli(x, pli(x, pli(pli(x, pli(pli(x, 1), x)), 1))), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.014090577959737456,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K15_01"
+ },
+ {
+  "expression": "pli(x, pli(pli(pli(pli(pli(x, x), pli(x, 1)), 1), x), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.021962899235686686,
+  "target_scale": 1.1182964840836802,
+  "target_id": "F-PLI_v2_K15_02"
+ },
+ {
+  "expression": "pli(pli(x, pli(pli(x, 1), pli(x, pli(pli(x, 1), 1)))), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.04288727787362382,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K15_03"
+ },
+ {
+  "expression": "pli(pli(x, x), pli(x, pli(pli(pli(pli(x, 1), 1), 1), 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.005633082898745804,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K15_04"
+ },
+ {
+  "expression": "pli(x, pli(pli(x, pli(pli(x, 1), x)), pli(x, pli(x, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.14247361299836997,
+  "target_scale": 2.1077919614934046,
+  "target_id": "F-PLI_v2_K15_05"
+ },
+ {
+  "expression": "pli(pli(pli(pli(pli(x, pli(x, 1)), x), pli(x, x)), x), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.0028740961400982503,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K15_06"
+ },
+ {
+  "expression": "pli(x, pli(pli(x, pli(pli(x, pli(pli(x, x), 1)), x)), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.0011658524635662828,
+  "target_scale": 4.240440425728354,
+  "target_id": "F-PLI_v2_K15_07"
+ },
+ {
+  "expression": "pli(pli(x, 1), pli(pli(pli(x, 1), pli(x, 1)), pli(x, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 1.3650626191564998,
+  "target_scale": 3.053704210644879,
+  "target_id": "F-PLI_v2_K15_08"
+ },
+ {
+  "expression": "pli(x, pli(pli(pli(x, pli(x, pli(x, x))), pli(x, 1)), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.004990907086832884,
+  "target_scale": 1.035000009504919,
+  "target_id": "F-PLI_v2_K15_09"
+ },
+ {
+  "expression": "pli(x, pli(pli(x, x), pli(pli(pli(x, x), pli(pli(x, 1), x)), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.11109646233235963,
+  "target_scale": 1.1243241841877603,
+  "target_id": "F-PLI_v2_K17_00"
+ },
+ {
+  "expression": "pli(pli(pli(x, pli(x, x)), pli(x, pli(pli(x, 1), pli(x, 1)))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.7490637692694412,
+  "target_scale": 1.5278518399091008,
+  "target_id": "F-PLI_v2_K17_01"
+ },
+ {
+  "expression": "pli(pli(pli(x, pli(x, pli(x, pli(pli(x, x), 1)))), x), pli(x, x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.3731622336082513,
+  "target_scale": 2.569514827025639,
+  "target_id": "F-PLI_v2_K17_02"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, pli(pli(pli(x, pli(x, 1)), 1), 1)), x), x), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.22974901678791695,
+  "target_scale": 1.1359909038924032,
+  "target_id": "F-PLI_v2_K17_03"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, pli(x, pli(x, 1))), pli(x, 1)), pli(x, 1)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.37798987054650696,
+  "target_scale": 1.715469542063418,
+  "target_id": "F-PLI_v2_K17_04"
+ },
+ {
+  "expression": "pli(x, pli(pli(pli(pli(pli(pli(x, 1), x), pli(x, x)), 1), 1), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.01253453015276957,
+  "target_scale": 1.0849288817252063,
+  "target_id": "F-PLI_v2_K17_05"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, pli(pli(x, 1), pli(x, x))), x), pli(x, x)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 4.9064175816705236,
+  "target_scale": 7.263281860359764,
+  "target_id": "F-PLI_v2_K17_06"
+ },
+ {
+  "expression": "pli(pli(pli(x, 1), pli(pli(pli(x, x), pli(x, 1)), pli(x, 1))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.053109806332125024,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K17_07"
+ },
+ {
+  "expression": "pli(pli(pli(pli(pli(x, pli(pli(x, x), pli(x, 1))), x), 1), 1), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.8427552285700127,
+  "target_scale": 1.5249822081825901,
+  "target_id": "F-PLI_v2_K17_08"
+ },
+ {
+  "expression": "pli(pli(pli(x, pli(x, x)), pli(x, pli(pli(pli(x, 1), x), 1))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1.5074223820809451,
+  "target_scale": 2.0446069711120654,
+  "target_id": "F-PLI_v2_K17_09"
+ },
+ {
+  "expression": "pli(pli(pli(pli(pli(pli(pli(x, x), x), 1), 1), x), 1), pli(x, pli(x, x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.13226433417161781,
+  "target_scale": 1.5518767113358665,
+  "target_id": "F-PLI_v2_K19_00"
+ },
+ {
+  "expression": "pli(pli(pli(x, 1), 1), pli(pli(pli(pli(x, pli(x, pli(x, x))), x), x), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 9.625745208762789,
+  "target_scale": 20.71115311282593,
+  "target_id": "F-PLI_v2_K19_01"
+ },
+ {
+  "expression": "pli(pli(pli(pli(pli(x, pli(x, 1)), x), pli(pli(pli(x, x), 1), x)), x), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.016005044094777696,
+  "target_scale": 1.0,
+  "target_id": "F-PLI_v2_K19_02"
+ },
+ {
+  "expression": "pli(pli(pli(pli(pli(x, pli(x, pli(x, x))), pli(x, pli(x, x))), x), 1), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.26993938493221925,
+  "target_scale": 1.1504435871847636,
+  "target_id": "F-PLI_v2_K19_03"
+ },
+ {
+  "expression": "pli(pli(pli(pli(pli(pli(pli(x, x), 1), pli(x, x)), x), 1), pli(x, 1)), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.05516736998460358,
+  "target_scale": 2.8156785057542923,
+  "target_id": "F-PLI_v2_K19_04"
+ },
+ {
+  "expression": "pli(x, pli(pli(pli(x, pli(pli(pli(pli(x, 1), 1), 1), pli(x, x))), 1), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.001841063632216714,
+  "target_scale": 1.0970978145828572,
+  "target_id": "F-PLI_v2_K19_05"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, 1), x), pli(x, 1)), pli(x, pli(pli(pli(x, 1), x), x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.42316378230061535,
+  "target_scale": 4.616632654484374,
+  "target_id": "F-PLI_v2_K19_06"
+ },
+ {
+  "expression": "pli(pli(pli(x, 1), pli(x, 1)), pli(pli(x, pli(pli(pli(x, x), x), x)), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 151.12922977868098,
+  "target_scale": 123.28769686749902,
+  "target_id": "F-PLI_v2_K19_07"
+ },
+ {
+  "expression": "pli(pli(x, x), pli(x, pli(pli(x, pli(pli(x, pli(x, pli(x, x))), x)), 1)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.3701800833645706,
+  "target_scale": 2.356467605947656,
+  "target_id": "F-PLI_v2_K19_08"
+ },
+ {
+  "expression": "pli(pli(pli(pli(x, pli(x, pli(x, pli(pli(x, 1), x)))), pli(x, x)), x), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.8242282500386997,
+  "target_scale": 1.3403420974012341,
+  "target_id": "F-PLI_v2_K19_09"
+ }
+]

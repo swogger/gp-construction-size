@@ -1,0 +1,681 @@
+{
+ "phase": "rand_sample",
+ "description": "D038: random-sampling baseline: 4 x 250,000 trees per operator drawn as GP's initial population; exact hits of every random target counted.",
+ "created": "2026-10-16 15:31:21",
+ "git": "c9ffc20",
+ "n_tasks": 28,
+ "tasks": [
+  {
+   "key": "rand|F-EML|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-EML",
+    "--targets",
+    "data/targets/F-EML/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261016"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-EML",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-EML|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-EML",
+    "--targets",
+    "data/targets/F-EML/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261017"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-EML",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-EML|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-EML",
+    "--targets",
+    "data/targets/F-EML/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261018"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-EML",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-EML|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-EML",
+    "--targets",
+    "data/targets/F-EML/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261019"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-EML",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-EDL|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-EDL",
+    "--targets",
+    "data/targets/F-EDL/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261016"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-EDL",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-EDL|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-EDL",
+    "--targets",
+    "data/targets/F-EDL/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261017"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-EDL",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-EDL|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-EDL",
+    "--targets",
+    "data/targets/F-EDL/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261018"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-EDL",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-EDL|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-EDL",
+    "--targets",
+    "data/targets/F-EDL/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261019"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-EDL",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-NEML|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-NEML",
+    "--targets",
+    "data/targets/F-NEML/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261016"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-NEML",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-NEML|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-NEML",
+    "--targets",
+    "data/targets/F-NEML/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261017"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-NEML",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-NEML|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-NEML",
+    "--targets",
+    "data/targets/F-NEML/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261018"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-NEML",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-NEML|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-NEML",
+    "--targets",
+    "data/targets/F-NEML/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261019"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-NEML",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-LDE0|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-LDE0",
+    "--targets",
+    "data/targets/F-LDE0/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261016"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-LDE0",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-LDE0|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-LDE0",
+    "--targets",
+    "data/targets/F-LDE0/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261017"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-LDE0",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-LDE0|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-LDE0",
+    "--targets",
+    "data/targets/F-LDE0/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261018"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-LDE0",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-LDE0|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-LDE0",
+    "--targets",
+    "data/targets/F-LDE0/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261019"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-LDE0",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-LDE1|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-LDE1",
+    "--targets",
+    "data/targets/F-LDE1/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261016"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-LDE1",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-LDE1|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-LDE1",
+    "--targets",
+    "data/targets/F-LDE1/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261017"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-LDE1",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-LDE1|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-LDE1",
+    "--targets",
+    "data/targets/F-LDE1/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261018"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-LDE1",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-LDE1|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-LDE1",
+    "--targets",
+    "data/targets/F-LDE1/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261019"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-LDE1",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-PLI|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-PLI",
+    "--targets",
+    "data/targets/F-PLI/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261016"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-PLI",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-PLI|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-PLI",
+    "--targets",
+    "data/targets/F-PLI/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261017"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-PLI",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-PLI|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-PLI",
+    "--targets",
+    "data/targets/F-PLI/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261018"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-PLI",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-PLI|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-PLI",
+    "--targets",
+    "data/targets/F-PLI/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261019"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-PLI",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-PLM|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-PLM",
+    "--targets",
+    "data/targets/F-PLM/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261016"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-PLM",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-PLM|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-PLM",
+    "--targets",
+    "data/targets/F-PLM/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261017"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-PLM",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-PLM|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-PLM",
+    "--targets",
+    "data/targets/F-PLM/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261018"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-PLM",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "rand|F-PLM|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.random_sample",
+    "--grammar",
+    "F-PLM",
+    "--targets",
+    "data/targets/F-PLM/targets_conf.json",
+    "--n",
+    "250000",
+    "--seed",
+    "20261019"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "exp": "rand",
+    "grammar": "F-PLM",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

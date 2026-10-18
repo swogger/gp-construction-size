@@ -1,0 +1,12 @@
+[
+ {
+  "target_id": "S2-lpowx-m1_calc_x^y",
+  "function": "x^y",
+  "expression": "lpowx(lpowx(lpowx(x, lpowx(lpowx(x, lpowx(y, x)), -1)), lpowx(lpowx(y, -1), -1)), y)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 14.755719429181891,
+  "target_scale": 22.34148957929672
+ }
+]

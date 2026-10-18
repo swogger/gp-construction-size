@@ -1,0 +1,50 @@
+[
+ {
+  "target_id": "F2-PLI_calc_x*y",
+  "K": 17,
+  "depth": 9,
+  "d_min": Infinity,
+  "n_near_6": 0,
+  "n_near_4": 0,
+  "n_near_2": 0,
+  "sub_viable": 1.0,
+  "dyn_range": 0.28684428460460054,
+  "nb_n": 39,
+  "nb_nonfinite": 0.20512820512820518,
+  "nb_med": 1.6627753165952779,
+  "nb_good": 0.0,
+  "nb_best": 0.004163711136998288
+ },
+ {
+  "target_id": "F2-PLI_calc_x/y",
+  "K": 17,
+  "depth": 7,
+  "d_min": Infinity,
+  "n_near_6": 0,
+  "n_near_4": 0,
+  "n_near_2": 0,
+  "sub_viable": 1.0,
+  "dyn_range": 0.2868442846046366,
+  "nb_n": 39,
+  "nb_nonfinite": 0.46153846153846156,
+  "nb_med": 1.6766040813177971,
+  "nb_good": 0.0,
+  "nb_best": -0.45736533282660374
+ },
+ {
+  "target_id": "F2-PLI_calc_log_x(y)",
+  "K": 13,
+  "depth": 6,
+  "d_min": Infinity,
+  "n_near_6": 0,
+  "n_near_4": 0,
+  "n_near_2": 0,
+  "sub_viable": 1.0,
+  "dyn_range": 0.32137231086335,
+  "nb_n": 29,
+  "nb_nonfinite": 0.1724137931034483,
+  "nb_med": 1.5688266351248752,
+  "nb_good": 0.0,
+  "nb_best": -0.5286210018022205
+ }
+]

@@ -1,0 +1,92 @@
+{
+ "grammar": "F-EML",
+ "ceiling": 21,
+ "table": {
+  "exp(x)": {
+   "K": 3,
+   "expr": "eml(x, 1)",
+   "verified": true
+  },
+  "ln(x)": {
+   "K": 7,
+   "expr": "eml(x, eml(eml(x, x), 1))",
+   "verified": true
+  },
+  "-x": {
+   "K": 15,
+   "expr": "eml(eml(x, eml(x, eml(x, eml(eml(x, 1), 1)))), eml(x, 1))",
+   "verified": true
+  },
+  "1/x": {
+   "K": 15,
+   "expr": "eml(eml(eml(x, eml(x, eml(x, eml(eml(x, 1), 1)))), x), 1)",
+   "verified": true
+  },
+  "x^2": {
+   "K": 17,
+   "expr": "eml(eml(x, eml(eml(eml(x, eml(eml(x, eml(x, x)), 1)), x), 1)), 1)",
+   "verified": true
+  },
+  "sqrt(x)": null,
+  "x+1": {
+   "K": 19,
+   "expr": "eml(x, eml(eml(eml(x, eml(eml(x, eml(x, eml(x, 1))), 1)), eml(1, 1)), 1))",
+   "verified": true
+  },
+  "x-1": {
+   "K": 11,
+   "expr": "eml(eml(x, eml(eml(x, x), 1)), eml(1, 1))",
+   "verified": true
+  },
+  "2x": {
+   "K": 19,
+   "expr": "eml(x, eml(eml(eml(x, eml(eml(x, eml(x, eml(x, 1))), 1)), eml(x, 1)), 1))",
+   "verified": true
+  },
+  "x/2": null,
+  "exp(-x)": {
+   "K": 17,
+   "expr": "eml(eml(eml(x, eml(x, eml(x, eml(eml(x, 1), 1)))), eml(x, 1)), 1)",
+   "verified": true
+  },
+  "x^x": null,
+  "exp(exp(x))": {
+   "K": 5,
+   "expr": "eml(eml(x, 1), 1)",
+   "verified": true
+  },
+  "ln(ln(x))": {
+   "K": 13,
+   "expr": "eml(x, eml(eml(x, eml(x, eml(eml(x, x), 1))), 1))",
+   "verified": true
+  },
+  "0": {
+   "K": 7,
+   "expr": "eml(x, eml(eml(x, 1), 1))",
+   "verified": true
+  },
+  "1": {
+   "K": 1,
+   "expr": "1",
+   "verified": true
+  },
+  "-1": {
+   "K": 15,
+   "expr": "eml(eml(x, eml(x, eml(x, eml(eml(x, 1), 1)))), eml(1, 1))",
+   "verified": true
+  },
+  "2": {
+   "K": 19,
+   "expr": "eml(x, eml(eml(eml(x, eml(eml(x, eml(x, eml(1, 1))), 1)), eml(1, 1)), 1))",
+   "verified": true
+  },
+  "1/2": null,
+  "e": {
+   "K": 3,
+   "expr": "eml(1, 1)",
+   "verified": true
+  },
+  "pi": null,
+  "i": null
+ }
+}

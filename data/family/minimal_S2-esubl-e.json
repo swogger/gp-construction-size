@@ -1,0 +1,14 @@
+{
+ "grammar": "S2-esubl-e",
+ "ceiling": 17,
+ "table": {
+  "x+y": null,
+  "x-y": null,
+  "x*y": null,
+  "x/y": null,
+  "x^y": null,
+  "log_x(y)": null,
+  "(x+y)/2": null,
+  "sqrt(x^2+y^2)": null
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "phase": "enum_family2v",
+ "description": "Full study step 1: enumerate the 7 two-variable family grammars (leaves x, y, c), 8 GB cap.",
+ "created": "2026-10-13 11:53:38",
+ "git": "89c315e",
+ "n_tasks": 7,
+ "tasks": [
+  {
+   "key": "F2-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F2-EML",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F2-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-EDL",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F2-EDL",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F2-EDL"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-NEML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F2-NEML",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F2-NEML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F2-LDE0",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F2-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-LDE1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F2-LDE1",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F2-LDE1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-PLI",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F2-PLI",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F2-PLI"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-PLM",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F2-PLM",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F2-PLM"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

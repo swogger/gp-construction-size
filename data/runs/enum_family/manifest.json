@@ -1,0 +1,149 @@
+{
+ "phase": "enum_family",
+ "description": "EML-family pilot step 1: enumerate the 7 family grammars (faithful semantics) until the 8 GB memory ceiling or 1 CPU-hour each. Run with --workers 2.",
+ "created": "2026-10-13 08:33:00",
+ "git": "f2a3752",
+ "n_tasks": 7,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-EML",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EDL",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-EDL",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-EDL"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-NEML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-NEML",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-NEML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-LDE0",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-LDE1",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-LDE1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLI",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-PLI",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-PLI"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLM",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-PLM",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-PLM"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

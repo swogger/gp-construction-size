@@ -1,0 +1,1811 @@
+[
+ {
+  "expression": "lsube(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 12.132399420784443,
+  "target_scale": 18.792344967958226,
+  "target_id": "S-lsube-0_c_K03_00"
+ },
+ {
+  "expression": "lsube(x, 0)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.01331409493534148,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K03_01"
+ },
+ {
+  "expression": "lsube(x, lsube(x, 0))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.00013734219733949442,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K05_00"
+ },
+ {
+  "expression": "lsube(lsube(x, x), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 10.896148759065026,
+  "target_scale": 17.24281198792265,
+  "target_id": "S-lsube-0_c_K05_01"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), 0)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 3.183936369938549,
+  "target_scale": 7.872423301123693,
+  "target_id": "S-lsube-0_c_K05_02"
+ },
+ {
+  "expression": "lsube(lsube(x, x), 0)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.08899069055401884,
+  "target_scale": 3.688879473998298,
+  "target_id": "S-lsube-0_c_K05_03"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 21.224614671047767,
+  "target_scale": 22.238308727874514,
+  "target_id": "S-lsube-0_c_K05_04"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), 0), 0)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.1656315525652178,
+  "target_scale": 3.2976295430555562,
+  "target_id": "S-lsube-0_c_K07_00"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, 0)), 0)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 4.660833292454722,
+  "target_scale": 14.842148606957206,
+  "target_id": "S-lsube-0_c_K07_01"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(x, 0)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.011087295439197205,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K07_02"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), lsube(x, 0))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 3.3555725075662224,
+  "target_scale": 7.870598271944335,
+  "target_id": "S-lsube-0_c_K07_03"
+ },
+ {
+  "expression": "lsube(lsube(x, x), lsube(x, 0))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.03731551899166776,
+  "target_scale": 3.637465696535098,
+  "target_id": "S-lsube-0_c_K07_04"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), 0), 0)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.007449805124613334,
+  "target_scale": 1.3015924416031015,
+  "target_id": "S-lsube-0_c_K07_05"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, 0)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 27.537881626991044,
+  "target_scale": 28.899582024882836,
+  "target_id": "S-lsube-0_c_K07_06"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, 0), 0))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.0053199981354211615,
+  "target_scale": 1.0602451983773,
+  "target_id": "S-lsube-0_c_K07_07"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), 0), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.97415419300961,
+  "target_scale": 18.94084944805885,
+  "target_id": "S-lsube-0_c_K07_08"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, x), 0))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 1.945985533477024,
+  "target_scale": 8.00862386564705,
+  "target_id": "S-lsube-0_c_K07_09"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), x), 0)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.09475370559046892,
+  "target_scale": 3.487812302572499,
+  "target_id": "S-lsube-0_c_K07_10"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), x), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 11.07646050931402,
+  "target_scale": 17.07729084701397,
+  "target_id": "S-lsube-0_c_K07_11"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), 0), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.689500074519726,
+  "target_scale": 18.610252917952735,
+  "target_id": "S-lsube-0_c_K07_12"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), x), 0)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.09274858392507168,
+  "target_scale": 3.7798461165524264,
+  "target_id": "S-lsube-0_c_K07_13"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, 0), lsube(x, 0)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.004202080090593911,
+  "target_scale": 1.0635815940210405,
+  "target_id": "S-lsube-0_c_K09_00"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, lsube(x, 0))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 20.743106046027975,
+  "target_scale": 22.190386827817317,
+  "target_id": "S-lsube-0_c_K09_01"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), 0), lsube(x, 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.01107997414476186,
+  "target_scale": 1.3632896234206846,
+  "target_id": "S-lsube-0_c_K09_02"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(x, 0)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 12.768200234107871,
+  "target_scale": 18.625563294024214,
+  "target_id": "S-lsube-0_c_K09_03"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, 0), 0), x), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0980497876146149,
+  "target_scale": 3.5523385855427922,
+  "target_id": "S-lsube-0_c_K09_04"
+ },
+ {
+  "expression": "lsube(lsube(x, x), lsube(lsube(x, 0), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.0655015260931601,
+  "target_scale": 4.274372369300046,
+  "target_id": "S-lsube-0_c_K09_05"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), x), 0), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.009772653855268461,
+  "target_scale": 1.2569202772396255,
+  "target_id": "S-lsube-0_c_K09_06"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), 0), x), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.09840710484039551,
+  "target_scale": 3.63717402321132,
+  "target_id": "S-lsube-0_c_K09_07"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, 0), 0), 0), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0223620840472706,
+  "target_scale": 1.5114773866479034,
+  "target_id": "S-lsube-0_c_K09_08"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, 0), x), 0), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.00796775484902454,
+  "target_scale": 1.164540843941212,
+  "target_id": "S-lsube-0_c_K09_09"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(x, 0), 0)), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.006100900569558969,
+  "target_scale": 1.2117664990491965,
+  "target_id": "S-lsube-0_c_K09_10"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, 0), x), 0), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 12.452278598392043,
+  "target_scale": 18.58388704470487,
+  "target_id": "S-lsube-0_c_K09_11"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, x)), lsube(x, 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.0007774018858510194,
+  "target_scale": 1.1004695052531732,
+  "target_id": "S-lsube-0_c_K09_12"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), 0), lsube(x, 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.1697879305448283,
+  "target_scale": 3.297127779890465,
+  "target_id": "S-lsube-0_c_K09_13"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, 0), x), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.013095418694358353,
+  "target_scale": 1.0953065518202758,
+  "target_id": "S-lsube-0_c_K09_14"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(x, 0), 0)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 12.392890671882055,
+  "target_scale": 19.829151267894158,
+  "target_id": "S-lsube-0_c_K09_15"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, x), 0), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 6.664397691902565e-05,
+  "target_scale": 1.2210360283330002,
+  "target_id": "S-lsube-0_c_K09_16"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, 0), x), x), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.10280159227731081,
+  "target_scale": 3.481187074847083,
+  "target_id": "S-lsube-0_c_K09_17"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(x, x), 0)), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.07191850661918674,
+  "target_scale": 1.0805189442790395,
+  "target_id": "S-lsube-0_c_K09_18"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, x), x), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.7631821323608385,
+  "target_scale": 7.422932347262098,
+  "target_id": "S-lsube-0_c_K09_19"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(x, lsube(x, 0))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0004241119644969563,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K09_20"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, 0)), x), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 11.083665835573663,
+  "target_scale": 16.92240144080703,
+  "target_id": "S-lsube-0_c_K09_21"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, 0), 0), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.5103017117488177,
+  "target_scale": 3.831952183781037,
+  "target_id": "S-lsube-0_c_K09_22"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), lsube(lsube(x, x), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 3.014060143886327,
+  "target_scale": 4.56266010573076,
+  "target_id": "S-lsube-0_c_K09_23"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, 0), lsube(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 5.860005638627013e-09,
+  "target_scale": 1.0000000062351204,
+  "target_id": "S-lsube-0_c_K09_24"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, 0)), lsube(x, 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 4.9851010371062765,
+  "target_scale": 14.843763124870158,
+  "target_id": "S-lsube-0_c_K09_25"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), x), lsube(x, 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.04438346187669724,
+  "target_scale": 3.435894312987392,
+  "target_id": "S-lsube-0_c_K09_26"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, x), lsube(x, 0)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.9907315924373027,
+  "target_scale": 7.350760052205977,
+  "target_id": "S-lsube-0_c_K09_27"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, lsube(x, 0))), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 3.1001788695839423,
+  "target_scale": 7.87333660259165,
+  "target_id": "S-lsube-0_c_K09_28"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), 0), 0), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.005406607949231011,
+  "target_scale": 1.6079981277080395,
+  "target_id": "S-lsube-0_c_K09_29"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(x, 0), lsube(x, 0))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 12.454244577046804,
+  "target_scale": 19.826009393613027,
+  "target_id": "S-lsube-0_c_K11_00"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), lsube(lsube(lsube(x, 0), x), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 1.8358595186516247,
+  "target_scale": 5.830359328025805,
+  "target_id": "S-lsube-0_c_K11_01"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(x, 0), 0), 0)), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.084492294213803,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K11_02"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(x, 0), 0)), lsube(x, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.0007925818079221384,
+  "target_scale": 1.041495752211982,
+  "target_id": "S-lsube-0_c_K11_03"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, lsube(x, 0)), x), x), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.10631492628222869,
+  "target_scale": 3.48125659717827,
+  "target_id": "S-lsube-0_c_K11_04"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), x), lsube(lsube(x, x), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 2.4293564473760965,
+  "target_scale": 10.49630931025073,
+  "target_id": "S-lsube-0_c_K11_05"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, 0), lsube(x, 0)), 0), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 11.958167445301315,
+  "target_scale": 18.7995847547882,
+  "target_id": "S-lsube-0_c_K11_06"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, lsube(x, 0)), 0), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.7730542037595088,
+  "target_scale": 6.442565901804949,
+  "target_id": "S-lsube-0_c_K11_07"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, lsube(x, 0)), x), 0), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 12.561889568019891,
+  "target_scale": 18.587670730428506,
+  "target_id": "S-lsube-0_c_K11_08"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, lsube(x, x))), lsube(x, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 1.0598920106337227e-05,
+  "target_scale": 3.176519614323529,
+  "target_id": "S-lsube-0_c_K11_09"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(lsube(x, x), 0)), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.044297107317170875,
+  "target_scale": 1.370854167819051,
+  "target_id": "S-lsube-0_c_K11_10"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, lsube(x, x)), lsube(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 2.1666909326971047e-07,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K11_11"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), 0), 0), x), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.08788103859585471,
+  "target_scale": 3.6211536087524827,
+  "target_id": "S-lsube-0_c_K11_12"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, 0), lsube(lsube(x, x), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 6.940537346812993e-08,
+  "target_scale": 1.0011749146249693,
+  "target_id": "S-lsube-0_c_K11_13"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), 0), 0), x), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 10.927479075645367,
+  "target_scale": 17.22794575331669,
+  "target_id": "S-lsube-0_c_K11_14"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(lsube(x, lsube(x, x)), 0)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.00020535687433371108,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K11_15"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, x), 0), lsube(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.033629730097542686,
+  "target_scale": 3.2514747584921135,
+  "target_id": "S-lsube-0_c_K11_16"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, lsube(x, 0))), lsube(x, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 3.260040567524567,
+  "target_scale": 7.871511533300468,
+  "target_id": "S-lsube-0_c_K11_17"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), lsube(lsube(lsube(x, x), 0), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 3.3636265637805876,
+  "target_scale": 7.10992194855206,
+  "target_id": "S-lsube-0_c_K11_18"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, lsube(x, 0)), 0), x), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 10.868484739654841,
+  "target_scale": 17.25182312881139,
+  "target_id": "S-lsube-0_c_K11_19"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), x), lsube(lsube(x, x), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 2.48098116852191,
+  "target_scale": 10.199190063357827,
+  "target_id": "S-lsube-0_c_K11_20"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), x), 0), 0), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 13.182426491487279,
+  "target_scale": 19.892285450028933,
+  "target_id": "S-lsube-0_c_K11_21"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(x, 0)), lsube(x, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 0.009114519318794919,
+  "target_scale": 1.301661164570072,
+  "target_id": "S-lsube-0_c_K11_22"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(x, lsube(x, x))), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 1.4834719623922523e-05,
+  "target_scale": 1.607880521337394,
+  "target_id": "S-lsube-0_c_K11_23"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, lsube(lsube(x, 0), 0)), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.007841848399010224,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K11_24"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), lsube(x, lsube(x, 0))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 12.966314526628764,
+  "target_scale": 18.94222735681816,
+  "target_id": "S-lsube-0_c_K11_25"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, 0), 0), 0), lsube(x, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.006270851365872255,
+  "target_scale": 1.505050174700527,
+  "target_id": "S-lsube-0_c_K11_26"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, x), 0), x), 0), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.008848530044095134,
+  "target_scale": 1.292386578141714,
+  "target_id": "S-lsube-0_c_K11_27"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, lsube(lsube(x, x), 0))), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 1.9673093418968852,
+  "target_scale": 7.680189183885359,
+  "target_id": "S-lsube-0_c_K11_28"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, x), x), 0), 0), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.0074809750427375435,
+  "target_scale": 1.7386823598772183,
+  "target_id": "S-lsube-0_c_K11_29"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), 0), lsube(lsube(x, 0), lsube(x, 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 4,
+  "var_target": 0.16349053378184236,
+  "target_scale": 3.7251421182399387,
+  "target_id": "S-lsube-0_c_K13_00"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), lsube(lsube(lsube(x, 0), 0), 0)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 19.139922620557815,
+  "target_scale": 20.02407178050076,
+  "target_id": "S-lsube-0_c_K13_01"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(x, 0), x), x)), lsube(x, 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.0006732332250399491,
+  "target_scale": 1.0917169828352666,
+  "target_id": "S-lsube-0_c_K13_02"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(lsube(x, 0), x), 0), 0)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 12.65340808044102,
+  "target_scale": 19.74829051605242,
+  "target_id": "S-lsube-0_c_K13_03"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(x, lsube(x, 0)), 0), 0)), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.053517108973369275,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K13_04"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), x), lsube(x, 0)), x), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.0974920862533591,
+  "target_scale": 3.637559807457319,
+  "target_id": "S-lsube-0_c_K13_05"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(lsube(x, 0), lsube(lsube(x, 0), 0))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.019643393909662858,
+  "target_scale": 2.118333541758145,
+  "target_id": "S-lsube-0_c_K13_06"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), lsube(lsube(lsube(x, 0), 0), lsube(x, 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 1.2678942667335462,
+  "target_scale": 4.0732225684963375,
+  "target_id": "S-lsube-0_c_K13_07"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), x), 0), x), lsube(x, 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.04255974239379696,
+  "target_scale": 3.5862633545768885,
+  "target_id": "S-lsube-0_c_K13_08"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, lsube(x, 0)), 0), lsube(x, 0)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 12.685992729355965,
+  "target_scale": 18.894000418490705,
+  "target_id": "S-lsube-0_c_K13_09"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, lsube(lsube(x, 0), 0)), lsube(x, 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.015741637499130448,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K13_10"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, lsube(x, x))), lsube(x, 0)), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 1.0510296956658344e-06,
+  "target_scale": 1.7262689762987484,
+  "target_id": "S-lsube-0_c_K13_11"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), lsube(lsube(lsube(x, x), x), lsube(x, 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 2.4092097778356942,
+  "target_scale": 3.454992683044228,
+  "target_id": "S-lsube-0_c_K13_12"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, x), lsube(x, 0)), 0), 0), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.0009005553135015826,
+  "target_scale": 2.2521823128098037,
+  "target_id": "S-lsube-0_c_K13_13"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(x, 0), 0)), lsube(lsube(x, 0), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.0012757326108662464,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K13_14"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(x, lsube(x, 0)), 0), x)), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.016603503969051435,
+  "target_scale": 1.3559753936758199,
+  "target_id": "S-lsube-0_c_K13_15"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(lsube(lsube(x, 0), 0), 0)), x), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.08832891209849526,
+  "target_scale": 3.6958321566287635,
+  "target_id": "S-lsube-0_c_K13_16"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, x), lsube(lsube(x, x), x)), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 7.209707681283296e-05,
+  "target_scale": 1.1560219817319641,
+  "target_id": "S-lsube-0_c_K13_17"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, 0)), lsube(x, lsube(lsube(x, x), 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 466972.5612656183,
+  "target_scale": 3012.140613851237,
+  "target_id": "S-lsube-0_c_K13_18"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, 0), x), lsube(lsube(x, 0), 0)), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.004379981330208002,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K13_19"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(lsube(x, 0), 0), x), 0)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 11.019409071861464,
+  "target_scale": 17.80254559349517,
+  "target_id": "S-lsube-0_c_K13_20"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), lsube(x, 0)), x), 0), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.009312284194669496,
+  "target_scale": 1.2717488635671708,
+  "target_id": "S-lsube-0_c_K13_21"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(x, x), lsube(x, x)), 0)), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 4.873740170000437e-05,
+  "target_scale": 1.7921581132533169,
+  "target_id": "S-lsube-0_c_K13_22"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, lsube(x, 0)), x), x), 0), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.011109162351759105,
+  "target_scale": 1.2896577615875517,
+  "target_id": "S-lsube-0_c_K13_23"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), 0), x), lsube(x, 0)), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.004153360971350575,
+  "target_scale": 1.1912081579965441,
+  "target_id": "S-lsube-0_c_K13_24"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), 0), lsube(x, lsube(x, lsube(x, 0))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.010068007636052667,
+  "target_scale": 1.3536115262590012,
+  "target_id": "S-lsube-0_c_K13_25"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, 0)), lsube(lsube(lsube(x, 0), 0), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 3.3560222341989148,
+  "target_scale": 11.229508818399534,
+  "target_id": "S-lsube-0_c_K13_26"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), 0), lsube(x, lsube(x, 0))), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.0050031364810786995,
+  "target_scale": 1.6024789149007348,
+  "target_id": "S-lsube-0_c_K13_27"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), x), lsube(lsube(x, x), 0)), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.047019964762762545,
+  "target_scale": 1.3546605831938712,
+  "target_id": "S-lsube-0_c_K13_28"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(lsube(lsube(x, lsube(x, 0)), 0), 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 6403.240188804709,
+  "target_scale": 565.2921681562842,
+  "target_id": "S-lsube-0_c_K13_29"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(lsube(lsube(x, x), x), x), 0), lsube(x, 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.010397768203935629,
+  "target_scale": 1.3262626354828613,
+  "target_id": "S-lsube-0_c_K15_00"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), 0), lsube(lsube(lsube(x, x), 0), 0)), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.02268887301900653,
+  "target_scale": 1.5120203870214917,
+  "target_id": "S-lsube-0_c_K15_01"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(lsube(x, lsube(x, 0)), 0), 0), 0)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 12.598453590607662,
+  "target_scale": 19.698359196138693,
+  "target_id": "S-lsube-0_c_K15_02"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), lsube(lsube(lsube(x, x), lsube(x, 0)), lsube(x, 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 2.9445416589304956,
+  "target_scale": 7.108022004511139,
+  "target_id": "S-lsube-0_c_K15_03"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, lsube(lsube(x, x), 0))), 0), lsube(x, 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.03646941281424055,
+  "target_scale": 1.1389687350097786,
+  "target_id": "S-lsube-0_c_K15_04"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, lsube(lsube(x, 0), lsube(x, 0)))), 0), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.00010198444568834332,
+  "target_scale": 1.740665768985013,
+  "target_id": "S-lsube-0_c_K15_05"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(lsube(lsube(x, 0), x), 0), 0), 0)), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.01049263723068355,
+  "target_scale": 1.3724390881221997,
+  "target_id": "S-lsube-0_c_K15_06"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, lsube(x, 0)), 0), lsube(lsube(x, 0), 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 4.4048637179115815,
+  "target_scale": 15.81351534929739,
+  "target_id": "S-lsube-0_c_K15_07"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, lsube(lsube(x, 0), 0)), 0), lsube(x, 0)), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 2.7841287095857434,
+  "target_scale": 1.9358633862527832,
+  "target_id": "S-lsube-0_c_K15_08"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(lsube(x, 0), x), 0), 0), lsube(x, 0)), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.009850711022181342,
+  "target_scale": 2.3334017509184806,
+  "target_id": "S-lsube-0_c_K15_09"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(x, lsube(lsube(lsube(x, 0), 0), 0))), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.41905085667177067,
+  "target_scale": 4.057606277698979,
+  "target_id": "S-lsube-0_c_K15_10"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(lsube(lsube(lsube(x, 0), 0), 0), lsube(x, 0))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.09269404054694616,
+  "target_scale": 2.4322338029628288,
+  "target_id": "S-lsube-0_c_K15_11"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(lsube(x, 0), x), 0), x), lsube(x, 0)), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.0037351225052337923,
+  "target_scale": 1.2173196022390953,
+  "target_id": "S-lsube-0_c_K15_12"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(lsube(x, lsube(x, 0)), lsube(x, 0)), 0), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.006845493756286911,
+  "target_scale": 1.2340363037637596,
+  "target_id": "S-lsube-0_c_K15_13"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), x), lsube(lsube(lsube(x, x), 0), lsube(x, 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.10638785615396397,
+  "target_scale": 2.9180256250596113,
+  "target_id": "S-lsube-0_c_K15_14"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(x, 0), x), lsube(lsube(x, 0), 0))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 11.384836304484331,
+  "target_scale": 16.77114412746384,
+  "target_id": "S-lsube-0_c_K15_15"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(lsube(x, 0), 0)), lsube(lsube(x, x), 0)), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.10529021336471905,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K15_16"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), lsube(lsube(lsube(lsube(lsube(x, 0), 0), 0), x), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 3.044911298479361,
+  "target_scale": 4.577242555350537,
+  "target_id": "S-lsube-0_c_K15_17"
+ },
+ {
+  "expression": "lsube(lsube(x, x), lsube(lsube(lsube(x, x), lsube(x, 0)), lsube(x, 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.09801043637679321,
+  "target_scale": 3.1288262292627684,
+  "target_id": "S-lsube-0_c_K15_18"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), 0), lsube(lsube(lsube(x, x), x), lsube(x, 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.8247735857659315,
+  "target_scale": 6.948960220823094,
+  "target_id": "S-lsube-0_c_K15_19"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(lsube(x, 0), 0), lsube(x, 0)), x), x), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.09585229462523215,
+  "target_scale": 3.491293775987596,
+  "target_id": "S-lsube-0_c_K15_20"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(x, lsube(lsube(lsube(x, 0), x), x))), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 2.132591586679669e-05,
+  "target_scale": 1.6118629763287002,
+  "target_id": "S-lsube-0_c_K15_21"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, 0), lsube(x, lsube(lsube(x, 0), lsube(x, 0)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.011094714818513264,
+  "target_scale": 1.0900452397737543,
+  "target_id": "S-lsube-0_c_K15_22"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, lsube(lsube(x, lsube(x, x)), 0))), lsube(x, x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.0002725055301516422,
+  "target_scale": 3.145429757337096,
+  "target_id": "S-lsube-0_c_K15_23"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(x, lsube(x, lsube(lsube(x, lsube(x, 0)), 0)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.034319375694180726,
+  "target_scale": 1.4793888108013629,
+  "target_id": "S-lsube-0_c_K15_24"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, lsube(lsube(lsube(x, x), 0), 0))), 0), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.00293537292659448,
+  "target_scale": 2.166945955861626,
+  "target_id": "S-lsube-0_c_K15_25"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), lsube(x, lsube(x, 0))), 0), lsube(x, 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.028131029373342754,
+  "target_scale": 1.647621228596647,
+  "target_id": "S-lsube-0_c_K15_26"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), lsube(x, 0)), lsube(x, 0)), 0), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 12.708220849679469,
+  "target_scale": 19.515867218363976,
+  "target_id": "S-lsube-0_c_K15_27"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(lsube(lsube(x, 0), lsube(x, 0)), 0)), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.03724734858804515,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K15_28"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, x), x), lsube(lsube(lsube(x, x), 0), 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 1.8212492856268088,
+  "target_scale": 8.783121004307832,
+  "target_id": "S-lsube-0_c_K15_29"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(lsube(x, 0), x), x), x), lsube(x, lsube(x, 0))), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.008882130452219776,
+  "target_scale": 1.2583434490869758,
+  "target_id": "S-lsube-0_c_K17_00"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, lsube(lsube(lsube(lsube(x, 0), 0), 0), 0)), x), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 1.924500755443159,
+  "target_scale": 8.25853135393479,
+  "target_id": "S-lsube-0_c_K17_01"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, x), 0), lsube(lsube(lsube(lsube(x, x), x), 0), 0)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.12322499990712003,
+  "target_scale": 1.7421316370566757,
+  "target_id": "S-lsube-0_c_K17_02"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, 0)), lsube(lsube(lsube(x, 0), 0), lsube(x, 0))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 11.002429401229108,
+  "target_scale": 18.394531300237247,
+  "target_id": "S-lsube-0_c_K17_03"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, lsube(lsube(lsube(x, 0), lsube(x, 0)), 0))), 0), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.08748232799011095,
+  "target_scale": 1.4311500647284436,
+  "target_id": "S-lsube-0_c_K17_04"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(lsube(lsube(x, x), x), lsube(x, 0))), lsube(x, 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.0057858774907839465,
+  "target_scale": 1.10440665006729,
+  "target_id": "S-lsube-0_c_K17_05"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, lsube(lsube(lsube(x, x), 0), 0)), 0), 0), lsube(x, x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 4.7038176175511055e-06,
+  "target_scale": 2.0140713361352423,
+  "target_id": "S-lsube-0_c_K17_06"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), lsube(x, lsube(x, x))), 0), lsube(lsube(x, 0), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 5.898724083352076e-06,
+  "target_scale": 1.5547373173708194,
+  "target_id": "S-lsube-0_c_K17_07"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), 0), 0), x), lsube(lsube(lsube(x, x), x), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 2.2692274429005024,
+  "target_scale": 9.366931464679023,
+  "target_id": "S-lsube-0_c_K17_08"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(lsube(x, x), 0), 0), 0), lsube(lsube(x, x), 0)), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.05824082938765983,
+  "target_scale": 1.0805736867018314,
+  "target_id": "S-lsube-0_c_K17_09"
+ },
+ {
+  "expression": "lsube(lsube(x, x), lsube(lsube(x, lsube(lsube(lsube(x, lsube(x, 0)), 0), 0)), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.048026211722388884,
+  "target_scale": 3.9381258118307794,
+  "target_id": "S-lsube-0_c_K17_10"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(lsube(x, 0), lsube(x, 0)), 0), lsube(x, 0)), 0), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 13.042753322659827,
+  "target_scale": 19.48330336347334,
+  "target_id": "S-lsube-0_c_K17_11"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, lsube(lsube(lsube(x, x), 0), lsube(x, 0))), 0), 0), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.001146507553094655,
+  "target_scale": 1.8821085552577927,
+  "target_id": "S-lsube-0_c_K17_12"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, lsube(x, 0))), lsube(lsube(lsube(x, 0), x), 0)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 11.918721244483457,
+  "target_scale": 18.116387057460802,
+  "target_id": "S-lsube-0_c_K17_13"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), x), 0), 0), lsube(lsube(x, x), lsube(x, 0)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.7230430694907217,
+  "target_scale": 6.412269817149045,
+  "target_id": "S-lsube-0_c_K17_14"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, lsube(x, 0)), 0), lsube(lsube(x, 0), 0)), lsube(x, 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.006031936240515192,
+  "target_scale": 1.0276519805489985,
+  "target_id": "S-lsube-0_c_K17_15"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(x, lsube(x, x)), 0), lsube(lsube(x, 0), x))), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 6.426116216079032e-05,
+  "target_scale": 1.0,
+  "target_id": "S-lsube-0_c_K17_16"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(x, 0), lsube(lsube(lsube(x, lsube(lsube(x, x), 0)), x), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 6.027387125968262e-08,
+  "target_scale": 1.0010947218453183,
+  "target_id": "S-lsube-0_c_K17_17"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), lsube(lsube(x, lsube(lsube(lsube(x, 0), x), 0)), 0)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 12.209216791696086,
+  "target_scale": 18.406240529546263,
+  "target_id": "S-lsube-0_c_K17_18"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(x, 0)), lsube(lsube(x, x), lsube(x, lsube(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 5,
+  "var_target": 0.0037316121184000368,
+  "target_scale": 2.4672840356767463,
+  "target_id": "S-lsube-0_c_K17_19"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(x, lsube(lsube(x, x), lsube(x, 0))), lsube(x, 0))), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.0016949961195638706,
+  "target_scale": 3.251214821044837,
+  "target_id": "S-lsube-0_c_K17_20"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), lsube(lsube(x, x), lsube(x, 0))), x), 0), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1.0098805803584205,
+  "target_scale": 1.30616493016214,
+  "target_id": "S-lsube-0_c_K17_21"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(lsube(lsube(x, 0), lsube(lsube(lsube(x, x), 0), 0)), 0)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 54.06222628614995,
+  "target_scale": 35.05177126014739,
+  "target_id": "S-lsube-0_c_K17_22"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(x, 0), lsube(x, lsube(x, 0)))), lsube(lsube(x, x), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 1.840479003550679,
+  "target_scale": 6.9716624785186365,
+  "target_id": "S-lsube-0_c_K17_23"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(lsube(x, x), x), lsube(lsube(x, x), 0)), 0)), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.06074048098356198,
+  "target_scale": 2.730339959351428,
+  "target_id": "S-lsube-0_c_K17_24"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(x, lsube(x, lsube(x, lsube(x, 0))))), lsube(x, 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.010540175509650593,
+  "target_scale": 1.3462178982618305,
+  "target_id": "S-lsube-0_c_K17_25"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), lsube(x, 0)), x), lsube(x, lsube(lsube(x, 0), 0)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 5,
+  "var_target": 0.017405489652314542,
+  "target_scale": 3.085818283629333,
+  "target_id": "S-lsube-0_c_K17_26"
+ },
+ {
+  "expression": "lsube(lsube(x, x), lsube(x, lsube(lsube(lsube(lsube(x, x), 0), 0), lsube(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.015665681553759924,
+  "target_scale": 5.32394186124568,
+  "target_id": "S-lsube-0_c_K17_27"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), x), lsube(lsube(x, x), lsube(lsube(x, 0), lsube(x, 0))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 5,
+  "var_target": 10.795291929707924,
+  "target_scale": 21.53768965579273,
+  "target_id": "S-lsube-0_c_K17_28"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(lsube(lsube(x, lsube(lsube(lsube(x, x), 0), 0)), 0), 0)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.08008952602841107,
+  "target_scale": 3.0747172024168923,
+  "target_id": "S-lsube-0_c_K17_29"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, 0), x), lsube(lsube(x, lsube(lsube(x, x), 0)), 0)), lsube(x, 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.015133337632038668,
+  "target_scale": 1.5219991603251062,
+  "target_id": "S-lsube-0_c_K19_00"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, lsube(lsube(lsube(lsube(lsube(x, x), 0), 0), 0), lsube(x, 0)))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.014358796169755564,
+  "target_scale": 2.573832589990378,
+  "target_id": "S-lsube-0_c_K19_01"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, 0)), lsube(lsube(lsube(x, lsube(lsube(x, x), lsube(x, 0))), x), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 2.7837585847209203,
+  "target_scale": 9.135649485049438,
+  "target_id": "S-lsube-0_c_K19_02"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), lsube(lsube(lsube(x, x), x), lsube(x, 0))), lsube(lsube(x, 0), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.7276796686219265,
+  "target_scale": 2.6780698819213753,
+  "target_id": "S-lsube-0_c_K19_03"
+ },
+ {
+  "expression": "lsube(lsube(x, x), lsube(lsube(x, 0), lsube(lsube(lsube(x, 0), 0), lsube(x, lsube(x, 0)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.07073052864888059,
+  "target_scale": 4.096832657485774,
+  "target_id": "S-lsube-0_c_K19_04"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(lsube(x, lsube(x, 0)), lsube(lsube(x, 0), lsube(x, 0)))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.00519815906062026,
+  "target_scale": 1.0592134675967533,
+  "target_id": "S-lsube-0_c_K19_05"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, 0)), x), lsube(x, lsube(lsube(lsube(x, x), lsube(x, 0)), 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.07924421431701291,
+  "target_scale": 5.187955512487727,
+  "target_id": "S-lsube-0_c_K19_06"
+ },
+ {
+  "expression": "lsube(lsube(x, x), lsube(x, lsube(lsube(lsube(x, x), lsube(lsube(lsube(x, x), x), 0)), 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.15043930273894066,
+  "target_scale": 4.297335700921937,
+  "target_id": "S-lsube-0_c_K19_07"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(x, lsube(lsube(x, 0), lsube(x, 0)))), lsube(lsube(x, x), 0)), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.04989990038985806,
+  "target_scale": 1.1654956500955687,
+  "target_id": "S-lsube-0_c_K19_08"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(lsube(lsube(x, lsube(x, x)), lsube(lsube(x, lsube(x, 0)), 0)), 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.004017072409099946,
+  "target_scale": 1.7944788657284436,
+  "target_id": "S-lsube-0_c_K19_09"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, x), 0), lsube(lsube(x, lsube(lsube(lsube(x, x), x), 0)), 0)), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.07155174001078332,
+  "target_scale": 2.357475727109157,
+  "target_id": "S-lsube-0_c_K19_10"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, lsube(lsube(x, x), 0)), lsube(x, lsube(x, 0))), x), 0), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.004445231502876245,
+  "target_scale": 1.2231593655211457,
+  "target_id": "S-lsube-0_c_K19_11"
+ },
+ {
+  "expression": "lsube(lsube(x, 0), lsube(lsube(lsube(lsube(x, lsube(lsube(lsube(x, 0), 0), 0)), x), x), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 2.9181997431201956,
+  "target_scale": 4.590998012007544,
+  "target_id": "S-lsube-0_c_K19_12"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), lsube(lsube(lsube(x, lsube(x, lsube(x, lsube(x, 0)))), x), 0)), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 11.671956194984418,
+  "target_scale": 17.97673195134849,
+  "target_id": "S-lsube-0_c_K19_13"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, x), lsube(lsube(lsube(lsube(lsube(x, lsube(x, 0)), x), 0), 0), 0)), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 12.557370794756723,
+  "target_scale": 18.52570037633787,
+  "target_id": "S-lsube-0_c_K19_14"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, x)), lsube(x, lsube(lsube(x, lsube(lsube(x, 0), lsube(x, 0))), 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.0010299591229363616,
+  "target_scale": 1.9308638212798432,
+  "target_id": "S-lsube-0_c_K19_15"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(lsube(lsube(x, x), lsube(lsube(lsube(x, 0), x), 0)), lsube(x, 0))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.02042095396270489,
+  "target_scale": 1.0601725544138647,
+  "target_id": "S-lsube-0_c_K19_16"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), x), lsube(x, lsube(lsube(x, lsube(lsube(lsube(x, 0), 0), 0)), 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.20034871178692648,
+  "target_scale": 3.9429885799352,
+  "target_id": "S-lsube-0_c_K19_17"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, lsube(lsube(x, x), lsube(lsube(x, x), x))), lsube(x, lsube(x, x))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 11.011941303008582,
+  "target_scale": 17.603060779881424,
+  "target_id": "S-lsube-0_c_K19_18"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), x), lsube(lsube(x, lsube(x, 0)), lsube(lsube(lsube(x, x), x), 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.25433058490401195,
+  "target_scale": 4.395323429071148,
+  "target_id": "S-lsube-0_c_K19_19"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(lsube(x, 0), x), 0), lsube(lsube(lsube(x, x), 0), 0))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 14.893246162847399,
+  "target_scale": 20.294534114443714,
+  "target_id": "S-lsube-0_c_K19_20"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(x, 0), 0), lsube(lsube(x, 0), lsube(lsube(x, x), 0)))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 7.221990773758996,
+  "target_scale": 5.8913436297563635,
+  "target_id": "S-lsube-0_c_K19_21"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(x, lsube(lsube(x, 0), lsube(lsube(x, x), 0))), lsube(x, 0)), 0), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 3.9790155152605537,
+  "target_scale": 3.2749773370945827,
+  "target_id": "S-lsube-0_c_K19_22"
+ },
+ {
+  "expression": "lsube(x, lsube(x, lsube(lsube(lsube(lsube(lsube(x, x), lsube(lsube(x, 0), 0)), 0), 0), 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.12453699006150448,
+  "target_scale": 3.430575077754715,
+  "target_id": "S-lsube-0_c_K19_23"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, x), lsube(x, lsube(lsube(x, lsube(x, x)), lsube(x, x)))), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 6.401634395246184e-05,
+  "target_scale": 1.2210368435238577,
+  "target_id": "S-lsube-0_c_K19_24"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(x, lsube(lsube(x, lsube(x, lsube(x, x))), lsube(x, 0)))), lsube(x, 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.00011037279136267937,
+  "target_scale": 3.1688277425370193,
+  "target_id": "S-lsube-0_c_K19_25"
+ },
+ {
+  "expression": "lsube(lsube(lsube(lsube(lsube(x, 0), 0), 0), 0), lsube(x, lsube(lsube(x, 0), lsube(x, 0))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.038353963620422135,
+  "target_scale": 2.9462444452848517,
+  "target_id": "S-lsube-0_c_K19_26"
+ },
+ {
+  "expression": "lsube(x, lsube(lsube(lsube(x, x), lsube(lsube(lsube(x, 0), 0), lsube(x, 0))), lsube(x, 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.04159155939616395,
+  "target_scale": 1.5089410531927183,
+  "target_id": "S-lsube-0_c_K19_27"
+ },
+ {
+  "expression": "lsube(lsube(x, lsube(lsube(lsube(lsube(x, 0), 0), x), lsube(lsube(lsube(x, 0), 0), 0))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.7141851307629261,
+  "target_scale": 4.455654086316756,
+  "target_id": "S-lsube-0_c_K19_28"
+ },
+ {
+  "expression": "lsube(lsube(lsube(x, 0), x), lsube(lsube(lsube(lsube(x, x), x), lsube(lsube(x, x), 0)), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.10561347310540438,
+  "target_scale": 2.11068292079925,
+  "target_id": "S-lsube-0_c_K19_29"
+ }
+]

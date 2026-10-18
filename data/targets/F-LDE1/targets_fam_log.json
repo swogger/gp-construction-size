@@ -1,0 +1,99 @@
+{
+ "grammar": "F-LDE1",
+ "seed": 20261013,
+ "ceiling": 23,
+ "levels": {
+  "3": {
+   "found": 2,
+   "rejected": {
+    "variance": 1
+   },
+   "proven": true
+  },
+  "5": {
+   "found": 6,
+   "rejected": {
+    "dead_subtree": 1,
+    "nonfinite": 1
+   },
+   "proven": true
+  },
+  "7": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 2,
+    "nonfinite": 1
+   },
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 3
+   },
+   "proven": true
+  },
+  "11": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 2
+   },
+   "proven": true
+  },
+  "13": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 3,
+    "magnitude_ratio": 1
+   },
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {
+    "magnitude_ratio": 2,
+    "dead_subtree": 6
+   },
+   "proven": true
+  },
+  "17": {
+   "found": 10,
+   "rejected": {
+    "magnitude_ratio": 1,
+    "dead_subtree": 5,
+    "nonfinite": 1
+   },
+   "proven": true
+  },
+  "19": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 7
+   },
+   "proven": true
+  },
+  "21": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 8
+   },
+   "proven": true
+  },
+  "23": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 4
+   },
+   "proven": true
+  },
+  "25": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 3,
+    "depth": 7,
+    "variance": 1
+   },
+   "proven": false
+  }
+ }
+}

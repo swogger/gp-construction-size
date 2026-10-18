@@ -1,0 +1,271 @@
+diff --git a/src/reach/engines/es.py b/src/reach/engines/es.py
+index 57d7ca1..896d1cf 100644
+--- a/src/reach/engines/es.py
++++ b/src/reach/engines/es.py
+@@ -22,14 +22,15 @@ _INF = float("inf")
+ 
+ 
+ def run_es(g, target_tree, seed, *, val_xs, val_target, var_norm, grid_xs, grid_target, grid_scale,
+-           evaluations=20_000, lam=4, timeout_seconds=600.0):
++           evaluations=20_000, lam=4, timeout_seconds=600.0, undefined_penalty="fixed"):
+     t0, c0 = time.time(), time.process_time()
+     saved = {n: getattr(_random_module, n) for n in _PATCHED}
++    penalty = {"fixed": 1000.0, "scaled": 1000.0 * var_norm}[undefined_penalty]   # as run_gp (D034)
+ 
+     def error(tree, xs, target):
+         if G.count_nodes(tree) > G.MAX_NODES:
+             return _INF
+-        return G.mse_against(G.evaluate(g, tree, xs), target) / var_norm
++        return G.mse_against(G.evaluate(g, tree, xs), target, penalty) / var_norm
+ 
+     def is_exact(tree):
+         return (G.scaled_func_hash(G.evaluate(g, tree, grid_xs), grid_scale)
+diff --git a/src/reach/engines/treegp.py b/src/reach/engines/treegp.py
+index bb228fb..655da52 100644
+--- a/src/reach/engines/treegp.py
++++ b/src/reach/engines/treegp.py
+@@ -15,7 +15,7 @@ import numpy as np
+ 
+ from reach import grammar as G
+ from reach.galib.evolution import crossover, mutate, point_mutate
+-from reach.galib.generator import generate_ramped_population
++from reach.galib.generator import generate_ramped_population, generate_random_tree
+ 
+ MAX_DEPTH = math.ceil(math.log2(G.MAX_NODES + 1)) - 1   # 10
+ BATCH_SIZE = 75
+@@ -35,11 +35,15 @@ def _patch(rng):
+ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_norm=1.0,
+            grid_xs=None, grid_target=None, grid_scale=1.0, generations=GENERATIONS,
+            pop_size=POP_SIZE, timeout_seconds=600.0, legacy=False, seed_leaves=None,
+-           point_mutation=False, stop_on="tolerance"):
++           point_mutation=False, stop_on="tolerance", undefined_penalty="fixed", crossover_mode="subtree"):
+     """One run. regime 'A' = crossover 0.75 + subtree mutation 0.20; 'B' = mutation only.
+     timeout_seconds is CPU time. For Boolean grammars the data arguments are ignored.
+     stop_on: 'tolerance' stops at validation nMSE <= 1e-6 (EML-GP); 'exact' keeps searching until the best
+-    tree is an exact match on the definition grid (a loose convergence no longer ends the run, D022)."""
++    tree is an exact match on the definition grid (a loose convergence no longer ends the run, D022).
++    undefined_penalty: 'fixed' charges 1000 per non-finite residual before dividing by var_norm (EML-GP); 'scaled'
++    charges 1000 * var_norm, i.e. 1000 after normalisation, so an undefined tree never beats a constant (D034).
++    crossover_mode: 'subtree' (standard); 'headless' crosses each selected parent with a fresh random tree drawn
++    like the initial population (headless-chicken control, Jones 1995; D034)."""
+     seed_leaves = legacy if seed_leaves is None else seed_leaves
+     plateau = LEGACY_PLATEAU if legacy else None
+     xdepth = None if legacy else MAX_DEPTH
+@@ -60,7 +64,8 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
+         def error(tree, xs, target):
+             if G.count_nodes(tree) > G.MAX_NODES:
+                 return _INF
+-            return G.mse_against(G.evaluate(g, tree, xs), target) / var_norm
++            return G.mse_against(G.evaluate(g, tree, xs), target, penalty) / var_norm
++        penalty = {"fixed": 1000.0, "scaled": 1000.0 * var_norm}[undefined_penalty]
+         threshold = CONV_THRESHOLD
+ 
+     def is_exact(tree):
+@@ -79,6 +84,10 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
+                                                 list(g.variables), seed_variable_leaves=seed_leaves)
+         _patch(evo_rng)
+         mut_depth = max(2, round(math.sqrt(MAX_DEPTH)))
++
++        def random_mate():               # as generate_ramped_population: depth 2..MAX_DEPTH, full or grow
++            return generate_random_tree(evo_rng.randint(2, MAX_DEPTH), g.operators, list(g.constants),
++                                        list(g.variables), evo_rng.choice(["full", "grow"]))
+         best_tree, best_val, stagnant = None, _INF, 0
+         converged, gens_to_converge, state, gens_run = False, None, "budget_exhausted", generations
+ 
+@@ -124,7 +133,11 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
+                     t2 = evo_rng.sample(scores, k=5)
+                     t2.sort(key=lambda x: x[1])
+                     p2 = t2[0][0]
+-                    c1, c2 = crossover(p1, p2, max_depth=xdepth)
++                    if crossover_mode == "headless":
++                        c1 = crossover(p1, random_mate(), max_depth=xdepth)[0]
++                        c2 = crossover(p2, random_mate(), max_depth=xdepth)[0]
++                    else:
++                        c1, c2 = crossover(p1, p2, max_depth=xdepth)
+                     if G.count_nodes(c1) > G.MAX_NODES:
+                         c1 = p1.copy()
+                     if G.count_nodes(c2) > G.MAX_NODES:
+diff --git a/src/reach/grammar.py b/src/reach/grammar.py
+index 5e5124b..57f8ab1 100644
+--- a/src/reach/grammar.py
++++ b/src/reach/grammar.py
+@@ -309,13 +309,13 @@ def _eval_bool(ops, tree, mask, vm):
+     return op.fn(mask, _eval_bool(ops, tree.left, mask, vm), _eval_bool(ops, tree.right, mask, vm))
+ 
+ 
+-def mse_against(pred, target):
+-    """EML-GP's error: mean squared |residual|, a non-finite residual costs 1000."""
++def mse_against(pred, target, penalty=1000.0):
++    """EML-GP's error: mean squared |residual|, a non-finite residual costs `penalty` (EML-GP: 1000)."""
+     with np.errstate(all="ignore"):
+         diff = np.abs(pred - target)
+         bad = ~np.isfinite(diff)
+         sq = np.where(bad, 0.0, diff) ** 2
+-        return float((np.where(bad, 1000.0, sq)).sum() / diff.size)
++        return float((np.where(bad, penalty, sq)).sum() / diff.size)
+ 
+ 
+ def grid_sample():
+diff --git a/src/reach/runner/phases.py b/src/reach/runner/phases.py
+index 433cd6d..ba45ca2 100644
+--- a/src/reach/runner/phases.py
++++ b/src/reach/runner/phases.py
+@@ -499,3 +499,77 @@ def nox_gp():
+     s, x = SEEDS[FULL_SEEDS], ("--stop_on", "exact")
+     return [_gp_task("confB", g, t, "B", sd, 200, x, tname="targets_conf") for g in _family() for t in _conf(g)
+             for sd in s[:5]]
++
++
++# D034 (2026-10-16), post hoc sensitivity analyses, specified and committed before any run (not preregistered):
++# (1) the penalty for undefined values scaled to the target (pen_*): same targets and seeds as full_gp, nox_gp and
++#     full_es (random targets), every operator, so EDL is compared with the pooled six under a fitness that never
++#     ranks an undefined tree above a constant; (2) headless-chicken crossover (hc_gp), the standard control for
++#     the crossover effect, on full_gp's random targets and first two seeds, with EML-GP's penalty as in full_gp.
++@phase("pen_gp", "D034 sensitivity: GP-A at E0, stop on exact, penalty scaled to the target; full_gp's targets_conf "
++       "and seeds (5 per target).")
++def pen_gp():
++    from reach.seeds import SEEDS
++    s, x = SEEDS[FULL_SEEDS], ("--stop_on", "exact", "--penalty", "scaled")
++    return [_gp_task("confP", g, t, "A", sd, 200, x, tname="targets_conf") for g in _family() for t in _conf(g)
++            for sd in s[:5]]
++
++
++@phase("pen_nox", "D034 sensitivity: GP without crossover (regime B) at E0, stop on exact, penalty scaled to the "
++       "target; nox_gp's targets and seeds.")
++def pen_nox():
++    from reach.seeds import SEEDS
++    s, x = SEEDS[FULL_SEEDS], ("--stop_on", "exact", "--penalty", "scaled")
++    return [_gp_task("confBP", g, t, "B", sd, 200, x, tname="targets_conf") for g in _family() for t in _conf(g)
++            for sd in s[:5]]
++
++
++@phase("pen_es", "D034 sensitivity: (1+4)-ES at E0, stop on exact, penalty scaled to the target; full_es's random "
++       "targets and seeds (sizes 3..15, 15 per size x 3 seeds).")
++def pen_es():
++    from reach.seeds import SEEDS
++    s, x = SEEDS[FULL_SEEDS], ("--stop_on", "exact", "--algorithm", "es", "--penalty", "scaled")
++    tasks = []
++    for g in _family():
++        by = {}
++        for t in _conf(g):
++            by.setdefault(t["K_construction"], []).append(t)
++        tasks += [_gp_task("esP", g, t, "A", sd, 200, x, weight=4.0, tname="targets_conf")
++                  for K, ts in by.items() if K <= 15 for t in ts[:15] for sd in s[:3]]
++    return tasks
++
++
++@phase("hc_gp", "D034 control: GP-A with headless-chicken crossover (each parent crossed with a fresh random tree) at "
++       "E0, stop on exact, EML-GP's penalty; full_gp's targets_conf and first two seeds.")
++def hc_gp():
++    from reach.seeds import SEEDS
++    s, x = SEEDS[FULL_SEEDS], ("--stop_on", "exact", "--crossover", "headless")
++    return [_gp_task("confH", g, t, "A", sd, 200, x, tname="targets_conf") for g in _family() for t in _conf(g)
++            for sd in s[:2]]
++
++
++# D038 (2026-10-16), post hoc, specified and committed before any run (not preregistered), answering the critical
++# referee report: (1) more seeds at E0 on the budget runs' set A targets, so that independent restarts can be
++# compared with single long runs at equal total budget up to 16 E0; (2) a random-sampling baseline.
++@phase("restart_seeds", "D038: GP-A at E0, stop on exact, on full_budget's set A targets (sizes 9..17, 20 per size) "
++       "with 15 further seeds (the 6th to 20th), for restarts against single long runs.")
++def restart_seeds():
++    from reach.seeds import SEEDS
++    s, x = SEEDS[FULL_SEEDS], ("--stop_on", "exact")
++    tasks = []
++    for g in _family():
++        by = {}
++        for t in _conf(g):
++            by.setdefault(t["K_construction"], []).append(t)
++        tasks += [_gp_task("conf", g, t, "A", sd, 200, x, tname="targets_conf")
++                  for K, ts in by.items() if 9 <= K <= 17 for t in ts[:20] for sd in s[5:20]]
++    return tasks
++
++
++@phase("rand_sample", "D038: random-sampling baseline: 4 x 250,000 trees per operator drawn as GP's initial "
++       "population; exact hits of every random target counted.")
++def rand_sample():
++    return [dict(key=f"rand|{g}|{i}", argv=["{python}", "-m", "reach.tasks.random_sample", "--grammar", g,
++                                             "--targets", f"data/targets/{g}/targets_conf.json", "--n", "250000",
++                                             "--seed", str(20261016 + i)],
++                 cpu_limit=3600, meta=dict(exp="rand", grammar=g, part=i)) for g in _family() for i in range(4)]
+diff --git a/src/reach/tasks/random_sample.py b/src/reach/tasks/random_sample.py
+new file mode 100644
+index 0000000..dd30f6e
+--- /dev/null
++++ b/src/reach/tasks/random_sample.py
+@@ -0,0 +1,41 @@
++"""Random-sampling baseline (D038): draw trees exactly as GP's initial population (ramped half-and-half, depth 2 to
++MAX_DEPTH, no seeded leaves) and count, for every random target of a grammar, how many sampled trees compute it
++(same exact-recovery hash as the GP runs). One task per (grammar, part) -> one `RESULT {json}` line."""
++import argparse
++import json
++import random
++
++import numpy as np
++
++from reach import grammar as G
++from reach.engines.treegp import MAX_DEPTH, _patch
++from reach.galib.generator import generate_ramped_population
++
++ap = argparse.ArgumentParser()
++ap.add_argument("--grammar", required=True)
++ap.add_argument("--targets", required=True)
++ap.add_argument("--n", type=int, required=True, help="trees to sample")
++ap.add_argument("--seed", type=int, required=True)
++a = ap.parse_args()
++
++g = G.get(a.grammar)
++xs = G.sample_grid(g)
++want = {}
++for t in json.load(open(a.targets)):
++    v = G.evaluate(g, G.parse_expr(t["expression"], g), xs)
++    want.setdefault(G.scaled_func_hash(v, t["target_scale"]), []).append(t["target_id"])
++_patch(random.Random(a.seed))
++hits, n, finite = {}, 0, 0
++while n < a.n:
++    for tree in generate_ramped_population(100, MAX_DEPTH, g.operators, list(g.constants), list(g.variables),
++                                           seed_variable_leaves=False):
++        n += 1
++        if G.count_nodes(tree) > G.MAX_NODES:
++            continue
++        v = G.evaluate(g, tree, xs)
++        if not np.isfinite(v).all():
++            continue
++        finite += 1
++        for tid in want.get(G.scaled_func_hash(v, max(1.0, float(np.abs(v).max()))), ()):
++            hits[tid] = hits.get(tid, 0) + 1
++print("RESULT " + json.dumps({"grammar": g.name, "n": n, "finite": finite, "hits": hits, "seed": a.seed}), flush=True)
+diff --git a/src/reach/tasks/treegp_task.py b/src/reach/tasks/treegp_task.py
+index a2583c4..5546583 100644
+--- a/src/reach/tasks/treegp_task.py
++++ b/src/reach/tasks/treegp_task.py
+@@ -20,6 +20,8 @@ ap.add_argument("--legacy", action="store_true", help="reproduce EML-GP's engine
+ ap.add_argument("--seed_leaves", choices=["default", "on", "off"], default="default")
+ ap.add_argument("--stop_on", choices=["tolerance", "exact"], default="tolerance")
+ ap.add_argument("--algorithm", choices=["gp", "es"], default="gp", help="es: (1+4)-ES, budget = pop_size x generations")
++ap.add_argument("--penalty", choices=["fixed", "scaled"], default="fixed", help="non-finite residual cost (D034)")
++ap.add_argument("--crossover", choices=["subtree", "headless"], default="subtree", help="headless-chicken control (D034)")
+ a = ap.parse_args()
+ 
+ g = G.get(a.grammar)
+@@ -32,15 +34,18 @@ if g.kind == "real":
+               grid_xs=grid, grid_target=G.evaluate(g, tree, grid), grid_scale=tgt["target_scale"])
+ if a.algorithm == "es":
+     from reach.engines.es import run_es
+-    r = run_es(g, tree, a.seed, evaluations=a.pop_size * a.generations, timeout_seconds=a.timeout, **kw)
++    r = run_es(g, tree, a.seed, evaluations=a.pop_size * a.generations, timeout_seconds=a.timeout,
++               undefined_penalty=a.penalty, **kw)
+ else:
+   r = run_gp(g, tree, a.regime, a.seed, generations=a.generations, pop_size=a.pop_size,
+            timeout_seconds=a.timeout, legacy=a.legacy,
+-           seed_leaves=None if a.seed_leaves == "default" else a.seed_leaves == "on", stop_on=a.stop_on, **kw)
++           seed_leaves=None if a.seed_leaves == "default" else a.seed_leaves == "on", stop_on=a.stop_on,
++           undefined_penalty=a.penalty, crossover_mode=a.crossover, **kw)
+ print("RESULT " + json.dumps({
+     "target_id": tgt["target_id"], "grammar": g.name, "K_construction": tgt.get("K_construction"),
+     "K_proven": tgt.get("K_proven"), "regime": a.regime, "seed": a.seed,
+     "budget_E": a.pop_size * a.generations, "legacy": a.legacy, "stop_on": a.stop_on, "algorithm": a.algorithm,
++    "penalty": a.penalty, "crossover": a.crossover,
+     "converged": "true" if r["converged"] else "false",
+     "exact_hash_match": "true" if r["exact_hash_match"] else "false",
+     "gens_to_converge": "" if r["gens_to_converge"] is None else r["gens_to_converge"],

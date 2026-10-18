@@ -1,0 +1,22 @@
+{
+ "form": "lpowe",
+ "const": "m1",
+ "one": {
+  "exp(x)": null,
+  "ln(x)": {
+   "K": 11,
+   "expr": "lpowe(x, lpowe(lpowe(x, lpowe(-1, lpowe(x, -1))), x))",
+   "grid_ok": true,
+   "ext_ok": false,
+   "ext_finite": 0.5333333333333333
+  },
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 15,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

@@ -1,0 +1,52 @@
+{
+ "grammar": "S-lsube-e",
+ "ceiling": 21,
+ "table": {
+  "exp(x)": {
+   "K": 17,
+   "expr": "lsube(x, lsube(lsube(x, x), lsube(lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, 2.718281828459045)), 2.718281828459045)))",
+   "verified": true
+  },
+  "ln(x)": {
+   "K": 13,
+   "expr": "lsube(x, lsube(lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, 2.718281828459045)), 2.718281828459045))",
+   "verified": true
+  },
+  "-x": {
+   "K": 15,
+   "expr": "lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, lsube(lsube(2.718281828459045, lsube(2.718281828459045, 2.718281828459045)), 2.718281828459045)))",
+   "verified": true
+  },
+  "1/x": null,
+  "x^2": null,
+  "sqrt(x)": null,
+  "x+1": null,
+  "x-1": null,
+  "2x": null,
+  "x/2": null,
+  "exp(-x)": null,
+  "x^x": null,
+  "exp(exp(x))": null,
+  "ln(ln(x))": null,
+  "0": {
+   "K": 19,
+   "expr": "lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(lsube(lsube(2.718281828459045, lsube(2.718281828459045, x)), lsube(x, lsube(2.718281828459045, x))), 2.718281828459045))",
+   "verified": false
+  },
+  "1": {
+   "K": 13,
+   "expr": "lsube(2.718281828459045, lsube(lsube(lsube(2.718281828459045, lsube(x, 2.718281828459045)), lsube(x, 2.718281828459045)), 2.718281828459045))",
+   "verified": true
+  },
+  "-1": null,
+  "2": null,
+  "1/2": null,
+  "e": {
+   "K": 1,
+   "expr": "2.718281828459045",
+   "verified": true
+  },
+  "pi": null,
+  "i": null
+ }
+}
