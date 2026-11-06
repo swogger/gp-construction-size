@@ -90,6 +90,24 @@ def main():
     V["two_var_runs"] = int(sum(len(by[g][t]) for g in by for t in by[g] if pred[t].get("nvar")))
     V["two_var_targets"] = int(sum(1 for g in by for t in by[g] if pred[t].get("nvar")))
     V["max_grammar_miss"] = max(abs(x["obs"] - x["pred"]) for k, x in V.items() if isinstance(x, dict))
+    # added (independent check, D048): calibration by target type, named as exploratory in the second registration
+    rows["kind"] = ["calculator" if "_calc_" in t else "random" for t in rows.t]
+    L += ["", "| Target type | targets | runs | AUC | calibration slope [95% target bootstrap] | mean predicted | observed |", "|---|---|---|---|---|---|---|"]
+    V["by_type"] = {}
+    rc = np.random.default_rng(20261107)
+    for kind, s in rows.groupby("kind"):
+        arr = {t: (x.y.values, x.p.values) for t, x in s.groupby("t")}
+        within = {g: sorted(x.t.unique()) for g, x in s.groupby("g")}      # targets resampled within each grammar, as for H6
+        sl = []
+        for _ in range(B):
+            pick = [ids[i] for ids in within.values() for i in rc.integers(0, len(ids), len(ids))]
+            yb, pb = np.concatenate([arr[t][0] for t in pick]), np.concatenate([arr[t][1] for t in pick])
+            sl.append(slope(yb, pb) if 0 < yb.sum() < len(yb) else float("nan"))
+        lo_, hi_ = np.nanquantile(sl, [0.025, 0.975])
+        V["by_type"][kind] = dict(targets=int(s.t.nunique()), runs=len(s), auc=auc(s.y.values, s.p.values), slope=slope(s.y.values, s.p.values),
+                                  slope_lo=float(lo_), slope_hi=float(hi_), pred=float(s.p.mean()), obs=float(s.y.mean()))
+        x = V["by_type"][kind]
+        L.append(f"| {kind} | {x['targets']} | {x['runs']} | {x['auc']:.3f} | {x['slope']:.2f} [{lo_:.2f}, {hi_:.2f}] | {x['pred']:.3f} | {x['obs']:.3f} |")
     values.record("h6_intervals", V)
     L.append("")
     (ROOT / "paper/results/h6_intervals.md").write_text("\n".join(L) + "\n")

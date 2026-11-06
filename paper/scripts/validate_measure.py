@@ -98,7 +98,7 @@ def fresh_grid():
     x2 = {v: rng.uniform(G.DOMAIN_LO, G.DOMAIN_HI, 1000).astype(np.complex128) for v in ("x", "y")}
     out, cache = Counter(), {}
     phases = ["full_gp", "full_budget", "full_budget64", "full_es", "nox_gp", "heldout_gp", "pen_gp", "pen_nox", "pen_es",
-              "hc_gp", "restart_seeds", "verify_fix"]
+              "hc_gp", "restart_seeds"]   # verify_fix removed (D048): its crash reruns are merged by fixed.results, the rest repeat counted runs
     for ph in phases:
         p = ROOT / f"data/rescored/{ph}.json"
         fl = set(json.loads(p.read_text())) if p.exists() else set()
@@ -232,7 +232,7 @@ def main():
     nf = sum(flag[t] for v in fam.values() for t in v); nt = sum(len(v) for v in fam.values())
     L += [f"**Targets whose function depends on floating-point rounding:** for {nf} of {nt} random targets of the first study "
           f"({', '.join(f'{k} {100 * x:.0f}%' for k, x in share.items())}) and {sum(flag[t] for t in held_flag)} of {len(held_flag)} "
-          "held-out targets, the double-precision values on the grid differ from the exact (50-digit) values of the same tree "
+          "random held-out targets, the double-precision values on the grid differ from the exact (50-digit) values of the same tree "
           "(relative difference above 10⁻⁶ at some grid point): rounding noise decides a branch of the complex logarithm, or the "
           "evaluation is ill-conditioned. GP, enumeration and the exact-recovery check all use the same double-precision "
           "evaluator, so the study is consistent, but for these targets the function is defined by that evaluator, not by "

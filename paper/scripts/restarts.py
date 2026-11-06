@@ -111,6 +111,12 @@ def main():
           f"{(pt[(16, 'single')] - pt[(1, 'single')]) / 4:.2f}.", "",
           f"Timing of the {len(gens)} successful E0 runs on random targets (all sizes): median generation {np.median(gens):.0f}; "
           f"{(gens <= 10).mean():.0%} by generation 10, {(gens <= 50).mean():.0%} by 50, {(gens > 100).mean():.0%} after 100.", ""]
+    # added (independent check, D048): the E0 contrast in run-length units, with the rate resampled in the same replicates
+    rate_of = lambda r: float(np.polyfit(np.log2([1, 4, 16]), [r[(m, "single")] for m in (1, 4, 16)], 1)[0])
+    fold_d1 = lambda r: 2 ** (d1(r) / rate_of(r))
+    cf = ci(fold_d1)
+    L += [f"E0 as runs of {best[1]} generations against one run: {d1(pt):+.2f} nodes [{c1[0]:+.2f}, {c1[1]:+.2f}], worth {fold_d1(pt):,.0f}× in the "
+          f"length of one run (95% interval {cf[0]:,.0f}–{cf[1]:,.0f}×, contrast and rate resampled together; Figure 1).", ""]
     # added (D040): the best split measured without bias (r <= n runs per target) up to 4 E0, over finer run lengths
     fine = (10, 20, 25, 40, 50, 100, 200)
     ub = {}
@@ -134,6 +140,27 @@ def main():
           + f"; {slope_ub:.2f} nodes per doubling (95% interval {ub_lo:.2f}–{ub_hi:.2f}, re-selecting the best split in each of 300 "
           f"bootstrap replicates; still optimistic, since the lengths are chosen on the same data), so one node ≈ {2 ** (1 / slope_ub):.1f}× the budget. Above 4 E0 the best "
           "split needs more runs per target than there are seeds, so the rate over E0–16 E0 above is a lower bound.", ""]
+    # added (independent check, D048): state what was fixed before the runs, and repeat the contrasts with the isotonic K50
+    L += [f"Fixed before the runs: the table above and the best-allocation rate over E0–16 E0 ({slope:.2f} nodes per doubling, one node ≈ "
+          f"{2 ** (1 / slope):.1f}× the budget). Added after the results: the contrast at E0, its run-length equivalent, the best split "
+          "measured without bias and the comparison with enumeration at 16 E0.", ""]
+    from curve_shapes import iso_k50
+    all_t = [(g, t) for g in FAMILY for t in tg[g]]
+    Ks = np.array([K[t] for _, t in all_t], float)
+    iso_at = lambda f: iso_k50(Ks, np.array([f(g, t) for g, t in all_t], float))
+    iso_single = {m: iso_at(lambda g, t, m=m: np.mean(d[(g, t, m)])) for m in (1, 4, 16)}
+    iso_rate = float(np.polyfit(np.log2([1, 4, 16]), [iso_single[m] for m in (1, 4, 16)], 1)[0])
+    iso_best = {b: np.nanmax([iso_at(lambda g, t, Lf=Lf, b=b: p_restart(runs[t], Lf, b * 200 // Lf))
+                              for Lf in fine if b * 200 % Lf == 0 and b * 200 // Lf <= nseeds]) for b in (1, 2, 4)}
+    iso_r = {b: iso_at(lambda g, t, b=b: p_restart(runs[t], 200, b)) for b in (4, 16)}
+    iso_slope_ub = (iso_best[4] - iso_best[1]) / 2
+    iso_v = dict(single={str(m): iso_single[m] for m in iso_single}, s=iso_rate, fold=2 ** (1 / iso_rate), best1=float(iso_best[1]),
+                 d1=float(iso_best[1] - iso_single[1]), d4=iso_r[4] - iso_single[4], d16=iso_r[16] - iso_single[16],
+                 slope_ub=float(iso_slope_ub), fold_ub=2 ** (1 / iso_slope_ub))
+    L += [f"With the isotonic K₅₀ (same runs): one run {iso_single[1]:.2f}, {iso_single[4]:.2f} and {iso_single[16]:.2f} nodes at E0, 4 E0 and 16 E0 "
+          f"({iso_rate:.2f} nodes per doubling, one node ≈ {2 ** (1 / iso_rate):.0f}× the length of a run); best split of E0 {iso_best[1]:.2f} ({iso_v['d1']:+.2f} over one run); "
+          f"restarts of full E0 runs minus one long run {iso_v['d4']:+.2f} at 4 E0 and {iso_v['d16']:+.2f} at 16 E0; best split up to 4 E0 {iso_slope_ub:.2f} nodes per doubling "
+          f"(one node ≈ {2 ** (1 / iso_slope_ub):.1f}× the budget).", ""]
     # enumeration against GP's best split of E0, per operator (set A targets)
     gp_best = {g: max(k50([(K[t], p_restart(runs[t], L_, 200 // L_)) for t in tg[g]]) for L_ in LENGTHS) for g in FAMILY}
     gp_single = {g: k50([(K[t], np.mean(d[(g, t, 1)])) for t in tg[g]]) for g in FAMILY}
@@ -159,20 +186,33 @@ def main():
           for rr in (1, 4)}
     spread_best = max(gp_best[g] for g in six) - min(gp_best[g] for g in six)
     spread_single = max(gp_single[g] for g in six) - min(gp_single[g] for g in six)
+    # added (independent check, D048): intervals for these two comparisons, targets resampled jointly in each
+    rs = np.random.default_rng(20261107)
+    p4 = {ph: {(g, t): (Kt, 1 - comb(len(ys) - int(sum(ys)), 4) / comb(len(ys), 4)) for (g, t, Kt), ys in allg[ph].items() if g in six} for ph in allg}
+    ts4 = {g: sorted(t for (h, t) in p4["full_gp"] if h == g) for g in six}
+    cx4 = lambda sel: k50([p4["full_gp"][(g, t)] for g in six for t in sel[g]]) - k50([p4["nox_gp"][(g, t)] for g in six for t in sel[g]])
+    cx4_lo, cx4_hi = np.nanquantile([cx4({g: [ts4[g][i] for i in rs.integers(0, len(ts4[g]), len(ts4[g]))] for g in six}) for _ in range(B)], [0.025, 0.975])
+
+    def spread_inc(sel):
+        b_ = [np.nanmax([k50([(K[t], p_restart(runs[t], L_, 200 // L_)) for t in sel[g]]) for L_ in LENGTHS]) for g in six]
+        s_ = [k50([(K[t], np.mean(d[(g, t, 1)])) for t in sel[g]]) for g in six]
+        return (np.nanmax(b_) - np.nanmin(b_)) - (np.nanmax(s_) - np.nanmin(s_))
+    sp_lo, sp_hi = np.nanquantile([spread_inc({g: [tg[g][i] for i in rs.integers(0, len(tg[g]), len(tg[g]))] for g in six}) for _ in range(B)], [0.025, 0.975])
     L += [f"Crossover (pooled six, all random targets, same 5 seeds): GP − GP without crossover {cx[1]:+.2f} nodes with one E0 run "
-          f"each, {cx[4]:+.2f} with four E0 restarts each. Spread of the six on set A at E0: {spread_single:.2f} (one run), "
-          f"{spread_best:.2f} (best split).", ""]
+          f"each, {cx[4]:+.2f} with four E0 restarts each (95% CI {cx4_lo:+.2f} to {cx4_hi:+.2f}). Spread of the six on set A at E0: {spread_single:.2f} (one run), "
+          f"{spread_best:.2f} (best split, re-chosen per operator in each replicate; 95% CI of the increase {sp_lo:+.2f} to {sp_hi:+.2f}).", ""]
     (ROOT / "paper/results/restarts.md").write_text("\n".join(L) + "\n")
     V = dict(nseeds=nseeds, single={str(b): pt[(b, "single")] for b in (1, 4, 16)},
              grid={f"{b}.{L_}": pt[(b, L_)] for b in BUDGETS for L_ in LENGTHS}, best={str(b): bestk[b] for b in BUDGETS},
              best_len={str(b): best[b] for b in BUDGETS}, slope_best=slope, seg=seg,
              slope_single=(pt[(16, "single")] - pt[(1, "single")]) / 4,
-             d4=d4(pt), d4_lo=c4[0], d4_hi=c4[1], d1=d1(pt), d1_lo=c1[0], d1_hi=c1[1], fold_best=2 ** (1 / slope), gen_median=float(np.median(gens)), by10=float((gens <= 10).mean()),
+             d4=d4(pt), d4_lo=c4[0], d4_hi=c4[1], d1=d1(pt), d1_lo=c1[0], d1_hi=c1[1], d1_fold=fold_d1(pt), d1_fold_lo=cf[0], d1_fold_hi=cf[1], iso=iso_v,
+             fold_best=2 ** (1 / slope), gen_median=float(np.median(gens)), by10=float((gens <= 10).mean()),
              by50=float((gens <= 50).mean()), after100=float((gens > 100).mean()),
              best_ub={str(b): ub[b][1] for b in (1, 2, 4)}, slope_ub=slope_ub, fold_ub=2 ** (1 / slope_ub),
              slope_ub_lo=ub_lo, slope_ub_hi=ub_hi, fold_ub_lo=2 ** (1 / ub_hi), fold_ub_hi=2 ** (1 / ub_lo),
              enum_gap16_median=float(np.median(list(gaps16.values()))),
-             crossover_1=cx[1], crossover_4=cx[4], spread_best=spread_best, spread_single=spread_single,
+             crossover_1=cx[1], crossover_4=cx[4], crossover_4_lo=cx4_lo, crossover_4_hi=cx4_hi, spread_best=spread_best, spread_single=spread_single, spread_diff_lo=sp_lo, spread_diff_hi=sp_hi,
              enum_gap_median=float(np.median(list(gaps.values()))), enum_gap_min=min(gaps.values()), enum_gap_max=max(gaps.values()))
     if nseeds >= 16:
         V.update(d16=d16(pt), d16_lo=c16[0], d16_hi=c16[1])

@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).parent))
 from exchange_rate import enum_k50  # noqa: E402
 import fixed  # noqa: E402
+import values  # noqa: E402
 
 NAMES = {"F-EML": "EML", "F-EDL": "EDL", "F-NEML": "−EML", "F-LDE0": "LDE (c=0)", "F-LDE1": "LDE (c=1)",
          "F-PLI": "PLI", "F-PLM": "PLM"}
@@ -45,6 +46,7 @@ def block(name, body):
 
 
 def main():
+    _v = values.load()
     gp, nox, es = k50s("full_gp", "conf"), k50s("nox_gp", "confB"), k50s("full_es", "es")
     pen = k50s("pen_gp", "confP")
     out = []
@@ -125,7 +127,7 @@ For example, x² under EML has K* = 17. With a budget of 1.3 × 10⁶ evaluation
 |---|---|---|---|
 | up to 13 nodes | {band([3, 5, 7, 9])} (≤ 9), {band([11, 13])} (11–13) | certain at 2 × 10⁴; under a second | **enumerate** |
 | 15–19 nodes | {band([15])} (15), {band([17, 19])} (17–19) | certain within 1.3 × 10⁶ (19 nodes: five of the seven operators); seconds | **enumerate, with a larger budget** |
-| over 19 nodes | rare; each node ≈ 10× the length of a single run, ≈ 2× the budget with short restarts | beyond our ceilings | **change operator** to one that makes the target shorter (Figure 2) |
+| over 19 nodes | rare; each node ≈ {_v['exchange_rate.node.fold']:.1f}× the length of a single run, ≈ {_v['restarts.fold_ub']:.0f}–{_v['restarts.fold_best']:.0f}× the budget with short restarts | not covered by the largest budget tested; our memory ceilings are 21–23 nodes for one variable | **change operator** to one that makes the target shorter (Figure 2) |
 """))
     (ROOT / "paper/results/tools.md").write_text("\n".join(out))
     print("\n".join(out))

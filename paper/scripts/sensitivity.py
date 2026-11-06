@@ -112,6 +112,21 @@ def main():
                       f"scaled {undefined(b, 'F-EDL', True)[0]} of {undefined(b, 'F-EDL', True)[1]}"
                       for name, a, b in pairs) + ".", ""]
 
+    # added after the results (independent check, D048): share of EDL's deficit under GP that the scaled penalty removes,
+    # with targets resampled jointly in the two arms; a separate stream, so the intervals above are unchanged.
+    a_, b_ = pairs[0][1], pairs[0][2]
+    tgj = {g: sorted(set(a_[g]) & set(b_[g])) for g in FAMILY}
+    rj = np.random.default_rng(20261106)
+    gap = lambda by, s: k50(by, ["F-EDL"], s) - k50(by, SIX, s)
+    share = lambda s: 1 - gap(b_, s) / gap(a_, s)
+    sreps = np.array([share({g: [tgj[g][i] for i in rj.integers(0, len(tgj[g]), len(tgj[g]))] for g in FAMILY}) for _ in range(B)])
+    V["edl_share"] = dict(d=share(tgj), lo=float(np.nanquantile(sreps, 0.025)), hi=float(np.nanquantile(sreps, 0.975)),
+                          below_half=float(np.nanmean(sreps < 0.5)))
+    L += [f"Share of EDL's deficit under GP removed by the scaled penalty: {V['edl_share']['d']:.0%} (95% CI {V['edl_share']['lo']:.0%}–{V['edl_share']['hi']:.0%}, "
+          f"targets resampled jointly; below one half in {V['edl_share']['below_half']:.0%} of replicates).", ""]
+    t0, t1 = {h: sorted(pairs[0][1][h]) for h in FAMILY}, {h: sorted(pairs[1][1][h]) for h in FAMILY}
+    V["crossover_seven"] = k50(pairs[0][1], FAMILY, t0) - k50(pairs[1][1], FAMILY, t1)
+
     # added after the results (D036): are the operator comparisons robust to the penalty?
     from reach.analysis import family_full as F
     F.RNG = np.random.default_rng(20261015)

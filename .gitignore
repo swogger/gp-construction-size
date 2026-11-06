@@ -22,3 +22,7 @@ paper/export/
 
 # public release: no Markdown files
 *.md
+
+# local output of scripts/reproduce_results.py; documentation is never part of this repository
+*.md
+docs/

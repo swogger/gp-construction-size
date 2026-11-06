@@ -90,7 +90,7 @@ def fig1():
     rows = [r for r in rows if r[0] in show]                             # one penalty throughout (D036)
     import values as V_                                                  # allocation: E0 split into short runs (D039)
     v = V_.load(); s = v["exchange_rate.s"]
-    rows.append(("restarts", v["restarts.d1"], 2 ** (v["restarts.d1"] / s), 2 ** (v["restarts.d1_lo"] / s), 2 ** (v["restarts.d1_hi"] / s)))
+    rows.append(("restarts", v["restarts.d1"], 2 ** (v["restarts.d1"] / s), v["restarts.d1_fold_lo"], v["restarts.d1_fold_hi"]))   # rate uncertainty included, as in the other bars; here resampled jointly with the contrast (D048)
     rows.sort(key=lambda r: r[2])
     lab = {"one extra node of target size": "One more\nnode", "spread among six operators": "Six\noperators",
            "penalty for undefined values, EDL (scaled − fixed, same runs)": "Fitness\npenalty (EDL)",
@@ -329,7 +329,7 @@ def fig4():
     ax.set_xlim(-0.6, len(FAMILY) - 0.4)
     fig.legend(loc="upper left", bbox_to_anchor=(0.02, 0.955), ncol=2, frameon=False, fontsize=8.5, handlelength=1.2,
               columnspacing=1.4, handletextpad=0.5)
-    headline(fig, "Crossover lifts GP well above random sampling",
+    headline(fig, "GP with crossover lies well above random sampling",
              "Reach per operator under three ways of searching; spread: range of the six non-EDL operators (nodes)", y=0.97)
     save(fig, "fig4v3_crossover")
 

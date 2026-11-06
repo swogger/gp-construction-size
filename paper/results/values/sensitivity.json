@@ -1,4 +1,5 @@
 {
+ "crossover_seven": 3.338390395080186,
  "deficit.full_es.fixed.d": -1.2289628946770046,
  "deficit.full_es.fixed.hi": -0.3783015665376683,
  "deficit.full_es.fixed.lo": -2.2671249320735614,
@@ -37,6 +38,10 @@
  "deficit.nox_gp.scaled_low.lo": -0.8657739479118701,
  "edl_low_fixed": 10.662140897828413,
  "edl_low_scaled": 10.636826029711504,
+ "edl_share.below_half": 0.269,
+ "edl_share.d": 0.5598252086922564,
+ "edl_share.hi": 0.7737518989827239,
+ "edl_share.lo": 0.38587041624493007,
  "gain_crossover.EDL": 2.3859911688344555,
  "gain_crossover.EML": 2.0285029016062364,
  "gain_crossover.LDE0": 4.52917425193178,

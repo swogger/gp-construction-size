@@ -27,7 +27,8 @@ paper/scripts/    Every post hoc analysis, table and figure in the paper.
 paper/results/values/  Every number quoted in the paper, as written by the analysis scripts.
 paper/figures/    The figures.
 registration/     Verification against the registered versions (see below), the checksums
-                  attached to the OSF registrations, and checksums of the run results.
+                  attached to the OSF registrations, and checksums of the run results and of
+                  the reports of the registered analyses.
 
 
 REPRODUCING
@@ -38,9 +39,12 @@ Python 3.9 with the pinned versions in requirements.txt:
     .venv/bin/python -m pytest
     .venv/bin/python scripts/reproduce_results.py
 
-reproduce_results.py reruns every analysis from the released run data and checks that each quoted
-number is reproduced. Rerunning the GP runs themselves uses the run queue
-(python -m reach.runner run PHASE; phases in src/reach/runner/phases.py) and takes days of CPU.
+reproduce_results.py reruns the registered analyses and every post hoc analysis from the released
+run data. It checks that the registered reports match registration/analysis_report_checksums.txt and
+that each quoted number is reproduced. The script finds src/ itself; nothing else needs installing.
+Reports go to docs/results/ and paper/results/ as local output. Rerunning the GP runs themselves uses
+the run queue (PYTHONPATH=src python -m reach.runner run PHASE; phases in src/reach/runner/phases.py)
+and takes days of CPU.
 
 
 VERIFYING AGAINST THE REGISTRATIONS

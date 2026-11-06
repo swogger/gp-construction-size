@@ -54,6 +54,10 @@ def main():
         R[i, names.index(f"C(op)[{a}]:l2")], R[i, names.index(f"C(op)[{c}]:l2")] = 1, -1
     w = m.wald_test(R, scalar=True)
     L += ["", f"Equal γ across operators: Wald χ² = {float(w.statistic):.1f} on {len(FAMILY) - 1} df, p = {float(w.pvalue):.3f} (cluster-robust)."]
+    # added (independent check, D048): Equation 1 assumes the budget's effect does not depend on size; test that assumption
+    mi = smf.glm("y ~ C(op) + K * l2", df, family=sm.families.Binomial()).fit(cov_type="cluster", cov_kwds={"groups": pd.factorize(df.tid)[0]})
+    V.update(interaction=float(mi.params["K:l2"]), interaction_z=float(mi.tvalues["K:l2"]))
+    L.append(f"Size × log₂ budget interaction added to the operator-intercept model: {mi.params['K:l2']:+.3f} per node per doubling (cluster-robust z = {mi.tvalues['K:l2']:.2f}).")
     (ROOT / "paper/results/law.md").write_text("\n".join(L) + "\n")
     ss = {o: x["s"] for o, x in V["op"].items()}
     V.update(wald_p=float(w.pvalue), op_s_min=min(ss.values()), op_s_max=max(ss.values()),
