@@ -1,0 +1,12 @@
+[
+ "es+stop_on+exact+algorithm+es|F-LDE0_c_K07_09|A|200|1936764466",
+ "es+stop_on+exact+algorithm+es|F-LDE0_c_K09_01|A|200|1250301191",
+ "es+stop_on+exact+algorithm+es|F-NEML_c_K07_04|A|200|268686632",
+ "es+stop_on+exact+algorithm+es|F-PLI_c_K09_00|A|200|1250301191",
+ "es_calc+stop_on+exact+algorithm+es|F-NEML_calc_exp(x)|A|200|268686632",
+ "es_calc+stop_on+exact+algorithm+es|F-PLM_calc_x^x|A|200|268686632",
+ "es_calc+stop_on+exact+algorithm+es|F-PLM_calc_x^x|A|200|407492831",
+ "es_calc2+stop_on+exact+algorithm+es|F2-LDE0_calc_log_x(y)|A|200|308381072",
+ "es_calc2+stop_on+exact+algorithm+es|F2-PLM_calc_x^y|A|200|1256056108",
+ "es_calc2+stop_on+exact+algorithm+es|F2-PLM_calc_x^y|A|200|377620559"
+]

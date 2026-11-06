@@ -1,0 +1,22 @@
+{
+ "form": "esube",
+ "const": "e",
+ "one": {
+  "exp(x)": {
+   "K": 21,
+   "expr": "esube(x, esube(x, esube(esube(esube(esube(x, x), esube(esube(x, x), 2.718281828459045)), esube(x, x)), esube(x, x))))",
+   "grid_ok": true,
+   "ext_ok": false,
+   "ext_finite": 1.0
+  },
+  "ln(x)": null,
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "budget_exhausted"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

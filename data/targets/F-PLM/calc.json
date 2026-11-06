@@ -1,0 +1,52 @@
+[
+ {
+  "target_id": "F-PLM_calc_exp(x)",
+  "function": "exp(x)",
+  "expression": "plm(plm(x, plm(plm(x, plm(x, x)), 1)), plm(plm(x, 1), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 12.935998848482955,
+  "target_scale": 19.887651468491956
+ },
+ {
+  "target_id": "F-PLM_calc_ln(x)",
+  "function": "ln(x)",
+  "expression": "plm(plm(plm(x, plm(plm(x, plm(x, plm(x, 1))), 1)), plm(plm(x, 1), 1)), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.01331409493535803,
+  "target_scale": 1.095306500533605
+ },
+ {
+  "target_id": "F-PLM_calc_1/x",
+  "function": "1/x",
+  "expression": "plm(plm(plm(x, plm(plm(x, plm(x, x)), 1)), plm(plm(x, 1), 1)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.002217170660322237,
+  "target_scale": 1.0
+ },
+ {
+  "target_id": "F-PLM_calc_exp(-x)",
+  "function": "exp(-x)",
+  "expression": "plm(plm(plm(x, plm(plm(x, plm(x, plm(plm(x, 1), 1))), 1)), plm(x, plm(plm(x, 1), 1))), x)",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 9,
+  "var_target": 0.0005872934391296047,
+  "target_scale": 1.0
+ },
+ {
+  "target_id": "F-PLM_calc_x^x",
+  "function": "x^x",
+  "expression": "plm(plm(x, plm(plm(x, x), 1)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 39.663997335259495,
+  "target_scale": 26.44520569703705
+ }
+]

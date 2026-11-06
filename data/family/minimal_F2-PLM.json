@@ -1,0 +1,30 @@
+{
+ "grammar": "F2-PLM",
+ "ceiling": 17,
+ "table": {
+  "x+y": null,
+  "x-y": null,
+  "x*y": {
+   "K": 17,
+   "expr": "plm(plm(x, plm(plm(plm(x, plm(plm(x, plm(x, x)), 1)), y), 1)), 1)",
+   "verified": true
+  },
+  "x/y": {
+   "K": 17,
+   "expr": "plm(plm(plm(x, plm(plm(x, plm(y, y)), 1)), plm(plm(y, x), 1)), 1)",
+   "verified": true
+  },
+  "x^y": {
+   "K": 9,
+   "expr": "plm(plm(x, plm(plm(x, x), 1)), y)",
+   "verified": true
+  },
+  "log_x(y)": {
+   "K": 13,
+   "expr": "plm(plm(plm(x, plm(plm(x, x), 1)), plm(y, 1)), 1)",
+   "verified": true
+  },
+  "(x+y)/2": null,
+  "sqrt(x^2+y^2)": null
+ }
+}

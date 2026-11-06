@@ -1,0 +1,80 @@
+{
+ "grammar": "F-PLI",
+ "ceiling": 23,
+ "table": {
+  "exp(x)": {
+   "K": 7,
+   "expr": "pli(x, pli(pli(x, x), 1))",
+   "verified": true
+  },
+  "ln(x)": {
+   "K": 3,
+   "expr": "pli(x, 1)",
+   "verified": true
+  },
+  "-x": null,
+  "1/x": {
+   "K": 17,
+   "expr": "pli(pli(pli(x, pli(pli(x, pli(x, x)), 1)), pli(pli(x, 1), 1)), 1)",
+   "verified": true
+  },
+  "x^2": {
+   "K": 17,
+   "expr": "pli(pli(x, pli(pli(pli(x, pli(pli(x, pli(x, x)), 1)), x), 1)), 1)",
+   "verified": true
+  },
+  "sqrt(x)": null,
+  "x+1": null,
+  "x-1": {
+   "K": 17,
+   "expr": "pli(pli(pli(x, pli(pli(x, 1), x)), pli(pli(pli(x, 1), x), 1)), 1)",
+   "verified": true
+  },
+  "2x": null,
+  "x/2": null,
+  "exp(-x)": {
+   "K": 23,
+   "expr": "pli(pli(x, pli(x, 1)), pli(pli(pli(pli(x, pli(pli(x, x), 1)), pli(pli(x, 1), 1)), x), 1))",
+   "verified": true
+  },
+  "x^x": {
+   "K": 21,
+   "expr": "pli(pli(x, 1), pli(pli(pli(x, pli(pli(x, pli(pli(x, 1), x)), 1)), pli(x, 1)), 1))",
+   "verified": true
+  },
+  "exp(exp(x))": null,
+  "ln(ln(x))": {
+   "K": 5,
+   "expr": "pli(pli(x, 1), 1)",
+   "verified": true
+  },
+  "0": {
+   "K": 3,
+   "expr": "pli(1, x)",
+   "verified": true
+  },
+  "1": {
+   "K": 1,
+   "expr": "1",
+   "verified": true
+  },
+  "-1": {
+   "K": 21,
+   "expr": "pli(pli(pli(pli(x, pli(pli(x, pli(x, x)), 1)), pli(pli(x, 1), 1)), pli(x, 1)), 1)",
+   "verified": true
+  },
+  "2": {
+   "K": 21,
+   "expr": "pli(pli(pli(x, pli(pli(pli(x, pli(pli(x, pli(x, x)), 1)), x), 1)), pli(x, 1)), 1)",
+   "verified": true
+  },
+  "1/2": null,
+  "e": {
+   "K": 7,
+   "expr": "pli(x, pli(pli(x, 1), 1))",
+   "verified": true
+  },
+  "pi": null,
+  "i": null
+ }
+}

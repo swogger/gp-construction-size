@@ -1,0 +1,137 @@
+{
+ "phase": "heldout_prepare",
+ "description": "Held-out extension A2: minimal tables, calculator targets and random minimal targets (fresh seed 20261115) for the held-out grammars.",
+ "created": "2026-10-15 08:48:21",
+ "git": "76efbde",
+ "n_tasks": 8,
+ "tasks": [
+  {
+   "key": "S-lsube-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.heldout_prepare",
+    "--grammar",
+    "S-lsube-0"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "S-lsube-0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S2-lsube-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.heldout_prepare",
+    "--grammar",
+    "S2-lsube-0"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "S2-lsube-0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esubl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.heldout_prepare",
+    "--grammar",
+    "S-esubl-e"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "S-esubl-e"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S2-esubl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.heldout_prepare",
+    "--grammar",
+    "S2-esubl-e"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "S2-esubl-e"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsube-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.heldout_prepare",
+    "--grammar",
+    "S-lsube-e"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "S-lsube-e"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S2-lsube-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.heldout_prepare",
+    "--grammar",
+    "S2-lsube-e"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "S2-lsube-e"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.heldout_prepare",
+    "--grammar",
+    "S-lpowx-m1"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "S-lpowx-m1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S2-lpowx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.heldout_prepare",
+    "--grammar",
+    "S2-lpowx-m1"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "S2-lpowx-m1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

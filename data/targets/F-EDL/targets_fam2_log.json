@@ -1,0 +1,103 @@
+{
+ "grammar": "F-EDL",
+ "seed": 20261014,
+ "ceiling": 21,
+ "levels": {
+  "3": {
+   "found": 3,
+   "rejected": {
+    "variance": 1
+   },
+   "proven": true,
+   "near_duplicate_rejected": 0,
+   "kept": 3
+  },
+  "5": {
+   "found": 14,
+   "rejected": {
+    "variance": 2
+   },
+   "proven": true,
+   "near_duplicate_rejected": 0,
+   "kept": 10
+  },
+  "7": {
+   "found": 40,
+   "rejected": {
+    "variance": 3
+   },
+   "proven": true,
+   "near_duplicate_rejected": 0,
+   "kept": 10
+  },
+  "9": {
+   "found": 40,
+   "rejected": {
+    "nonfinite": 1,
+    "dead_subtree": 1,
+    "magnitude_ratio": 1
+   },
+   "proven": true,
+   "near_duplicate_rejected": 4,
+   "kept": 10
+  },
+  "11": {
+   "found": 40,
+   "rejected": {
+    "nonfinite": 8,
+    "variance": 4,
+    "magnitude_ratio": 2
+   },
+   "proven": true,
+   "near_duplicate_rejected": 7,
+   "kept": 10
+  },
+  "13": {
+   "found": 40,
+   "rejected": {
+    "nonfinite": 16,
+    "dead_subtree": 4,
+    "variance": 3,
+    "magnitude_ratio": 2
+   },
+   "proven": true,
+   "near_duplicate_rejected": 1,
+   "kept": 10
+  },
+  "15": {
+   "found": 40,
+   "rejected": {
+    "nonfinite": 15,
+    "dead_subtree": 6,
+    "variance": 2,
+    "magnitude_ratio": 1
+   },
+   "proven": true,
+   "near_duplicate_rejected": 2,
+   "kept": 10
+  },
+  "17": {
+   "found": 40,
+   "rejected": {
+    "nonfinite": 19,
+    "magnitude_ratio": 5,
+    "dead_subtree": 6
+   },
+   "proven": true,
+   "near_duplicate_rejected": 0,
+   "kept": 10
+  },
+  "19": {
+   "found": 40,
+   "rejected": {
+    "nonfinite": 22,
+    "magnitude_ratio": 9,
+    "dead_subtree": 5,
+    "variance": 1
+   },
+   "proven": true,
+   "near_duplicate_rejected": 2,
+   "kept": 10
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 0, "exact": false, "best": "plm(plm(x, plm(plm(x, x), c)), x)", "error": "", "wall_s": 365.06}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 1, "exact": false, "best": "x", "error": "", "wall_s": 2.42}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 2, "exact": false, "best": "x", "error": "", "wall_s": 482.83}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 3, "exact": false, "best": "plm(x, plm(plm(x, c), c))", "error": "", "wall_s": 1.26}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 4, "exact": false, "best": "x", "error": "", "wall_s": 0.82}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 5, "exact": false, "best": "plm(x, plm(x, plm(x, x)))", "error": "", "wall_s": 1.41}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 6, "exact": false, "best": "plm(x, plm(x, plm(x, x)))", "error": "", "wall_s": 683.55}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 7, "exact": false, "best": "x", "error": "", "wall_s": 446.99}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 8, "exact": false, "best": "plm(plm(plm(x, c), c), c)", "error": "", "wall_s": 534.98}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 20000, "seed": 9, "exact": false, "best": "plm(x, c)", "error": "", "wall_s": 1.39}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 320000, "seed": 0, "exact": false, "best": "plm(plm(x, plm(plm(x, x), c)), x)", "error": "", "wall_s": 3122.93}
+{"grammar": "F-PLM", "target_set": "calc", "target_id": "F-PLM_calc_exp(x)", "function": "exp(x)", "K": 15, "budget": 320000, "seed": 1, "exact": false, "best": "x", "error": "", "wall_s": 9197.89}

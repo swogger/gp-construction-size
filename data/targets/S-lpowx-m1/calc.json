@@ -1,0 +1,42 @@
+[
+ {
+  "target_id": "S-lpowx-m1_calc_exp(x)",
+  "function": "exp(x)",
+  "expression": "lpowx(lpowx(x, lpowx(lpowx(x, lpowx(x, lpowx(lpowx(x, -1), -1))), -1)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 12.935998848503003,
+  "target_scale": 19.887651468492056
+ },
+ {
+  "target_id": "S-lpowx-m1_calc_ln(x)",
+  "function": "ln(x)",
+  "expression": "lpowx(x, lpowx(x, lpowx(-1, lpowx(-1, lpowx(-1, lpowx(-1, -1))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.01331409493530378,
+  "target_scale": 1.0953065005336762
+ },
+ {
+  "target_id": "S-lpowx-m1_calc_1/x",
+  "function": "1/x",
+  "expression": "lpowx(lpowx(lpowx(x, lpowx(lpowx(x, lpowx(x, x)), -1)), lpowx(lpowx(x, -1), -1)), -1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.0022171706603260483,
+  "target_scale": 1.0
+ },
+ {
+  "target_id": "S-lpowx-m1_calc_x^x",
+  "function": "x^x",
+  "expression": "lpowx(lpowx(lpowx(x, lpowx(lpowx(x, lpowx(x, x)), -1)), lpowx(lpowx(x, -1), -1)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 39.66399733527082,
+  "target_scale": 26.445205697037274
+ }
+]

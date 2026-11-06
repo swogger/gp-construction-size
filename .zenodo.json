@@ -1,0 +1,31 @@
+{
+  "title": "Quantifying the cost of construction size for genetic programming in single-operator grammars: code, data and results",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Kazakov, Dimitar Georgiev",
+      "affiliation": "Technical University of Varna"
+    }
+  ],
+  "description": "Code, data and results of a preregistered study of how a target's shortest construction, proven by exhaustive enumeration, relates to how often genetic programming recovers the target exactly. It covers seven single-operator grammars of the EML type and four held-out grammars. The record holds the grammars and exhaustive enumerator, tree GP and a (1+4) evolution strategy, every run record, the registered and post hoc analyses and their outputs, and a script that checks the code and data against the versions registered on OSF.",
+  "license": "MIT",
+  "keywords": [
+    "genetic programming",
+    "symbolic regression",
+    "single-operator grammars",
+    "exhaustive enumeration",
+    "preregistration"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17605/OSF.IO/7DXHA",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17605/OSF.IO/2JQHR",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ]
+}

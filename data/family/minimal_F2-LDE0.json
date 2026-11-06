@@ -1,0 +1,30 @@
+{
+ "grammar": "F2-LDE0",
+ "ceiling": 17,
+ "table": {
+  "x+y": {
+   "K": 17,
+   "expr": "lde(lde(x, lde(lde(lde(x, lde(lde(x, lde(x, y)), 0)), x), 0)), 0)",
+   "verified": true
+  },
+  "x-y": {
+   "K": 17,
+   "expr": "lde(lde(lde(x, lde(lde(x, lde(y, y)), 0)), lde(lde(y, x), 0)), 0)",
+   "verified": true
+  },
+  "x*y": null,
+  "x/y": {
+   "K": 11,
+   "expr": "lde(lde(x, lde(lde(x, x), 0)), lde(y, 0))",
+   "verified": true
+  },
+  "x^y": null,
+  "log_x(y)": {
+   "K": 7,
+   "expr": "lde(y, lde(lde(x, 0), 0))",
+   "verified": true
+  },
+  "(x+y)/2": null,
+  "sqrt(x^2+y^2)": null
+ }
+}

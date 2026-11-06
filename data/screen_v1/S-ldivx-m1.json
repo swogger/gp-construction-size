@@ -1,0 +1,28 @@
+{
+ "form": "ldivx",
+ "const": "m1",
+ "one": {
+  "exp(x)": null,
+  "ln(x)": {
+   "K": 15,
+   "expr": "ldivx(x, ldivx(ldivx(x, ldivx(-1, -1)), ldivx(ldivx(-1, ldivx(x, -1)), -1)))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "-x": {
+   "K": 13,
+   "expr": "ldivx(ldivx(x, ldivx(-1, -1)), ldivx(ldivx(-1, ldivx(x, -1)), x))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  }
+ },
+ "enum1": {
+  "k_reached": 15,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

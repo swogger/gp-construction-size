@@ -1,0 +1,60 @@
+{
+ "form": "ldive",
+ "const": "0",
+ "one": {
+  "exp(x)": {
+   "K": 7,
+   "expr": "ldive(x, ldive(ldive(x, x), 0))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": {
+   "K": 3,
+   "expr": "ldive(x, 0)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "-x": {
+   "K": 17,
+   "expr": "ldive(ldive(ldive(x, ldive(ldive(x, ldive(x, x)), 0)), ldive(ldive(x, 0), 0)), 0)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  }
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "completed"
+ },
+ "two": {
+  "x-y": {
+   "K": 17,
+   "expr": "ldive(ldive(ldive(x, ldive(ldive(x, ldive(y, y)), 0)), ldive(ldive(y, x), 0)), 0)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "x/y": {
+   "K": 11,
+   "expr": "ldive(ldive(x, ldive(ldive(x, x), 0)), ldive(y, 0))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "x+y": {
+   "K": 17,
+   "expr": "ldive(ldive(x, ldive(ldive(ldive(x, ldive(ldive(x, ldive(x, y)), 0)), x), 0)), 0)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  }
+ },
+ "enum2": {
+  "k_reached": 17,
+  "state": "budget_exhausted"
+ },
+ "passed": true,
+ "score": 21
+}

@@ -1,0 +1,35 @@
+{
+ "form": "esubl",
+ "const": "e",
+ "one": {
+  "exp(x)": {
+   "K": 15,
+   "expr": "esubl(x, esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), x)))))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": {
+   "K": 13,
+   "expr": "esubl(2.718281828459045, esubl(esubl(2.718281828459045, x), esubl(2.718281828459045, esubl(esubl(2.718281828459045, 2.718281828459045), 2.718281828459045))))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "budget_exhausted"
+ },
+ "two": {
+  "x-y": null,
+  "x/y": null,
+  "x+y": null
+ },
+ "enum2": {
+  "k_reached": 17,
+  "state": "budget_exhausted"
+ },
+ "passed": false
+}

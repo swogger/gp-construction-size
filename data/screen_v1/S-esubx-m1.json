@@ -1,0 +1,22 @@
+{
+ "form": "esubx",
+ "const": "m1",
+ "one": {
+  "exp(x)": null,
+  "ln(x)": null,
+  "-x": {
+   "K": 11,
+   "expr": "esubx(esubx(x, esubx(esubx(esubx(-1, -1), -1), -1)), x)",
+   "grid_ok": true,
+   "ext_ok": false,
+   "ext_finite": 1.0
+  }
+ },
+ "enum1": {
+  "k_reached": 15,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

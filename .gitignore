@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+.pytest_cache/
+*.egg-info/
+# large run outputs: decide per phase whether to track
+data/runs/*.log
+legacy/results_rerun/STOP
+# run queue: keep manifest.json and results.jsonl; the rest is per-machine or derivable
+data/runs/*/logs/
+data/runs/*/code/
+data/runs/*/status.json
+data/runs/*/console.log
+data/runs/*/queue.pid
+data/runs/*/STOP
+data/runs/*/results.csv
+data/runs/*/*.tmp
+data/enumeration/*/level_*.npz
+.venv-pysr/
+paper/export/
+
+# public release: no Markdown files
+*.md

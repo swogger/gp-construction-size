@@ -1,0 +1,32 @@
+[
+ {
+  "target_id": "F2-LDE0_calc_x+y",
+  "function": "x+y",
+  "expression": "lde(lde(x, lde(lde(lde(x, lde(lde(x, lde(x, y)), 0)), x), 0)), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.1363636363636365,
+  "target_scale": 5.818181818181817
+ },
+ {
+  "target_id": "F2-LDE0_calc_x/y",
+  "function": "x/y",
+  "expression": "lde(lde(x, lde(lde(x, x), 0)), lde(y, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.02272221941527075,
+  "target_scale": 1.3913043478260871
+ },
+ {
+  "target_id": "F2-LDE0_calc_log_x(y)",
+  "function": "log_x(y)",
+  "expression": "lde(y, lde(lde(x, 0), 0))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.028512177034931193,
+  "target_scale": 1.447725271227814
+ }
+]

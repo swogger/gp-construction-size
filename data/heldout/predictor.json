@@ -1,0 +1,11 @@
+{
+ "model": "M4 K + nvar + nb_good",
+ "formula": "K + nvar + nb_good",
+ "params": {
+  "Intercept": 5.309779195158605,
+  "K": -0.4524621801516882,
+  "nvar": -1.9829216989211684,
+  "nb_good": 2.6779984162917145
+ },
+ "training_runs": 9680
+}

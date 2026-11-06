@@ -1,0 +1,18 @@
+{
+ "full_gp": {
+  "flipped": 14,
+  "misses_without_stored_tree": 1
+ },
+ "full_es": {
+  "flipped": 10,
+  "misses_without_stored_tree": 105
+ },
+ "full_budget": {
+  "flipped": 7,
+  "misses_without_stored_tree": 36
+ },
+ "full_budget64": {
+  "flipped": 0,
+  "misses_without_stored_tree": 4
+ }
+}

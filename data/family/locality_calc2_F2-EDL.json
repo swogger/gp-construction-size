@@ -1,0 +1,34 @@
+[
+ {
+  "target_id": "F2-EDL_calc_x/y",
+  "K": 11,
+  "depth": 5,
+  "d_min": Infinity,
+  "n_near_6": 0,
+  "n_near_4": 0,
+  "n_near_2": 0,
+  "sub_viable": 1.0,
+  "dyn_range": 0.28684428460462624,
+  "nb_n": 24,
+  "nb_nonfinite": 0.0,
+  "nb_med": 1.7094065489937438,
+  "nb_good": 0.08333333333333333,
+  "nb_best": -2.4218683193323374
+ },
+ {
+  "target_id": "F2-EDL_calc_log_x(y)",
+  "K": 15,
+  "depth": 6,
+  "d_min": Infinity,
+  "n_near_6": 0,
+  "n_near_4": 0,
+  "n_near_2": 0,
+  "sub_viable": 1.0,
+  "dyn_range": 0.32137231086335155,
+  "nb_n": 34,
+  "nb_nonfinite": 0.0,
+  "nb_med": 1.4235909109369773,
+  "nb_good": 0.058823529411764705,
+  "nb_best": -2.7287560296492526
+ }
+]

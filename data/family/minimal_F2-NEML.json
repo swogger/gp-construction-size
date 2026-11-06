@@ -1,0 +1,26 @@
+{
+ "grammar": "F2-NEML",
+ "ceiling": 17,
+ "table": {
+  "x+y": null,
+  "x-y": {
+   "K": 11,
+   "expr": "neml(neml(x, neml(neml(x, x), -inf)), neml(y, -inf))",
+   "verified": true
+  },
+  "x*y": null,
+  "x/y": {
+   "K": 13,
+   "expr": "neml(x, neml(neml(x, neml(x, neml(neml(y, -inf), -inf))), -inf))",
+   "verified": true
+  },
+  "x^y": null,
+  "log_x(y)": {
+   "K": 17,
+   "expr": "neml(x, neml(neml(x, neml(neml(y, -inf), neml(neml(neml(x, -inf), -inf), -inf))), -inf))",
+   "verified": true
+  },
+  "(x+y)/2": null,
+  "sqrt(x^2+y^2)": null
+ }
+}

@@ -1,0 +1,836 @@
+diff --git a/src/reach/analysis/family_locality.py b/src/reach/analysis/family_locality.py
+new file mode 100644
+index 0000000..247c699
+--- /dev/null
++++ b/src/reach/analysis/family_locality.py
+@@ -0,0 +1,95 @@
++"""EXPLORATORY (after the confirmatory runs, D026): do enumeration-only target properties explain the operator
++differences under the (1+4)-ES, where node reach is not invariant (H5 not supported), and do they matter for GP?
++
++Metrics per confirmatory target (`targets_conf`) from `reach.family_metrics.target_metrics` without the
++near-duplicate scan (those targets passed the near-duplicate filter): locality (one-edit neighbours),
++sub_viable, dyn_range. Cached in data/family/locality_conf_<op>.json. Outcome: exact recovery at E0; error
++runs count as failures, as in the registered analysis. -> docs/results/eml_family_locality_exploratory.md
++"""
++import json
++
++import numpy as np
++import pandas as pd
++from scipy.stats import chi2
++
++from reach import grammar as G
++from reach.analysis.family_predictors import auc, fit
++from reach.family import FAMILY
++from reach.family_metrics import target_metrics
++from reach.paths import ROOT
++
++LOC = "nb_med + nb_nonfinite + nb_good + sub_viable + dyn_range"
++
++
++def metrics(g):
++    path = ROOT / f"data/family/locality_conf_{g}.json"
++    if not path.exists():
++        gr = G.get(g)
++        ts = json.loads((ROOT / f"data/targets/{g}/targets_conf.json").read_text())
++        out = [dict(target_id=t["target_id"], **target_metrics(gr, G.parse_expr(t["expression"], gr), t["var_target"], {}))
++               for t in ts]
++        path.write_text(json.dumps(out, indent=1))
++    return pd.DataFrame(json.loads(path.read_text())).assign(op=g)
++
++
++def runs(phase, exp):
++    rows = [json.loads(l) for l in open(ROOT / f"data/runs/{phase}/results.jsonl")]
++    return pd.DataFrame([dict(target_id=r["target_id"], exact=int(r.get("exact_hash_match") == "true"))
++                         for r in rows if r.get("exp") == exp])
++
++
++def logo(d, formula):
++    rows, ll = [], []
++    for g in FAMILY:
++        tr, te = d[d.op != g], d[d.op == g]
++        m = fit(formula, tr, "exact")
++        p = np.clip(m.predict(te), 1e-9, 1 - 1e-9)
++        ll.append(float(-np.mean(te.exact * np.log(p) + (1 - te.exact) * np.log(1 - p))))
++        rows.append((g, te.exact.mean(), p.mean()))
++    return float(np.mean(ll)), rows
++
++
++def main():
++    pred = pd.concat([metrics(g) for g in FAMILY])
++    L = ["# EXPLORATORY: what explains operator differences under the ES (and under GP)?", "",
++         "Not pre-registered; run after the confirmatory phases. Targets: `targets_conf`. Outcome: exact recovery at E₀ "
++         "(error runs = failures). Logistic models, cluster-robust SEs by target. Locality = fitness of one-edit "
++         "neighbours: `nb_med` median log₁₀ nMSE, `nb_nonfinite` share non-finite, `nb_good` share within nMSE ≤ 10⁻²; "
++         "plus `sub_viable`, `dyn_range` (see `reach.family_metrics`).", ""]
++    for name, phase, exp, kmax in (("GP", "full_gp", "conf", 19), ("ES", "full_es", "es", 15)):
++        d = runs(phase, exp).merge(pred, on="target_id")
++        d = d[d.K <= kmax]
++        t = d.drop_duplicates("target_id")
++        L += [f"## {name} ({len(d)} runs, {t.target_id.nunique()} targets, K ≤ {kmax})", "",
++              "| Operator | exact rate | median nb_med | mean nb_nonfinite | mean nb_good | mean sub_viable | median dyn_range |",
++              "|---|---|---|---|---|---|---|"]
++        for g in FAMILY:
++            x, tx = d[d.op == g], t[t.op == g]
++            L.append(f"| {g} | {x.exact.mean():.2f} | {tx.nb_med.median():.2f} | {tx.nb_nonfinite.mean():.2f} | "
++                     f"{tx.nb_good.mean():.3f} | {tx.sub_viable.mean():.2f} | {tx.dyn_range.median():.2f} |")
++        specs = {"size": "K", "size + operator": "K + C(op)", "size + locality": f"K + {LOC}",
++                 "size + locality + operator": f"K + {LOC} + C(op)"}
++        fits = {k: fit(v, d, "exact") for k, v in specs.items()}
++        L += ["", "| Model | AIC | AUC | operator LR χ² (df 6), p | coefficients (cluster-robust z) |", "|---|---|---|---|---|"]
++        for k, m in fits.items():
++            base = {"size + operator": "size", "size + locality + operator": "size + locality"}.get(k)
++            lr = ""
++            if base:
++                s = 2 * (m.llf - fits[base].llf)
++                lr = f"{s:.1f}, p = {chi2.sf(s, 6):.2g}"
++            co = ", ".join(f"{n} {m.params[n]:+.2f} (z {m.tvalues[n]:+.1f})" for n in m.params.index
++                           if not n.startswith("C(") and n != "Intercept")
++            L.append(f"| {k} | {m.aic:.0f} | {auc(d.exact, m.predict(d)):.3f} | {lr} | {co} |")
++        L += ["", "Leave-one-operator-out: held-out log-loss; observed → predicted exact rate per held-out operator.", "",
++              "| Model | log-loss | per operator |", "|---|---|---|"]
++        for k in ("size", "size + locality"):
++            ll, rows = logo(d, specs[k])
++            L.append(f"| {k} | {ll:.4f} | " + ", ".join(f"{g[2:]} {o:.2f}→{p:.2f}" for g, o, p in rows) + " |")
++        L.append("")
++    out = ROOT / "docs/results/eml_family_locality_exploratory.md"
++    out.write_text("\n".join(L) + "\n")
++    print(f"-> {out}")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/reach/analysis/heldout_analysis.py b/src/reach/analysis/heldout_analysis.py
+new file mode 100644
+index 0000000..7db50ae
+--- /dev/null
++++ b/src/reach/analysis/heldout_analysis.py
+@@ -0,0 +1,134 @@
++"""Confirmatory analysis of the held-out extension (OSF addendum; D027). Written before any held-out search run.
++
++H6  prediction: the frozen corrected predictor (data/heldout/predictor.json; per-target predictions in
++    data/heldout/predictions.json) predicts exact recovery in every held-out GP run at E0 (random and calculator
++    targets, one and two variables): AUC >= 0.85 AND calibration slope in [0.7, 1.3] (slope of a logistic
++    regression of the outcome on the predicted logit) -- the bar H3 did not meet.
++H7  node invariance replicates: each held-out grammar's K50 (random targets, E0) lies within +-1.5 nodes of the
++    frozen six-operator K50 from full_gp, 12.41 (90% target-bootstrap CI of the difference inside +-1.5).
++H8  GP without crossover (regime B, `nox_gp`; same targets and seeds as full_gp's scout runs): each of the six
++    non-EDL operators' K50 lies within +-1.5 nodes of the pooled six (90% target-bootstrap CI inside the margin),
++    the H1 test applied to GP without crossover. Reported with the operator spread (max - min K50) for GP with
++    and without crossover.
++Outcomes use the corrected exact-match hash (signed-zero fix, 2026-10-15). Error runs count as failures; B = 2000 bootstrap replicates; RNG seed 20261115; a CI needs >= 90% estimable
++replicates, otherwise the hypothesis is not supported.
++
++    .venv/bin/python -m reach.analysis.heldout_analysis
++"""
++import json
++import math
++from collections import defaultdict
++
++import numpy as np
++
++from reach.analysis.k50 import logit
++from reach.paths import ROOT
++from reach.runner.phases import HELDOUT
++from reach.runner.queue import Phase
++
++B, POOLED_SIX, RNG = 2000, 12.41, np.random.default_rng(20261115)
++
++
++def rows(phase, exps):
++    ph = Phase(phase)
++    if not ph.manifest_path.exists():
++        return []
++    return [dict(g=r["grammar"].replace("S2-", "S-"), tid=r["target_id"], K=float(r["K"]),
++                 y=float(r.get("exact_hash_match") == "true")) for r in ph.results().values() if r.get("exp") in exps]
++
++
++def k50(K, y):
++    K, y = np.asarray(K, float), np.asarray(y, float)
++    if len(y) == 0 or y.min() == y.max() or K.min() == K.max():
++        return float("nan")
++    try:
++        b = logit(K, y)
++    except np.linalg.LinAlgError:
++        return float("nan")
++    return float(-b[0] / b[1]) if b[1] < 0 else float("nan")
++
++
++def ci(vals, conf):
++    v = np.array([x for x in vals if not math.isnan(x)])
++    if len(v) < 0.9 * B:
++        return float("nan"), float("nan")
++    a = (1 - conf) / 2
++    return float(np.quantile(v, a)), float(np.quantile(v, 1 - a))
++
++
++def clusters(rs):
++    by = defaultdict(lambda: defaultdict(list))
++    for r in rs:
++        by[r["g"]][r["tid"]].append((r["K"], r["y"]))
++    return {g: list(t.values()) for g, t in by.items()}
++
++
++def k50_of(ts):
++    return k50([k for t in ts for k, _ in t], [v for t in ts for _, v in t])
++
++
++def auc(y, p):
++    o = np.argsort(p); y = np.asarray(y)[o]; n1 = y.sum(); n0 = len(y) - n1
++    return float((np.arange(1, len(y) + 1)[y == 1].sum() - n1 * (n1 + 1) / 2) / (n1 * n0)) if n1 and n0 else float("nan")
++
++
++def main():
++    L = ["# Held-out extension: confirmatory results (OSF addendum)", "",
++         "Analysis: `reach.analysis.heldout_analysis` (registered). Held-out grammars: "
++         + ", ".join(f"S-{h}" for h in HELDOUT) + ". Exact recovery; error runs = failures.", ""]
++    verdict = {}
++    pred = json.loads((ROOT / "data/heldout/predictions.json").read_text())
++    gp = rows("heldout_gp", {"conf", "calc", "calc2"})
++    if gp:
++        y = np.array([r["y"] for r in gp]); p = np.array([pred[r["tid"]]["p"] for r in gp])
++        lp = np.log(np.clip(p, 1e-9, 1 - 1e-9) / np.clip(1 - p, 1e-9, 1))
++        try:
++            cal = logit(lp, y)[1]
++        except np.linalg.LinAlgError:
++            cal = float("nan")
++        A = auc(y, p)
++        verdict["H6"] = A >= 0.85 and 0.7 <= cal <= 1.3
++        L += ["## H6 prediction on held-out grammars", "",
++              f"{len(gp)} runs on {len({r['tid'] for r in gp})} targets. **AUC = {A:.3f}, calibration slope = {cal:.2f}. "
++              f"H6: {'SUPPORTED' if verdict['H6'] else 'NOT supported'}.** Mean observed {y.mean():.3f}, mean predicted {p.mean():.3f}.", "",
++              "| Grammar | runs | observed | predicted |", "|---|---|---|---|"]
++        for h in HELDOUT:
++            m = np.array([r["g"] == f"S-{h}" for r in gp])
++            L.append(f"| S-{h} | {m.sum()} | {y[m].mean():.3f} | {p[m].mean():.3f} |")
++        L.append("")
++        # H7
++        cl = clusters([r for r in gp if r["tid"] in pred and pred[r["tid"]]["target_set"] == "targets_conf"])
++        point = {g: k50_of(ts) for g, ts in cl.items()}
++        reps = [{g: k50_of([ts[i] for i in RNG.integers(0, len(ts), len(ts))]) for g, ts in cl.items()} for _ in range(B)]
++        ok7 = len(cl) == len(HELDOUT)
++        L += ["## H7 node invariance on held-out grammars (margin ±1.5 around the frozen 12.41, 90% CI)", "",
++              "| Grammar | K50 | difference | 90% CI | within ±1.5 |", "|---|---|---|---|---|"]
++        for g in sorted(cl):
++            lo, hi = ci([r[g] - POOLED_SIX for r in reps], 0.90)
++            ok = (not math.isnan(lo)) and -1.5 < lo and hi < 1.5
++            ok7 &= ok
++            L.append(f"| {g} | {point[g]:.2f} | {point[g] - POOLED_SIX:+.2f} | [{lo:+.2f}, {hi:+.2f}] | {'yes' if ok else 'NO'} |")
++        verdict["H7"] = ok7
++        L += ["", f"**H7: {'SUPPORTED' if ok7 else 'NOT supported'}.**", ""]
++    nox = [dict(op=r["g"], tid=r["tid"], K=r["K"], y=r["y"]) for r in rows("nox_gp", {"confB"})]
++    if nox:
++        from reach.analysis import family_full as F
++        F.RNG = np.random.default_rng(20261115)
++        point, reps = F.k50_boot(nox, F.FAMILY)
++        ok8, tab = F.equivalence(point, reps, 1.5)
++        verdict["H8"] = ok8
++        six = [point[g] for g in F.SIX]
++        L += ["## H8 GP without crossover (regime B, E0; margin ±1.5 around the pooled six, 90% CI)", "",
++              f"Pooled six K50 = {point['SIX']:.2f}; EDL K50 = {point['F-EDL']:.2f}; spread of the six (max − min) = "
++              f"{max(six) - min(six):.2f} nodes.", "",
++              "| Operator | K50 | difference | 90% CI | within ±1.5 |", "|---|---|---|---|---|"]
++        L += [f"| {g} | {k:.2f} | {d:+.2f} | [{lo:+.2f}, {hi:+.2f}] | {'yes' if p else 'NO'} |" for g, k, d, lo, hi, p in tab]
++        L += ["", f"**H8: {'SUPPORTED' if ok8 else 'NOT supported'}.**", ""]
++    L += ["## Verdicts", "", " · ".join(f"{k}: {'supported' if v else 'not supported'}" for k, v in verdict.items()), ""]
++    out = ROOT / "docs/results/heldout_report.md"
++    out.write_text("\n".join(L) + "\n")
++    print(f"-> {out}; " + ", ".join(f"{k} {v}" for k, v in verdict.items()))
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/reach/analysis/heldout_predictions.py b/src/reach/analysis/heldout_predictions.py
+new file mode 100644
+index 0000000..230ec2b
+--- /dev/null
++++ b/src/reach/analysis/heldout_predictions.py
+@@ -0,0 +1,38 @@
++"""Held-out extension A4 (D027): per-target predictions of the frozen corrected predictor for every held-out
++target, written BEFORE any held-out search run -> data/heldout/predictions.json (checksum goes into the
++OSF addendum)."""
++import json
++import math
++
++from reach import grammar as G
++from reach.family_metrics import target_metrics
++from reach.paths import ROOT
++from reach.runner.phases import HELDOUT
++
++
++def target_sets(h):
++    for g, tname in ((f"S-{h}", "targets_conf"), (f"S-{h}", "calc"), (f"S2-{h}", "calc2")):
++        p = ROOT / f"data/targets/{g}/{tname}.json"
++        if p.exists():
++            yield g, tname, json.loads(p.read_text())
++
++
++def main():
++    pred = json.loads((ROOT / "data/heldout/predictor.json").read_text())
++    b = pred["params"]
++    out = {}
++    for h in HELDOUT:
++        for g, tname, ts in target_sets(h):
++            gr = G.get(g)
++            for t in ts:
++                m = target_metrics(gr, G.parse_expr(t["expression"], gr), t["var_target"], {})
++                x = dict(K=t["K_construction"], nvar=int(g.startswith("S2-")), calc=int(tname != "targets_conf"),
++                         nb_good=m["nb_good"])
++                eta = b["Intercept"] + sum(b[k] * x[k] for k in b if k != "Intercept")
++                out[t["target_id"]] = dict(grammar=g, target_set=tname, **x, p=1 / (1 + math.exp(-eta)))
++    (ROOT / "data/heldout/predictions.json").write_text(json.dumps(out, indent=1, sort_keys=True))
++    print(f"{len(out)} predictions; model {pred['model']}")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/reach/analysis/heldout_predictor.py b/src/reach/analysis/heldout_predictor.py
+new file mode 100644
+index 0000000..cb3e71e
+--- /dev/null
++++ b/src/reach/analysis/heldout_predictor.py
+@@ -0,0 +1,99 @@
++"""Held-out extension A4 (D027): choose and freeze the corrected predictor of exact recovery, using the
++confirmatory `full_gp` data only (all runs: random targets, one- and two-variable calculator targets).
++
++Candidate models use enumeration-only features: K (minimal size), nvar (1 = two variables), calc (1 = a
++calculator function rather than a random minimal target) and nb_good (share of one-edit neighbours within
++nMSE <= 1e-2). Selection rule, fixed in advance: smallest leave-one-operator-out log-loss (an operator's
++one- and two-variable grammars held out together). The chosen model is refitted on all data and frozen
++in data/heldout/predictor.json. -> docs/results/heldout_predictor_selection.md
++"""
++import json
++
++import numpy as np
++import pandas as pd
++import statsmodels.api as sm
++import statsmodels.formula.api as smf
++
++from reach import grammar as G
++from reach.family import FAMILY
++from reach.family_metrics import target_metrics
++from reach.paths import ROOT
++from reach.runner.queue import Phase
++
++MODELS = {"M0 K (registered H3 form)": "K", "M1 K + nvar": "K + nvar", "M2 K + nvar + calc": "K + nvar + calc",
++          "M3 K * calc + nvar": "K * calc + nvar", "M4 K + nvar + nb_good": "K + nvar + nb_good",
++          "M5 K * calc + nvar + nb_good": "K * calc + nvar + nb_good"}
++
++
++def locality(g, tname):
++    path = ROOT / f"data/family/locality_{tname}_{g}.json"
++    if not path.exists():
++        gr = G.get(g)
++        ts = json.loads((ROOT / f"data/targets/{g}/{tname}.json").read_text())
++        path.write_text(json.dumps([dict(target_id=t["target_id"], **target_metrics(
++            gr, G.parse_expr(t["expression"], gr), t["var_target"], {})) for t in ts], indent=1))
++    return {r["target_id"]: r for r in json.loads(path.read_text())}
++
++
++def load(phase="full_gp"):
++    """Training rows; outcomes corrected for the signed-zero hash bug (data/rescored/<phase>.json)."""
++    flips = set(json.loads((ROOT / f"data/rescored/{phase}.json").read_text()))
++    loc = {}
++    for g in FAMILY:
++        loc.update(locality(g, "conf")); loc.update(locality(g, "calc")); loc.update(locality("F2" + g[1:], "calc2"))
++    rows = []
++    for k, r in Phase(phase).results().items():
++        rows.append(dict(op=r["grammar"].replace("F2-", "F-"), tid=r["target_id"], K=float(r["K"]),
++                         nvar=int(r["grammar"].startswith("F2-")), calc=int(r["exp"] in ("calc", "calc2")),
++                         nb_good=loc[r["target_id"]]["nb_good"],
++                         exact=int(r.get("exact_hash_match") == "true" or k in flips)))
++    return pd.DataFrame(rows)
++
++
++def fit(formula, d):
++    return smf.glm(f"exact ~ {formula}", d, family=sm.families.Binomial()).fit()
++
++
++def scores(y, p):
++    p = np.clip(np.asarray(p), 1e-9, 1 - 1e-9); y = np.asarray(y)
++    ll = float(-np.mean(y * np.log(p) + (1 - y) * np.log(1 - p)))
++    o = np.argsort(p); ys = y[o]; n1 = ys.sum(); n0 = len(ys) - n1
++    auc = float((np.arange(1, len(ys) + 1)[ys == 1].sum() - n1 * (n1 + 1) / 2) / (n1 * n0))
++    lp = np.log(p / (1 - p))
++    cal = sm.GLM(y, sm.add_constant(lp), family=sm.families.Binomial()).fit().params
++    return ll, auc, float(cal[1]), float(cal[0])
++
++
++def main():
++    d = load()
++    L = ["# Held-out extension: choice of the corrected predictor (A4, D027)", "",
++         f"Training data: `full_gp` (outcomes corrected for the signed-zero hash bug), {len(d)} runs on {d.tid.nunique()} targets (7 operators; random targets, one- and "
++         "two-variable calculator functions). Selection rule fixed in advance: smallest leave-one-operator-out (LOGO) "
++         "log-loss. LOGO AUC and calibration (slope, intercept) are pooled over the held-out predictions.", "",
++         "| Model | LOGO log-loss | LOGO AUC | LOGO calibration slope | LOGO intercept | in-sample AIC |", "|---|---|---|---|---|---|"]
++    best = None
++    for name, f in MODELS.items():
++        pred = pd.Series(index=d.index, dtype=float)
++        for g in FAMILY:
++            te = d.op == g
++            pred[te] = fit(f, d[~te]).predict(d[te])
++        ll, auc, slope, icpt = scores(d.exact, pred)
++        L.append(f"| {name} | {ll:.4f} | {auc:.3f} | {slope:.2f} | {icpt:+.2f} | {fit(f, d).aic:.0f} |")
++        if best is None or ll < best[1]:
++            best = (name, ll)
++    name = best[0]
++    m = fit(MODELS[name], d)
++    L += ["", f"**Chosen: {name}** (`exact ~ {MODELS[name]}`), refitted on all training runs:", "",
++          "| Term | Coefficient | SE |", "|---|---|---|"]
++    L += [f"| {k} | {v:+.4f} | {m.bse[k]:.4f} |" for k, v in m.params.items()]
++    out = ROOT / "data/heldout"
++    out.mkdir(parents=True, exist_ok=True)
++    (out / "predictor.json").write_text(json.dumps(dict(model=name, formula=MODELS[name],
++                                                         params={k: float(v) for k, v in m.params.items()},
++                                                         training_runs=len(d)), indent=1))
++    (ROOT / "docs/results/heldout_predictor_selection.md").write_text("\n".join(L) + "\n")
++    print("\n".join(L))
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/reach/analysis/rescore.py b/src/reach/analysis/rescore.py
+new file mode 100644
+index 0000000..0c8d91f
+--- /dev/null
++++ b/src/reach/analysis/rescore.py
+@@ -0,0 +1,71 @@
++"""Correction for the signed-zero exact-match bug (review 2026-10-15; deviations log).
++
++The run-level exact check hashed -0.0 and +0.0 imaginary parts differently, so some final trees identical to the
++target on the grid were scored "not exact". This script re-scores every non-error run of the confirmatory phases
++from its stored final tree with the corrected hash (a correction can only turn a miss into a match), writes the
++flips to data/rescored/<phase>.json, and reruns the registered analysis `reach.analysis.family_full` unchanged
++(same code, same RNG) on the corrected outcomes -> docs/results/eml_family_full_report_rescored.md.
++
++    .venv/bin/python -m reach.analysis.rescore
++"""
++import json
++import sys
++
++from reach import grammar as G
++from reach.analysis import family_full
++from reach.paths import ROOT
++from reach.runner.queue import Phase
++
++PHASES = ("full_gp", "full_es", "full_budget", "full_budget64")
++
++
++def rescore(phase):
++    man = {t["key"]: t for t in json.loads((ROOT / f"data/runs/{phase}/manifest.json").read_text())["tasks"]}
++    cache, flips, n_noexpr = {}, [], 0
++    for k, r in Phase(phase).results().items():
++        if r["terminal_state"] == "error" or r.get("exact_hash_match") == "true":
++            continue
++        if not r.get("best_expr"):
++            n_noexpr += 1
++            continue
++        argv = man[k]["argv"]
++        path = argv[argv.index("--targets") + 1]
++        if path not in cache:
++            cache[path] = {t["target_id"]: t for t in json.loads((ROOT / path).read_text())}
++        t, g = cache[path][r["target_id"]], G.get(r["grammar"])
++        xs = G.sample_grid(g)
++        tv = G.evaluate(g, G.parse_expr(t["expression"], g), xs)
++        bv = G.evaluate(g, G.parse_expr(r["best_expr"], g), xs)
++        if G.scaled_func_hash(bv, t["target_scale"]) == G.scaled_func_hash(tv, t["target_scale"]):
++            flips.append(k)
++    return flips, n_noexpr
++
++
++class RescoredPhase(Phase):
++    flips = {}
++
++    def results(self):
++        res = super().results()
++        for k in self.flips.get(self.name, ()):
++            res[k] = dict(res[k], exact_hash_match="true")
++        return res
++
++
++def main():
++    out = ROOT / "data/rescored"
++    out.mkdir(exist_ok=True)
++    summary = {}
++    for ph in PHASES:
++        flips, n_noexpr = rescore(ph)
++        (out / f"{ph}.json").write_text(json.dumps(sorted(flips), indent=1))
++        RescoredPhase.flips[ph] = set(flips)
++        summary[ph] = dict(flipped=len(flips), misses_without_stored_tree=n_noexpr)
++        print(ph, summary[ph], flush=True)
++    (out / "summary.json").write_text(json.dumps(summary, indent=1))
++    family_full.Phase = RescoredPhase
++    sys.argv = ["family_full", "--out", "docs/results/eml_family_full_report_rescored.md"]
++    family_full.main()
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/reach/engines/treegp.py b/src/reach/engines/treegp.py
+index 38379fa..bb228fb 100644
+--- a/src/reach/engines/treegp.py
++++ b/src/reach/engines/treegp.py
+@@ -103,6 +103,8 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
+                 best_val, best_tree, stagnant = gen_val, scores[0][0], 0
+             else:
+                 stagnant += 1
++                if best_tree is None:   # every validation error so far NaN/inf: the old code crashed here (D027 A3)
++                    best_tree = scores[0][0]
+             if best_val <= threshold:
+                 if gens_to_converge is None:
+                     gens_to_converge = gen
+diff --git a/src/reach/grammar.py b/src/reach/grammar.py
+index 0f4f5e9..5e5124b 100644
+--- a/src/reach/grammar.py
++++ b/src/reach/grammar.py
+@@ -111,6 +111,44 @@ FAMILY_OPS = {   # Odrzywolek, arXiv 2603.21852 eq. 4; arXiv 2609.11210 Table 1
+     "plm": Op("plm", 2, lambda a, b: fexp(-b * np.log(np.log(a)))),                     # (ln x)^(-y); 1
+ }
+ 
++
++# ---------------------------------------------------------------- held-out candidates (D027)
++def fmul(a, b):
++    r = a * b
++    fin = np.isfinite(a) & np.isfinite(b)
++    under = fin & (a != 0) & (b != 0) & (np.abs(r) < np.finfo(float).tiny)
++    return np.where((fin & ~np.isfinite(r)) | under, np.nan, r)
++
++
++# f(x, y) = A(x) o B(y): A, B in {x, e^x, ln x}, o in {+, -, *, /, ^}; named e.g. "esubx" = e^x - y
++_UN = {"x": lambda a: a, "e": fexp, "l": np.log}
++_BIN = {"add": lambda a, b: _guard(a + b, a, b), "sub": lambda a, b: _guard(a - b, a, b), "mul": fmul,
++        "div": fdiv, "pow": lambda a, b: fexp(fmul(b, np.log(a)))}
++CAND_CONSTS = {"1": 1.0, "0": 0.0, "m1": -1.0, "e": float(np.e)}
++CONST_NAMES = dict(CAND_CONSTS, minf=float("-inf"))   # minf only for positive controls (NEML)
++KNOWN_FORMS = {"esubl", "edivl", "lsube", "ldive"}     # eml, edl, neml, lde: already in the family
++
++
++def cand_forms():
++    return [f"{A}{o}{B}" for o in _BIN for A in _UN for B in _UN
++            if not (A == B == "x" or (o in ("add", "mul") and A > B) or f"{A}{o}{B}" in KNOWN_FORMS)]
++
++
++EXTRA_FORMS = {   # literature operators outside the A(x) o B(y) space (D027 fallback pool)
++    "cosacos": lambda a, b: _guard(np.cos(a) - np.arccos(b), np.cos(a), np.arccos(b)),   # Stachowiak: cos x - arccos y
++}
++
++
++def _cand(name):
++    """'S-<form>-<const>' (leaves x, c) or 'S2-<form>-<const>' (leaves x, y, c)."""
++    kind, form, c = name.split("-")
++    if form in EXTRA_FORMS:
++        op = Op(form, 2, EXTRA_FORMS[form])
++    else:
++        A, o, B = form[0], form[1:-1], form[-1]
++        op = Op(form, 2, lambda a, b: _BIN[o](_UN[A](a), _UN[B](b)))
++    return Grammar(name, "real", (op,), ("x",) if kind == "S" else ("x", "y"), (CONST_NAMES[c],))
++
+ # ---------------------------------------------------------------- Boolean operators
+ BOOL_OPS = {
+     "nand": Op("nand", 2, lambda m, a, b: m ^ (a & b)),
+@@ -170,6 +208,8 @@ for _n in (3, 4, 5):
+ 
+ 
+ def get(name):
++    if name not in GRAMMARS and name.split("-")[0] in ("S", "S2"):
++        GRAMMARS[name] = _cand(name)
+     return GRAMMARS[name]
+ 
+ 
+@@ -314,7 +354,9 @@ def scaled_func_hash(vec, scale, precision=HASH_PRECISION):
+     import hashlib
+     with np.errstate(all="ignore"):
+         v = np.asarray(vec, dtype=np.complex128) / scale
+-        r, i = np.round(v.real, precision), np.round(v.imag, precision)
++        # + 0.0 maps -0.0 to +0.0: without it, equal functions whose zero imaginary parts carried different
++        # signs hashed differently (false "not exact"; found in review 2026-10-15). The enumerator key already did this.
++        r, i = np.round(v.real, precision) + 0.0, np.round(v.imag, precision) + 0.0
+         r[~np.isfinite(r)] = np.nan
+         i[~np.isfinite(i)] = np.nan
+     return hashlib.sha1(r.tobytes() + i.tobytes()).hexdigest()
+diff --git a/src/reach/runner/phases.py b/src/reach/runner/phases.py
+index e8e250a..433cd6d 100644
+--- a/src/reach/runner/phases.py
++++ b/src/reach/runner/phases.py
+@@ -405,3 +405,97 @@ def full_pysr():
+     return [dict(key=g, cwd=".", argv=[".venv-pysr/bin/python", "-m", "reach.tasks.pysr_check", "--grammar", g],
+                  cpu_limit=6 * 3600, weight=30.0, meta=dict(grammar=g))
+             for g in ("F-EML", "F-EDL", "F-LDE0", "F-LDE1", "F-PLI", "F-PLM")]
++
++
++# ---------------------------------------------------------------- held-out extension (D027)
++@phase("screen_ops", "Held-out extension A1: universality screen of 30 candidate forms x 4 constants (D027).")
++def screen_ops():
++    from reach.grammar import CAND_CONSTS, cand_forms
++    return [dict(key=f"S-{f}-{c}", argv=["{python}", "-m", "reach.tasks.screen_op", "--form", f, "--const", c],
++                 cpu_limit=1800, meta=dict(grammar=f"S-{f}-{c}")) for f in cand_forms() for c in CAND_CONSTS]
++
++
++@phase("verify_fix", "Held-out extension A3: rerun 500 sampled non-error full_gp runs (must be bit-identical after the "
++       "generation-0 elitism fix) and every error run of full_gp and full_budget (exploratory EDL sensitivity).")
++def verify_fix():
++    import random
++    tasks = []
++    for ph in ("full_gp", "full_budget"):
++        man = json.loads((ROOT / f"data/runs/{ph}/manifest.json").read_text())["tasks"]
++        res = {json.loads(l)["key"]: json.loads(l) for l in open(ROOT / f"data/runs/{ph}/results.jsonl")}
++        err = [t for t in man if res[t["key"]]["terminal_state"] == "error"]
++        pick = err + (random.Random(20261015).sample([t for t in man if res[t["key"]]["terminal_state"] != "error"], 500)
++                      if ph == "full_gp" else [])
++        tasks += [dict(t, key=f"{ph}|{t['key']}", meta=dict(t["meta"], source=ph)) for t in pick]
++    return tasks
++
++
++@phase("screen_ops2", "Held-out extension A1 (amended): screen with K1 <= 21, K2 <= 17 and the x - y / x / y criterion; "
++       "the five known A(x) o B(y) universal operators included as positive controls (D027 amendment).")
++def screen_ops2():
++    from reach.grammar import CAND_CONSTS, cand_forms
++    ctrl = [("esubl", "1"), ("edivl", "e"), ("lsube", "minf"), ("ldive", "0"), ("ldive", "1")]
++    return [dict(key=f"S-{f}-{c}", argv=["{python}", "-m", "reach.tasks.screen_op", "--form", f, "--const", c,
++                                         "--k1", "21", "--k2", "17", "--max_gb", "6"],
++                 cpu_limit=3 * 3600, meta=dict(grammar=f"S-{f}-{c}", control=(f, c) in ctrl))
++            for f, c in ctrl + [(f, c) for f in cand_forms() for c in CAND_CONSTS]]
++
++
++@phase("screen_ops3", "Held-out extension A1 fallback pools (D027): Stachowiak's cos x - arccos y with the 4 constants, "
++       "and the four known A(x) o B(y) forms with the constants not yet studied; same screen as screen_ops2.")
++def screen_ops3():
++    from reach.grammar import CAND_CONSTS
++    used = {("esubl", "1"), ("edivl", "e"), ("lsube", "minf"), ("ldive", "0"), ("ldive", "1")}
++    pairs = [("cosacos", c) for c in CAND_CONSTS] + [(f, c) for f in ("esubl", "edivl", "lsube", "ldive")
++                                                       for c in CAND_CONSTS if (f, c) not in used]
++    return [dict(key=f"S-{f}-{c}", argv=["{python}", "-m", "reach.tasks.screen_op", "--form", f, "--const", c,
++                                         "--k1", "21", "--k2", "17", "--max_gb", "6"],
++                 cpu_limit=3 * 3600, meta=dict(grammar=f"S-{f}-{c}")) for f, c in pairs]
++
++
++HELDOUT = ["lsube-0", "esubl-e", "lsube-e", "lpowx-m1"]      # D027, chosen by the author after the screen
++
++
++@phase("enum_heldout", "Held-out extension A2: enumerate the 4 held-out grammars, one and two variables (8 GB cap, "
++       "as enum_family / enum_family2v). Run with --workers 2.")
++def enum_heldout():
++    return [dict(key=f"{p}-{h}", argv=["{python}", "-m", "reach.tasks.enumerate_task", "--grammar", f"{p}-{h}",
++                                       "--kmax", "40", "--max_gb", "8"], cpu_limit=3600, meta=dict(grammar=f"{p}-{h}"))
++            for h in HELDOUT for p in ("S", "S2")]
++
++
++@phase("heldout_prepare", "Held-out extension A2: minimal tables, calculator targets and random minimal targets "
++       "(fresh seed 20261115) for the held-out grammars.")
++def heldout_prepare():
++    return [dict(key=f"{p}-{h}", argv=["{python}", "-m", "reach.tasks.heldout_prepare", "--grammar", f"{p}-{h}"],
++                 cpu_limit=7200, meta=dict(grammar=f"{p}-{h}")) for h in HELDOUT for p in ("S", "S2")]
++
++
++HELD_SEEDS = slice(50, 80)           # fresh seeds for the held-out extension
++
++
++def _held_calc_sets(h):
++    out = [(f"S-{h}", "calc", t) for t in json.loads((ROOT / f"data/targets/S-{h}/calc.json").read_text())]
++    p2 = ROOT / f"data/targets/S2-{h}/calc2.json"
++    return out + ([(f"S2-{h}", "calc2", t) for t in json.loads(p2.read_text())] if p2.exists() else [])
++
++
++@phase("heldout_gp", "Held-out extension H6/H7 (confirmatory after the OSF addendum): GP-A at E0, stop on exact; "
++       "targets_conf x 5 seeds; calculator targets (one and two variables) x 30 seeds. Mirrors full_gp.")
++def heldout_gp():
++    from reach.seeds import SEEDS
++    s, x, tasks = SEEDS[HELD_SEEDS], ("--stop_on", "exact"), []
++    for h in HELDOUT:
++        tasks += [_gp_task("conf", f"S-{h}", t, "A", sd, 200, x, tname="targets_conf") for t in _conf(f"S-{h}") for sd in s[:5]]
++        tasks += [_gp_task(exp, g, t, "A", sd, 200, x, tname=exp) for g, exp, t in _held_calc_sets(h) for sd in s[:30]]
++    return tasks
++
++
++@phase("nox_gp", "Held-out extension H8 (confirmatory after the OSF addendum): GP without crossover (regime B: same "
++       "population, selection and budget; every offspring gets subtree mutation) at E0, stop on exact, on the same "
++       "targets_conf and seeds as full_gp's scout runs (paired with H1).")
++def nox_gp():
++    from reach.seeds import SEEDS
++    s, x = SEEDS[FULL_SEEDS], ("--stop_on", "exact")
++    return [_gp_task("confB", g, t, "B", sd, 200, x, tname="targets_conf") for g in _family() for t in _conf(g)
++            for sd in s[:5]]
+diff --git a/src/reach/tasks/heldout_prepare.py b/src/reach/tasks/heldout_prepare.py
+new file mode 100644
+index 0000000..9e638a6
+--- /dev/null
++++ b/src/reach/tasks/heldout_prepare.py
+@@ -0,0 +1,64 @@
++"""Held-out extension A2 (D027): prepare one held-out grammar, exactly as the confirmatory family grammars.
++One variable (S-*): minimal table, calculator targets (calc.json) and random minimal targets (targets_conf:
++sizes 3..19, uniform over minimal functions, dead-subtree and near-duplicate filters, up to 30 per size from
++a pool of 100; fresh seed). Two variables (S2-*): minimal table and calc2.json. Idempotent -> RESULT line."""
++import argparse
++import json
++
++from reach import grammar as G
++from reach.family import CONSTANTS, enum_dir, minimal_table
++from reach.family_metrics import load_values, near_duplicates
++from reach.paths import ROOT
++from reach.targets import _real_info, generate
++
++ap = argparse.ArgumentParser()
++ap.add_argument("--grammar", required=True)
++ap.add_argument("--n", type=int, default=30)
++ap.add_argument("--pool", type=int, default=100)
++ap.add_argument("--seed", type=int, default=20261115)
++a = ap.parse_args()
++g = G.get(a.grammar)
++outdir = ROOT / f"data/targets/{g.name}"
++outdir.mkdir(parents=True, exist_ok=True)
++
++mt = minimal_table(g.name)
++(ROOT / f"data/family/minimal_{g.name}.json").write_text(json.dumps(mt, indent=1))
++cname = "calc.json" if len(g.variables) == 1 else "calc2.json"
++if not (outdir / cname).exists():
++    calc = []
++    for fname, hit in mt["table"].items():
++        if hit is None or not hit["verified"] or fname in CONSTANTS:
++            continue
++        tree = G.parse_expr(hit["expr"], g)
++        info, _ = _real_info(g, tree)
++        if info is None:
++            continue
++        info.pop("vals")
++        calc.append(dict(target_id=f"{g.name}_calc_{fname}", function=fname, expression=hit["expr"],
++                         K_construction=hit["K"], K_proven=hit["K"], depth=G.tree_depth(tree), **info))
++    (outdir / cname).write_text(json.dumps(calc, indent=1))
++n_conf = 0
++if len(g.variables) == 1:
++    out = outdir / "targets_conf.json"
++    if not out.exists():
++        levels = [K for K in range(3, 20, 2) if K <= mt["ceiling"]]
++        pool, log = generate(g, enum_dir(g.name), levels, a.pool, seed=a.seed)
++        vals, xs, keep = load_values(g, 17), G.sample_grid(g), []
++        for K in levels:
++            got = rej = 0
++            for t in [t for t in pool if t["K_construction"] == K]:
++                if got == a.n:
++                    break
++                f = G.evaluate(g, G.parse_expr(t["expression"], g), xs)
++                if near_duplicates(vals, f, t["var_target"], K)[1][6] > 0:
++                    rej += 1
++                    continue
++                t["target_id"] = f"{g.name}_c_K{K:02d}_{got:02d}"
++                keep.append(t)
++                got += 1
++            log["levels"][K].update(near_duplicate_rejected=rej, kept=got)
++        out.write_text(json.dumps(keep, indent=1))
++        (outdir / "targets_conf_log.json").write_text(json.dumps(log, indent=1))
++    n_conf = len(json.loads(out.read_text()))
++print("RESULT " + json.dumps(dict(grammar=g.name, terminal_state="completed", ceiling=mt["ceiling"], conf=n_conf,
++                                  calc=len(json.loads((outdir / cname).read_text())))), flush=True)
+diff --git a/src/reach/tasks/pysr_check.py b/src/reach/tasks/pysr_check.py
+index 1cba65e..0e27e3c 100644
+--- a/src/reach/tasks/pysr_check.py
++++ b/src/reach/tasks/pysr_check.py
+@@ -25,6 +25,7 @@ ap = argparse.ArgumentParser()
+ ap.add_argument("--grammar", required=True)
+ ap.add_argument("--seeds", type=int, default=10)
+ ap.add_argument("--budgets", default="20000,320000")
++ap.add_argument("--fit_timeout", type=float, default=None)   # D027: completion runs cap each fit (seconds)
+ a = ap.parse_args()
+ op_def, op_sym, cval = OPS[a.grammar]
+ op_name = op_def.split("(")[0]
+@@ -60,7 +61,8 @@ with open(out_path, "a") as fh:
+                                       complexity_of_constants=100, should_optimize_constants=False, parsimony=0.0,
+                                       max_evals=budget, niterations=10 ** 7, populations=4, population_size=25,
+                                       deterministic=True, parallelism="serial", random_state=seed, precision=64,
+-                                      progress=False, verbosity=0, temp_equation_file=True)
++                                      progress=False, verbosity=0, temp_equation_file=True,
++                                      timeout_in_seconds=a.fit_timeout)
+                     exact, best, err = False, "", ""
+                     try:
+                         m.fit(X, y, variable_names=names)
+@@ -75,7 +77,7 @@ with open(out_path, "a") as fh:
+                         err = repr(e)[:200]
+                     rec = dict(grammar=a.grammar, target_set=tname, target_id=t["target_id"], function=t["function"],
+                                K=t["K_construction"], budget=budget, seed=seed, exact=exact, best=best, error=err,
+-                               wall_s=round(time.time() - t0, 2))
++                               wall_s=round(time.time() - t0, 2), fit_timeout=a.fit_timeout)
+                     fh.write(json.dumps(rec) + "\n"); fh.flush()
+                     n_runs += 1; n_exact += exact
+                     print(f"{t['target_id']} E={budget} seed={seed} exact={exact} {rec['wall_s']}s", flush=True)
+diff --git a/src/reach/tasks/screen_op.py b/src/reach/tasks/screen_op.py
+new file mode 100644
+index 0000000..f48a1b7
+--- /dev/null
++++ b/src/reach/tasks/screen_op.py
+@@ -0,0 +1,78 @@
++"""Universality screen for one held-out candidate (D027) -> data/screen/S-<form>-<const>.json + RESULT line.
++
++Sufficient condition (the reduction used for EML): the one-variable grammar builds e^x and ln x, and the
++two-variable grammar builds x - y or x / y (x - y = ln(e^x / e^y)), or x + y together with -x (D027 amendment). Minimal sizes by enumeration on the usual
++grids; every construction is re-verified on an extended real domain."""
++import argparse
++import json
++
++import numpy as np
++
++from reach import grammar as G
++from reach.enumerate import Enumerator
++from reach.paths import ROOT
++from reach.targets import load_structure
++
++ap = argparse.ArgumentParser()
++ap.add_argument("--form", required=True)
++ap.add_argument("--const", required=True)
++ap.add_argument("--k1", type=int, default=15)
++ap.add_argument("--k2", type=int, default=15)
++ap.add_argument("--max_gb", type=float, default=3.0)
++a = ap.parse_args()
++
++rng = np.random.default_rng(0)
++X_EXT = rng.uniform(0.5, 6.0, 60).astype(np.complex128)
++Y_EXT = rng.uniform(0.5, 6.0, 60).astype(np.complex128)
++
++
++def find(g, fns):
++    """{name: dict(K, expr, ext_ok) or None}, smallest K on the enumeration grid."""
++    d = ROOT / "data/enumeration" / g.name
++    e = Enumerator(g, d, log=lambda *_: None)
++    k_reached, state = e.run(a.k1 if len(g.variables) == 1 else a.k2, a.max_gb)
++    e = load_structure(g, d)
++    xs = G.sample_grid(g)
++    ext = X_EXT if len(g.variables) == 1 else {"x": X_EXT, "y": Y_EXT}
++    out = {}
++    for name, f in fns.items():
++        vec = f(xs) if len(g.variables) == 1 else f(xs["x"], xs["y"])
++        key = e._key(vec[None, :])[0]
++        out[name] = None
++        for k in sorted(e.keys):
++            idx = np.nonzero(e.keys[k] == key)[0]
++            if len(idx):
++                expr = e.expr(k, int(idx[0]))
++                t = G.parse_expr(expr, g)
++                want = f(ext) if len(g.variables) == 1 else f(ext["x"], ext["y"])
++                got = G.evaluate(g, t, ext)
++                fin = np.isfinite(got) & np.isfinite(want)
++                ok = bool(fin.mean() >= 0.9 and np.allclose(got[fin], want[fin], rtol=1e-8, atol=1e-10))
++                out[name] = dict(K=k, expr=expr, grid_ok=bool(np.allclose(G.evaluate(g, t, xs), vec, rtol=1e-9, atol=1e-12)),
++                                 ext_ok=ok, ext_finite=float(fin.mean()))
++                break
++    return out, dict(k_reached=k_reached, state=state)
++
++
++g1 = G.get(f"S-{a.form}-{a.const}")
++one, info1 = find(g1, {"exp(x)": np.exp, "ln(x)": np.log, "-x": lambda x: -x})
++good = lambda h: h is not None and h["grid_ok"] and h["ext_ok"]
++res = dict(form=a.form, const=a.const, one=one, enum1=info1, two=None, enum2=None)
++if good(one["exp(x)"]) and good(one["ln(x)"]):
++    two, info2 = find(G.get(f"S2-{a.form}-{a.const}"), {"x-y": lambda x, y: x - y, "x/y": lambda x, y: x / y,
++                                                               "x+y": lambda x, y: x + y})
++    res.update(two=two, enum2=info2)
++    routes = [two[f]["K"] for f in ("x-y", "x/y") if good(two[f])]
++    if good(two["x+y"]) and good(one["-x"]):
++        routes.append(two["x+y"]["K"] + one["-x"]["K"])
++    sub_ok = bool(routes)
++else:
++    sub_ok = False
++res["passed"] = bool(good(one["exp(x)"]) and good(one["ln(x)"]) and sub_ok)
++if res["passed"]:
++    res["score"] = one["exp(x)"]["K"] + one["ln(x)"]["K"] + min(routes)
++out = ROOT / "data/screen"
++out.mkdir(parents=True, exist_ok=True)
++(out / f"{g1.name}.json").write_text(json.dumps(res, indent=1))
++print("RESULT " + json.dumps(dict(grammar=g1.name, terminal_state="completed", passed=res["passed"],
++                                  score=res.get("score"))), flush=True)

@@ -1,0 +1,22 @@
+{
+ "form": "epowx",
+ "const": "0",
+ "one": {
+  "exp(x)": {
+   "K": 5,
+   "expr": "epowx(x, epowx(x, 0))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": null,
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

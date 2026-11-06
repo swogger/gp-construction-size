@@ -1,0 +1,233 @@
+{
+ "phase": "full_prepare",
+ "description": "Full study step 2: confirmatory targets (targets_conf) and two-variable tables + calc2.",
+ "created": "2026-10-13 11:55:48",
+ "git": "89c315e",
+ "n_tasks": 14,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F-EML"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EDL",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F-EDL"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-EDL"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-NEML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F-NEML"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-NEML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F-LDE0"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F-LDE1"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-LDE1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLI",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F-PLI"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-PLI"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-PLM",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F-PLM"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F-PLM"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F2-EML"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F2-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-EDL",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F2-EDL"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F2-EDL"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-NEML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F2-NEML"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F2-NEML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F2-LDE0"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F2-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-LDE1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F2-LDE1"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F2-LDE1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-PLI",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F2-PLI"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F2-PLI"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F2-PLM",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.full_prepare",
+    "--grammar",
+    "F2-PLM"
+   ],
+   "cpu_limit": 7200,
+   "meta": {
+    "grammar": "F2-PLM"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

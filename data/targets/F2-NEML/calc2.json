@@ -1,0 +1,22 @@
+[
+ {
+  "target_id": "F2-NEML_calc_x/y",
+  "function": "x/y",
+  "expression": "neml(x, neml(neml(x, neml(x, neml(neml(y, -inf), -inf))), -inf))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.022722219415270754,
+  "target_scale": 1.3913043478260871
+ },
+ {
+  "target_id": "F2-NEML_calc_log_x(y)",
+  "function": "log_x(y)",
+  "expression": "neml(x, neml(neml(x, neml(neml(y, -inf), neml(neml(neml(x, -inf), -inf), -inf))), -inf))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.028512177034931186,
+  "target_scale": 1.447725271227814
+ }
+]

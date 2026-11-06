@@ -1,0 +1,3134 @@
+{
+ "phase": "screen_ops2",
+ "description": "Held-out extension A1 (amended): screen with K1 <= 21, K2 <= 17 and the x - y / x / y criterion; the five known A(x) o B(y) universal operators included as positive controls (D027 amendment).",
+ "created": "2026-10-15 08:09:57",
+ "git": "25806a7",
+ "n_tasks": 125,
+ "tasks": [
+  {
+   "key": "S-esubl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esubl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esubl-1",
+    "control": true
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edivl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edivl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edivl-e",
+    "control": true
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsube-minf",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsube",
+    "--const",
+    "minf",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsube-minf",
+    "control": true
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldive-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldive",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldive-0",
+    "control": true
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldive-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldive",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldive-1",
+    "control": true
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eaddx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eaddx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eaddx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eaddx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eaddx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eaddx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eaddx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eaddx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eaddx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eaddx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eaddx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eaddx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eadde-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eadde",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eadde-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eadde-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eadde",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eadde-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eadde-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eadde",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eadde-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eadde-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eadde",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eadde-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eaddl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eaddl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eaddl-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eaddl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eaddl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eaddl-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eaddl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eaddl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eaddl-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-eaddl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "eaddl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-eaddl-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-laddx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "laddx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-laddx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-laddx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "laddx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-laddx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-laddx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "laddx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-laddx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-laddx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "laddx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-laddx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-laddl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "laddl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-laddl-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-laddl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "laddl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-laddl-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-laddl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "laddl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-laddl-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-laddl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "laddl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-laddl-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xsube-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xsube",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xsube-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xsube-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xsube",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xsube-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xsube-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xsube",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xsube-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xsube-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xsube",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xsube-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xsubl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xsubl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xsubl-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xsubl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xsubl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xsubl-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xsubl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xsubl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xsubl-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xsubl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xsubl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xsubl-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esubx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esubx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esubx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esubx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esubx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esubx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esubx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esubx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esubx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esubx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esubx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esubx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esube-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esube",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esube-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esube-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esube",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esube-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esube-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esube",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esube-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esube-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esube",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esube-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsubx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsubx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsubx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsubx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsubx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsubx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsubx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsubx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsubx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsubx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsubx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsubx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsubl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsubl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsubl-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsubl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsubl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsubl-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsubl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsubl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsubl-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsubl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsubl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsubl-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emulx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emulx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emulx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emulx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emulx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emulx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emulx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emulx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emulx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emulx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emulx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emulx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emule-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emule",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emule-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emule-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emule",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emule-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emule-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emule",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emule-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emule-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emule",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emule-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emull-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emull",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emull-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emull-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emull",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emull-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emull-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emull",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emull-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-emull-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "emull",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-emull-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lmulx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lmulx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lmulx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lmulx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lmulx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lmulx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lmulx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lmulx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lmulx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lmulx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lmulx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lmulx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lmull-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lmull",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lmull-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lmull-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lmull",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lmull-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lmull-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lmull",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lmull-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lmull-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lmull",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lmull-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xdive-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xdive",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xdive-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xdive-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xdive",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xdive-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xdive-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xdive",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xdive-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xdive-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xdive",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xdive-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xdivl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xdivl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xdivl-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xdivl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xdivl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xdivl-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xdivl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xdivl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xdivl-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xdivl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xdivl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xdivl-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edivx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edivx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edivx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edivx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edivx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edivx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edivx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edivx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edivx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edivx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edivx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edivx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edive-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edive",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edive-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edive-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edive",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edive-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edive-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edive",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edive-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edive-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edive",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edive-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldivx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldivx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldivx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldivx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldivx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldivx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldivx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldivx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldivx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldivx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldivx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldivx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldivl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldivl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldivl-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldivl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldivl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldivl-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldivl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldivl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldivl-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldivl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldivl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldivl-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xpowe-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xpowe",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xpowe-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xpowe-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xpowe",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xpowe-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xpowe-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xpowe",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xpowe-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xpowe-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xpowe",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xpowe-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xpowl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xpowl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xpowl-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xpowl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xpowl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xpowl-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xpowl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xpowl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xpowl-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-xpowl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "xpowl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-xpowl-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowe-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowe",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowe-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowe-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowe",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowe-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowe-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowe",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowe-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowe-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowe",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowe-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowl-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowl-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowl-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-epowl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "epowl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-epowl-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowx-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowx",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowx-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowx-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowx",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowx-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowx-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowx",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowx-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowx-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowx",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowx-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowe-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowe",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowe-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowe-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowe",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowe-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowe-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowe",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowe-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowe-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowe",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowe-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowl-1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowl-0",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowl-m1",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lpowl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lpowl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lpowl-e",
+    "control": false
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

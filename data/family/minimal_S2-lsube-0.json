@@ -1,0 +1,18 @@
+{
+ "grammar": "S2-lsube-0",
+ "ceiling": 17,
+ "table": {
+  "x+y": null,
+  "x-y": {
+   "K": 15,
+   "expr": "lsube(lsube(x, lsube(lsube(x, x), lsube(0, x))), lsube(y, lsube(0, x)))",
+   "verified": true
+  },
+  "x*y": null,
+  "x/y": null,
+  "x^y": null,
+  "log_x(y)": null,
+  "(x+y)/2": null,
+  "sqrt(x^2+y^2)": null
+ }
+}

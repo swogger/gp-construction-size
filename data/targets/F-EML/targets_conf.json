@@ -1,0 +1,2009 @@
+[
+ {
+  "expression": "eml(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 12.935998848502534,
+  "target_scale": 19.887651468491836,
+  "target_id": "F-EML_c_K03_00"
+ },
+ {
+  "expression": "eml(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 12.132399420784443,
+  "target_scale": 18.792344967958226,
+  "target_id": "F-EML_c_K03_01"
+ },
+ {
+  "expression": "eml(1, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.013314094935341478,
+  "target_scale": 2.020196366258517,
+  "target_id": "F-EML_c_K03_02"
+ },
+ {
+  "expression": "eml(1, eml(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K05_00"
+ },
+ {
+  "expression": "eml(x, eml(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 10.896148759065026,
+  "target_scale": 16.95420186413267,
+  "target_id": "F-EML_c_K05_01"
+ },
+ {
+  "expression": "eml(eml(1, x), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.686941844091526,
+  "target_scale": 6.84171988947142,
+  "target_id": "F-EML_c_K05_02"
+ },
+ {
+  "expression": "eml(1, eml(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.08899069055401884,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K05_03"
+ },
+ {
+  "expression": "eml(x, eml(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 10.978280534051486,
+  "target_scale": 16.897552458590845,
+  "target_id": "F-EML_c_K05_04"
+ },
+ {
+  "expression": "eml(x, eml(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 13.393148101982181,
+  "target_scale": 19.40339038159961,
+  "target_id": "F-EML_c_K05_05"
+ },
+ {
+  "expression": "eml(1, eml(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.0040575056696615245,
+  "target_scale": 2.234020741566821,
+  "target_id": "F-EML_c_K05_06"
+ },
+ {
+  "expression": "eml(eml(1, x), 1)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.5091769317007916,
+  "target_scale": 7.539805351671948,
+  "target_id": "F-EML_c_K05_07"
+ },
+ {
+  "expression": "eml(eml(1, 1), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.013314094935341502,
+  "target_scale": 14.456176779278735,
+  "target_id": "F-EML_c_K05_08"
+ },
+ {
+  "expression": "eml(x, eml(1, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 12.935998848502534,
+  "target_scale": 18.887651468491836,
+  "target_id": "F-EML_c_K05_09"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(1, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.935998848502534,
+  "target_scale": 19.34632661387892,
+  "target_id": "F-EML_c_K07_00"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), x), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 51653.71136504296,
+  "target_scale": 936.0977356645712,
+  "target_id": "F-EML_c_K07_01"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.10613022305324891,
+  "target_scale": 1.0043233495558084,
+  "target_id": "F-EML_c_K07_02"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(1, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.004057505669661537,
+  "target_scale": 14.67000115458704,
+  "target_id": "F-EML_c_K07_03"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 3.0990538622730206,
+  "target_scale": 8.710358933480622,
+  "target_id": "F-EML_c_K07_04"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.09414623320990771,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K07_05"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.1088491517954949,
+  "target_scale": 1.0221750649176862,
+  "target_id": "F-EML_c_K07_06"
+ },
+ {
+  "expression": "eml(x, eml(x, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 10.844166026959758,
+  "target_scale": 16.922203655753517,
+  "target_id": "F-EML_c_K07_07"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.024937581424795758,
+  "target_scale": 1.3388004215480294,
+  "target_id": "F-EML_c_K07_08"
+ },
+ {
+  "expression": "eml(x, eml(x, eml(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 10.693105329979039,
+  "target_scale": 17.060482681986404,
+  "target_id": "F-EML_c_K07_09"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.08168316831683166,
+  "target_scale": 13.144361251380253,
+  "target_id": "F-EML_c_K07_10"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 2.926030501890078,
+  "target_scale": 9.193961325654982,
+  "target_id": "F-EML_c_K07_11"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, 1), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 9.011000083283559e-09,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K07_12"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, 1), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.993420611089588,
+  "target_scale": 17.244391856493078,
+  "target_id": "F-EML_c_K07_13"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 14.083837841604359,
+  "target_scale": 18.50817006158082,
+  "target_id": "F-EML_c_K07_14"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.5091769317007916,
+  "target_scale": 6.539805351671948,
+  "target_id": "F-EML_c_K07_15"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.724070430667235,
+  "target_scale": 19.083848483390693,
+  "target_id": "F-EML_c_K07_16"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(x, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.9965577691376889,
+  "target_scale": 5.529904361572938,
+  "target_id": "F-EML_c_K07_17"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, 1)), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.13487291560144843,
+  "target_scale": 2.030700562827876,
+  "target_id": "F-EML_c_K07_18"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.42262159655053444,
+  "target_scale": 6.836610633964451,
+  "target_id": "F-EML_c_K07_19"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, 1)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.23270026474041963,
+  "target_scale": 1.332615100627348,
+  "target_id": "F-EML_c_K07_20"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 21.997227823368256,
+  "target_scale": 22.629849451120258,
+  "target_id": "F-EML_c_K07_21"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.013314094938636292,
+  "target_scale": 3814278.406674752,
+  "target_id": "F-EML_c_K07_22"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.28151125693902057,
+  "target_scale": 1.5421803326872094,
+  "target_id": "F-EML_c_K07_23"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.2858279196135328,
+  "target_scale": 9.337333710950595,
+  "target_id": "F-EML_c_K07_24"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, 1)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.013314094935341464,
+  "target_scale": 4.876856062560352,
+  "target_id": "F-EML_c_K07_25"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.013314094935341471,
+  "target_scale": 1.09530650053361,
+  "target_id": "F-EML_c_K07_26"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.1759649013655158,
+  "target_scale": 8.242027210416985,
+  "target_id": "F-EML_c_K07_27"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 13.7662264660913,
+  "target_scale": 18.2646761405664,
+  "target_id": "F-EML_c_K07_28"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, 1), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.935998848502528,
+  "target_scale": 17.16936964003279,
+  "target_id": "F-EML_c_K07_29"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(x, eml(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 1.0780127040542993,
+  "target_scale": 5.825846872768711,
+  "target_id": "F-EML_c_K09_00"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(1, x), x), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 19.438594946588502,
+  "target_scale": 15.914810663100262,
+  "target_id": "F-EML_c_K09_01"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, 1), eml(1, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 1.9135633354510482e-05,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K09_02"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(1, x)), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 48128.95729724563,
+  "target_scale": 931.3271705493688,
+  "target_id": "F-EML_c_K09_03"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, 1)), eml(1, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.13487291560144843,
+  "target_scale": 1.0307005628278758,
+  "target_id": "F-EML_c_K09_04"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), 1), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.01331409493534162,
+  "target_scale": 263.03604780732246,
+  "target_id": "F-EML_c_K09_05"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, 1)), eml(1, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.004057505669661524,
+  "target_scale": 5.090680437868656,
+  "target_id": "F-EML_c_K09_06"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(x, 1)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 3.2933712811848763,
+  "target_scale": 8.420668417469981,
+  "target_id": "F-EML_c_K09_07"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, 1)), 1), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 2.62913037242236,
+  "target_scale": 6.921336911339202,
+  "target_id": "F-EML_c_K09_08"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, 1), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.5091769317007915,
+  "target_scale": 4.821523523212903,
+  "target_id": "F-EML_c_K09_09"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(1, 1)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 13.111824524393125,
+  "target_scale": 18.388109893190038,
+  "target_id": "F-EML_c_K09_10"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(x, 1))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.43243347526547915,
+  "target_scale": 2.08114774502722,
+  "target_id": "F-EML_c_K09_11"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(x, eml(x, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.10045078656518966,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K09_12"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(1, 1))), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.196968287044713,
+  "target_scale": 2.344925075718893,
+  "target_id": "F-EML_c_K09_13"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(1, 1), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.13753202403105044,
+  "target_scale": 1.151447358968003,
+  "target_id": "F-EML_c_K09_14"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), eml(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.4897519434858206,
+  "target_scale": 2.1836928765888386,
+  "target_id": "F-EML_c_K09_15"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(x, eml(1, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 21.790617331678583,
+  "target_scale": 23.377687067771504,
+  "target_id": "F-EML_c_K09_16"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(x, eml(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.10477147024226059,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K09_17"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(x, x)), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 15.153830319048073,
+  "target_scale": 20.102819244391952,
+  "target_id": "F-EML_c_K09_18"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(1, x)), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 12.4869646063622,
+  "target_scale": 17.653630726925016,
+  "target_id": "F-EML_c_K09_19"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), x), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.1219098719873508,
+  "target_scale": 4.674771725073548,
+  "target_id": "F-EML_c_K09_20"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(x, eml(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 23.308755298381943,
+  "target_scale": 28.16304999571506,
+  "target_id": "F-EML_c_K09_21"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, eml(1, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.5091769317007915,
+  "target_scale": 6.99848049705903,
+  "target_id": "F-EML_c_K09_22"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(1, x), 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.12292163931242253,
+  "target_scale": 1.0240649819389878,
+  "target_id": "F-EML_c_K09_23"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), x)), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 7.411929914935767e-05,
+  "target_scale": 1.077908097921072,
+  "target_id": "F-EML_c_K09_24"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(x, eml(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 23.02456114534318,
+  "target_scale": 24.498896384792214,
+  "target_id": "F-EML_c_K09_25"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), x), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.3690404694691276,
+  "target_scale": 3.9766862628730197,
+  "target_id": "F-EML_c_K09_26"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), eml(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.08168316833093985,
+  "target_scale": 3814277.0948592243,
+  "target_id": "F-EML_c_K09_27"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, x), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.3094331097789812,
+  "target_scale": 5.616766205815538,
+  "target_id": "F-EML_c_K09_28"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(1, eml(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.08968588566604524,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K09_29"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(x, eml(1, eml(1, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 1.030062737249439,
+  "target_scale": 5.628499067460239,
+  "target_id": "F-EML_c_K11_00"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(1, 1)), 1), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 1.9273196138928218e-07,
+  "target_scale": 2.8540092582324896,
+  "target_id": "F-EML_c_K11_01"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, eml(x, eml(1, x))), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.09414623320990771,
+  "target_scale": 2.9654478127383186,
+  "target_id": "F-EML_c_K11_02"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), eml(eml(1, 1), 1)), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.013314094935349461,
+  "target_scale": 251696.08820348157,
+  "target_id": "F-EML_c_K11_03"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(x, 1)), eml(1, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 22.024630316766114,
+  "target_scale": 21.55329630407095,
+  "target_id": "F-EML_c_K11_04"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), eml(eml(1, 1), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 0.28582791961353293,
+  "target_scale": 6.619051882491551,
+  "target_id": "F-EML_c_K11_05"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, x), eml(eml(1, 1), 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.04354589007873642,
+  "target_scale": 1.8639237455728872,
+  "target_id": "F-EML_c_K11_06"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(eml(1, eml(1, 1)), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 12.787780062336092,
+  "target_scale": 19.689833722603336,
+  "target_id": "F-EML_c_K11_07"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, x), eml(x, x)), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 1.0215888310786263,
+  "target_scale": 2.909836212013477,
+  "target_id": "F-EML_c_K11_08"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, 1), eml(eml(1, x), 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 6.991066582728856e-08,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K11_09"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(eml(1, x), x)), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 11.747038550645138,
+  "target_scale": 18.887329007660256,
+  "target_id": "F-EML_c_K11_10"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, eml(1, 1))), 1), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.013314094935340404,
+  "target_scale": 6763.693725930457,
+  "target_id": "F-EML_c_K11_11"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, x)), eml(x, x)), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 9384.679905345973,
+  "target_scale": 603.0919073361591,
+  "target_id": "F-EML_c_K11_12"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(x, eml(x, eml(1, 1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 2.4122988926937103,
+  "target_scale": 9.663959766180763,
+  "target_id": "F-EML_c_K11_13"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(1, 1), eml(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 0.000549395908458805,
+  "target_scale": 12.65112178936422,
+  "target_id": "F-EML_c_K11_14"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, x), eml(x, 1)), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.9965577691376888,
+  "target_scale": 2.811622533113893,
+  "target_id": "F-EML_c_K11_15"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(x, eml(1, x))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 4649.97693332202,
+  "target_scale": 278.3484179326369,
+  "target_id": "F-EML_c_K11_16"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(x, eml(x, eml(1, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 1.073547518040649,
+  "target_scale": 5.817655003798167,
+  "target_id": "F-EML_c_K11_17"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), eml(1, x))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 2.0725713463442252e-05,
+  "target_scale": 1.0486603994169117,
+  "target_id": "F-EML_c_K11_18"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(x, x))), eml(1, x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.21796514180639895,
+  "target_scale": 2.0268646341175725,
+  "target_id": "F-EML_c_K11_19"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(x, eml(x, 1))), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 15.39659067061701,
+  "target_scale": 19.996538426538223,
+  "target_id": "F-EML_c_K11_20"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(1, eml(x, 1)), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 3.2933712811848763,
+  "target_scale": 20.490926506903755,
+  "target_id": "F-EML_c_K11_21"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, 1)), 1), x), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 33881.91318200929,
+  "target_scale": 1013.6742816937258,
+  "target_id": "F-EML_c_K11_22"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), eml(1, 1))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.013314094935341478,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K11_23"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(1, eml(x, eml(x, 1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.11699289955028347,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K11_24"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, x), x), 1)), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.006090861228281904,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K11_25"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(x, 1)), x)), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 125599.44187092809,
+  "target_scale": 2471.759040593204,
+  "target_id": "F-EML_c_K11_26"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(x, eml(x, x))), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 24.118112859107,
+  "target_scale": 22.9387200833881,
+  "target_id": "F-EML_c_K11_27"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, eml(x, eml(1, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 2.5020426297719514,
+  "target_scale": 13.201973040976522,
+  "target_id": "F-EML_c_K11_28"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, 1), 1)), eml(1, x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.004057505669661525,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K11_29"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), eml(x, x)), eml(x, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 56.64747964092872,
+  "target_scale": 37.0763246614905,
+  "target_id": "F-EML_c_K13_00"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, 1), eml(1, eml(x, eml(x, 1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 12.465534152159282,
+  "target_scale": 17.01765829857465,
+  "target_id": "F-EML_c_K13_01"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(x, x))), eml(1, eml(1, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.28088645394685385,
+  "target_scale": 2.1887344972121507,
+  "target_id": "F-EML_c_K13_02"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, x), 1), eml(1, eml(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.5025513340342374,
+  "target_scale": 4.821637754441779,
+  "target_id": "F-EML_c_K13_03"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(x, 1))), eml(eml(1, x), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.1832561164508314,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K13_04"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, eml(eml(x, 1), eml(1, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 12.936313970170165,
+  "target_scale": 35.04191397649125,
+  "target_id": "F-EML_c_K13_05"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(x, eml(eml(x, x), 1)), x)), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 1.0783045650327434,
+  "target_scale": 11.552129029724384,
+  "target_id": "F-EML_c_K13_06"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(x, eml(eml(eml(1, x), x), 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 24.028425475708467,
+  "target_scale": 24.370902174903726,
+  "target_id": "F-EML_c_K13_07"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), eml(x, eml(1, 1))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 61.443787572030494,
+  "target_scale": 40.111343104631835,
+  "target_id": "F-EML_c_K13_08"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), eml(x, 1)), eml(1, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.06123472698179385,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K13_09"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(1, 1))), eml(1, eml(x, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 2.6380959207979306,
+  "target_scale": 7.19357824317204,
+  "target_id": "F-EML_c_K13_10"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), eml(eml(1, eml(1, 1)), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.17261907575418717,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K13_11"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, x), eml(eml(1, 1), eml(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.03664602639859707,
+  "target_scale": 1.776320677789145,
+  "target_id": "F-EML_c_K13_12"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, eml(x, eml(1, x))), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 2.4914832012615595,
+  "target_scale": 11.73559051042162,
+  "target_id": "F-EML_c_K13_13"
+ },
+ {
+  "expression": "eml(x, eml(x, eml(eml(eml(1, eml(x, 1)), 1), 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 10.513552642892503,
+  "target_scale": 16.93662068866127,
+  "target_id": "F-EML_c_K13_14"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), eml(1, eml(1, eml(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.14110138203287476,
+  "target_scale": 7.69806295468099,
+  "target_id": "F-EML_c_K13_15"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(eml(x, eml(1, 1)), x))), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 1.52736406033575e-05,
+  "target_scale": 15.154262137423164,
+  "target_id": "F-EML_c_K13_16"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(1, eml(1, x)), eml(1, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.11312878129670739,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K13_17"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), 1), eml(x, eml(1, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.09414623320990807,
+  "target_scale": 261.8232015487304,
+  "target_id": "F-EML_c_K13_18"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, eml(x, x)))), x), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 2.6263000179028455,
+  "target_scale": 6.94534117705565,
+  "target_id": "F-EML_c_K13_19"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(1, eml(eml(1, eml(1, x)), x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.0006727644177266856,
+  "target_scale": 1.6397591340071722,
+  "target_id": "F-EML_c_K13_20"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(eml(eml(1, eml(x, 1)), 1), 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.08197080919347034,
+  "target_scale": 3.0928570803316355,
+  "target_id": "F-EML_c_K13_21"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, eml(eml(1, 1), eml(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.7212160939357404,
+  "target_scale": 9.543436026596186,
+  "target_id": "F-EML_c_K13_22"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, eml(x, x)), eml(x, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 3.8788614035496978,
+  "target_scale": 12.341350317670003,
+  "target_id": "F-EML_c_K13_23"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, eml(x, 1)), eml(1, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.07568816054734297,
+  "target_scale": 7.256503474443821,
+  "target_id": "F-EML_c_K13_24"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(x, x)), x), eml(1, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.6126192030586082,
+  "target_scale": 4.046965050962953,
+  "target_id": "F-EML_c_K13_25"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, x), eml(1, x))), eml(x, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.0003930975824911734,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K13_26"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, x), eml(eml(x, x), 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 4.514205017979989,
+  "target_scale": 11.090111546950622,
+  "target_id": "F-EML_c_K13_27"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, 1), eml(1, eml(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.5997155102852549,
+  "target_scale": 4.807440076854942,
+  "target_id": "F-EML_c_K13_28"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(eml(1, 1), eml(x, eml(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.024861673016185058,
+  "target_scale": 4.838346282499769,
+  "target_id": "F-EML_c_K13_29"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(eml(x, eml(eml(1, 1), x)), 1))), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.0003021149663357236,
+  "target_scale": 5.733172092778294,
+  "target_id": "F-EML_c_K15_00"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, eml(eml(eml(1, eml(1, 1)), 1), x)), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.0006950692180398703,
+  "target_scale": 5.683704029285126,
+  "target_id": "F-EML_c_K15_01"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(eml(1, 1), x)), x), eml(x, 1)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.054501368439724744,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K15_02"
+ },
+ {
+  "expression": "eml(eml(eml(eml(x, eml(eml(x, 1), x)), 1), 1), eml(x, 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.08338898451555227,
+  "target_scale": 13.16089149208024,
+  "target_id": "F-EML_c_K15_03"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(1, eml(1, x)))), 1), eml(1, 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 3.8060220627148946,
+  "target_scale": 8.403853567513261,
+  "target_id": "F-EML_c_K15_04"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(eml(1, 1), eml(1, 1))), eml(1, 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 12.935998848502528,
+  "target_scale": 22.537667265703003,
+  "target_id": "F-EML_c_K15_05"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, 1)), eml(x, eml(1, eml(x, eml(1, 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.11622669075935224,
+  "target_scale": 3.543843715838404,
+  "target_id": "F-EML_c_K15_06"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(eml(eml(1, eml(1, 1)), x), 1)), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.01748060920421282,
+  "target_scale": 4.52633516110202,
+  "target_id": "F-EML_c_K15_07"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(eml(1, 1), eml(eml(1, eml(x, x)), x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 7.8230963269072245,
+  "target_scale": 21.5330875234107,
+  "target_id": "F-EML_c_K15_08"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, x), eml(x, eml(1, 1))), x)), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.3087449565878225,
+  "target_scale": 2.071238314621187,
+  "target_id": "F-EML_c_K15_09"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(x, eml(1, eml(1, x)))), 1), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.34555712624145374,
+  "target_scale": 2.60753085759801,
+  "target_id": "F-EML_c_K15_10"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(1, eml(x, eml(x, x))))), 1), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 2.446226305841503,
+  "target_scale": 7.628377433195319,
+  "target_id": "F-EML_c_K15_11"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(eml(1, x), eml(eml(1, 1), 1))), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 11.358263749104195,
+  "target_scale": 18.20986637952059,
+  "target_id": "F-EML_c_K15_12"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), x), eml(eml(1, eml(x, x)), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 2.332922305233769,
+  "target_scale": 6.645486700164551,
+  "target_id": "F-EML_c_K15_13"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), x)), eml(eml(eml(1, x), x), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.701267784796407,
+  "target_scale": 5.793430118748558,
+  "target_id": "F-EML_c_K15_14"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(1, eml(eml(1, 1), x)), x), 1), x), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 49.376931546907926,
+  "target_scale": 30.37611028090447,
+  "target_id": "F-EML_c_K15_15"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(x, eml(x, 1))), eml(1, eml(x, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 11.884650727040412,
+  "target_scale": 18.568315232008178,
+  "target_id": "F-EML_c_K15_16"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(eml(1, 1), x)), eml(eml(1, 1), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 967.4668435234732,
+  "target_scale": 127.43118953374268,
+  "target_id": "F-EML_c_K15_17"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(x, eml(eml(eml(1, x), x), 1))), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 3.755236068491975,
+  "target_scale": 8.836254876695177,
+  "target_id": "F-EML_c_K15_18"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(1, x), eml(x, eml(1, eml(1, 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.07935210689317229,
+  "target_scale": 14.40964052977125,
+  "target_id": "F-EML_c_K15_19"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), x), eml(x, eml(eml(1, 1), 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 2.012550844396859,
+  "target_scale": 3.1178285414859817,
+  "target_id": "F-EML_c_K15_20"
+ },
+ {
+  "expression": "eml(eml(eml(x, eml(eml(x, 1), x)), eml(eml(1, 1), x)), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 2.3419146857570253e-06,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K15_21"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, x), eml(1, eml(1, 1)))), eml(1, x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.16676319017952446,
+  "target_scale": 2.863398867627583,
+  "target_id": "F-EML_c_K15_22"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(1, eml(eml(1, 1), eml(x, eml(x, x))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.0011987796115406155,
+  "target_scale": 1.2609447556844637,
+  "target_id": "F-EML_c_K15_23"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(1, eml(x, eml(eml(x, 1), eml(1, 1))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 3.3916499869850094,
+  "target_scale": 8.9665885425225,
+  "target_id": "F-EML_c_K15_24"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(1, eml(x, eml(x, eml(1, eml(1, 1)))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 11.00838857500132,
+  "target_scale": 18.132136552024047,
+  "target_id": "F-EML_c_K15_25"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, 1)), eml(eml(1, x), eml(1, eml(1, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.01602289055655432,
+  "target_scale": 4.064921277020456,
+  "target_id": "F-EML_c_K15_26"
+ },
+ {
+  "expression": "eml(1, eml(eml(x, eml(eml(x, eml(1, eml(1, 1))), x)), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 2.6610700705772273e-08,
+  "target_scale": 2.1769569695057,
+  "target_id": "F-EML_c_K15_27"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, 1), eml(x, eml(1, x)))), 1), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.00047313992616467086,
+  "target_scale": 2.442137778877367,
+  "target_id": "F-EML_c_K15_28"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, eml(1, x)), eml(eml(1, 1), x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.6531861792991371,
+  "target_scale": 5.964905257771597,
+  "target_id": "F-EML_c_K15_29"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(eml(1, eml(x, eml(eml(1, x), 1))), 1), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.16184541039678213,
+  "target_scale": 1.16601573875984,
+  "target_id": "F-EML_c_K17_00"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, eml(1, eml(x, eml(1, eml(1, 1))))), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 4.838463369225797,
+  "target_scale": 4.6145437187288225,
+  "target_id": "F-EML_c_K17_01"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, x)), 1), eml(eml(1, 1), eml(x, 1))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 22577.79231591958,
+  "target_scale": 915.8343010189956,
+  "target_id": "F-EML_c_K17_02"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(eml(1, eml(x, 1)), eml(1, 1)), x), eml(x, 1)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 14.347400164911598,
+  "target_scale": 19.331688726951224,
+  "target_id": "F-EML_c_K17_03"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(eml(1, eml(x, x)), x), 1), eml(eml(1, x), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1.86684817192779,
+  "target_scale": 3.02536920872173,
+  "target_id": "F-EML_c_K17_04"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(eml(eml(1, eml(x, x)), x), 1)), x)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 1.84811805001571,
+  "target_scale": 5.957739371578723,
+  "target_id": "F-EML_c_K17_05"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(eml(x, eml(eml(x, x), 1)), x), eml(1, x)), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.8581324450413796,
+  "target_scale": 3.4463250076417524,
+  "target_id": "F-EML_c_K17_06"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(eml(x, x), 1))), eml(x, eml(1, eml(1, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 6.409344608642081,
+  "target_scale": 19.797013201069515,
+  "target_id": "F-EML_c_K17_07"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(x, 1)), eml(eml(1, x), eml(1, eml(x, 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 5,
+  "var_target": 3841.338968629142,
+  "target_scale": 250.0548887317302,
+  "target_id": "F-EML_c_K17_08"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, eml(x, 1))), eml(x, x)), eml(x, 1)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.14307587974272884,
+  "target_scale": 1.03801653390452,
+  "target_id": "F-EML_c_K17_09"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(eml(1, eml(x, 1)), 1), 1)), eml(x, x)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 256.88549429146724,
+  "target_scale": 61.68086354792506,
+  "target_id": "F-EML_c_K17_10"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(eml(1, 1), eml(x, eml(1, x)))), eml(1, x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 1139.322629510802,
+  "target_scale": 141.36558192444699,
+  "target_id": "F-EML_c_K17_11"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(x, eml(1, eml(eml(1, eml(x, eml(1, x))), x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 1.747313438067797,
+  "target_scale": 6.224004610512319,
+  "target_id": "F-EML_c_K17_12"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(x, x)), eml(x, eml(1, eml(1, 1)))), 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.5092127375501962,
+  "target_scale": 4.874378257524942,
+  "target_id": "F-EML_c_K17_13"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(eml(eml(1, x), eml(eml(x, x), 1)), eml(1, 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.06552469057987065,
+  "target_scale": 1.7781991934223347,
+  "target_id": "F-EML_c_K17_14"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(eml(1, eml(1, eml(1, eml(x, x)))), 1), 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 1.441866727042963,
+  "target_scale": 13.505977926948532,
+  "target_id": "F-EML_c_K17_15"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), eml(eml(1, eml(x, eml(1, 1))), 1))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.018737005350862434,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K17_16"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, eml(x, eml(eml(eml(1, eml(1, x)), 1), 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.04720247653056837,
+  "target_scale": 12.982113810696932,
+  "target_id": "F-EML_c_K17_17"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(1, eml(1, eml(x, eml(1, x)))), eml(x, 1)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 3.2706747271263668,
+  "target_scale": 12.335239015053148,
+  "target_id": "F-EML_c_K17_18"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(eml(1, eml(eml(1, 1), x)), x), eml(1, 1)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1.1098543292720588,
+  "target_scale": 11.953409924075022,
+  "target_id": "F-EML_c_K17_19"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, eml(1, x)), eml(x, eml(1, eml(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.5610323762576015,
+  "target_scale": 5.841791669382097,
+  "target_id": "F-EML_c_K17_20"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, eml(1, 1)), eml(x, eml(1, eml(eml(1, 1), x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 7.322039737471013e-07,
+  "target_scale": 1.003679200176447,
+  "target_id": "F-EML_c_K17_21"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(eml(1, eml(x, eml(1, 1))), x))), 1), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 3.400847097569001,
+  "target_scale": 8.81251864823129,
+  "target_id": "F-EML_c_K17_22"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(1, eml(eml(1, eml(x, eml(x, x))), eml(x, 1)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.10942837088550314,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K17_23"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(x, 1)), eml(1, eml(x, eml(eml(1, x), 1)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 10.865048101526698,
+  "target_scale": 18.52924197753211,
+  "target_id": "F-EML_c_K17_24"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(1, 1)), x)), eml(x, eml(eml(x, 1), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 12.602652985388506,
+  "target_scale": 23.179540688818346,
+  "target_id": "F-EML_c_K17_25"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, eml(eml(1, 1), x)), eml(eml(1, x), x))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.02534447289381275,
+  "target_scale": 14.690667941812523,
+  "target_id": "F-EML_c_K17_26"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(x, eml(eml(eml(1, eml(x, 1)), x), 1)))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 197661.09293870957,
+  "target_scale": 3097.051784772734,
+  "target_id": "F-EML_c_K17_27"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(x, eml(1, eml(eml(1, eml(x, eml(x, x))), x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 22.61718621553787,
+  "target_scale": 25.15839811377969,
+  "target_id": "F-EML_c_K17_28"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(eml(1, eml(x, x)), 1), eml(x, eml(1, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 3.5269180183558064,
+  "target_scale": 19.54755377038787,
+  "target_id": "F-EML_c_K17_29"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(x, eml(1, eml(x, eml(x, eml(1, eml(eml(1, x), x))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 10,
+  "var_target": 18.71743357208166,
+  "target_scale": 22.375112702743365,
+  "target_id": "F-EML_c_K19_00"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(eml(eml(eml(1, eml(x, 1)), x), eml(eml(1, 1), 1)), x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.14356968782334367,
+  "target_scale": 2.066740677546146,
+  "target_id": "F-EML_c_K19_01"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, eml(x, 1)))), eml(x, eml(x, eml(x, 1)))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.48686616926060255,
+  "target_scale": 1.7030343295380055,
+  "target_id": "F-EML_c_K19_02"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), eml(x, 1))), eml(eml(1, eml(x, x)), eml(1, x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 5,
+  "var_target": 0.23048895356065116,
+  "target_scale": 2.3785655213450507,
+  "target_id": "F-EML_c_K19_03"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(1, eml(eml(1, x), eml(x, x))), eml(x, eml(x, 1))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.18086239123301875,
+  "target_scale": 15.157776664871035,
+  "target_id": "F-EML_c_K19_04"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(1, eml(eml(eml(1, x), eml(eml(1, x), 1)), 1)), 1), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 12.073523652895993,
+  "target_scale": 20.52955796210742,
+  "target_id": "F-EML_c_K19_05"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(eml(1, x), eml(x, 1))), eml(eml(1, 1), eml(1, 1))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.8929164181099288,
+  "target_scale": 5.121742887719407,
+  "target_id": "F-EML_c_K19_06"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, x), eml(x, 1)), x)), eml(eml(1, eml(1, x)), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.28814116226477127,
+  "target_scale": 1.8571328255447435,
+  "target_id": "F-EML_c_K19_07"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(eml(1, eml(1, 1)), eml(eml(x, eml(x, 1)), 1))), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 21.042868432098174,
+  "target_scale": 19.256231925499932,
+  "target_id": "F-EML_c_K19_08"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(eml(1, eml(1, eml(1, eml(x, 1)))), 1), eml(1, 1)), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 2078.1381226980975,
+  "target_scale": 132.35052816656628,
+  "target_id": "F-EML_c_K19_09"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(eml(1, eml(1, x)), eml(x, eml(x, 1))))), x), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 2.6447738367739944,
+  "target_scale": 7.090673834518397,
+  "target_id": "F-EML_c_K19_10"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(eml(1, eml(1, eml(eml(1, eml(x, 1)), x))), x), x), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 10,
+  "var_target": 4537.451264323746,
+  "target_scale": 245.32715997350894,
+  "target_id": "F-EML_c_K19_11"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, 1)), eml(1, 1)), eml(1, eml(eml(eml(1, x), x), x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 0.06676252461394376,
+  "target_scale": 3.43395530057142,
+  "target_id": "F-EML_c_K19_12"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(eml(eml(1, eml(x, x)), x), eml(1, eml(x, eml(1, 1))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.12243443308978534,
+  "target_scale": 4.587134811572248,
+  "target_id": "F-EML_c_K19_13"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), 1), eml(1, eml(1, eml(x, eml(1, eml(1, x))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 4.888256245794209,
+  "target_scale": 8.319889902408827,
+  "target_id": "F-EML_c_K19_14"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(eml(1, 1), eml(eml(1, eml(1, x)), x)))), eml(1, 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 10.109114360279738,
+  "target_scale": 111.02407571013043,
+  "target_id": "F-EML_c_K19_15"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), eml(eml(1, x), eml(1, eml(x, 1)))), eml(x, 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 44.28877065805835,
+  "target_scale": 34.47220328364802,
+  "target_id": "F-EML_c_K19_16"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(eml(eml(1, eml(x, 1)), x), eml(x, x))), x)), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 1.3907981708415513,
+  "target_scale": 3.0060491674590595,
+  "target_id": "F-EML_c_K19_17"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(1, eml(x, x)), eml(x, 1)), x), x), eml(1, eml(1, 1)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.2492000703115384,
+  "target_scale": 2.3286194661524044,
+  "target_id": "F-EML_c_K19_18"
+ },
+ {
+  "expression": "eml(eml(eml(x, eml(eml(x, eml(1, x)), eml(1, x))), eml(eml(1, x), 1)), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 1.3496983174417754e-07,
+  "target_scale": 1.0016505119566887,
+  "target_id": "F-EML_c_K19_19"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, eml(1, 1)), eml(x, x))), eml(1, 1)), eml(1, 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 629.7810812107581,
+  "target_scale": 113.0924110015066,
+  "target_id": "F-EML_c_K19_20"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(eml(eml(1, eml(x, eml(1, 1))), x), eml(eml(1, x), 1))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.2670891848400206,
+  "target_scale": 2.2707546796339035,
+  "target_id": "F-EML_c_K19_21"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(eml(1, x), eml(1, 1)), eml(x, 1))), eml(1, x)), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.0012780425506861825,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K19_22"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(1, eml(eml(1, x), x)))), eml(eml(1, x), 1)), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.022234108018831397,
+  "target_scale": 1.0,
+  "target_id": "F-EML_c_K19_23"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, 1), eml(eml(x, eml(eml(eml(1, x), x), 1)), x))), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 2.2909213753972824e-08,
+  "target_scale": 1.0004406559999726,
+  "target_id": "F-EML_c_K19_24"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, x), eml(eml(eml(1, x), x), eml(1, eml(eml(1, x), x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.017127564005399568,
+  "target_scale": 3.078046190808724,
+  "target_id": "F-EML_c_K19_25"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, x), eml(1, eml(eml(1, eml(x, x)), eml(x, x)))), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.45836543482887565,
+  "target_scale": 3.478329431496357,
+  "target_id": "F-EML_c_K19_26"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(x, eml(eml(1, eml(1, eml(1, x))), eml(1, eml(x, x))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 21.64617606116774,
+  "target_scale": 21.94701363911784,
+  "target_id": "F-EML_c_K19_27"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(x, eml(eml(x, x), 1)), eml(1, eml(1, eml(x, 1)))), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.1855309091461422,
+  "target_scale": 2.9420054864540637,
+  "target_id": "F-EML_c_K19_28"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(eml(eml(1, eml(x, x)), x), x)), eml(eml(1, x), x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 7.86052722149271,
+  "target_scale": 16.381718318586284,
+  "target_id": "F-EML_c_K19_29"
+ }
+]

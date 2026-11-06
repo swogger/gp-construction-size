@@ -1,0 +1,393 @@
+{
+ "phase": "screen_ops3",
+ "description": "Held-out extension A1 fallback pools (D027): Stachowiak's cos x - arccos y with the 4 constants, and the four known A(x) o B(y) forms with the constants not yet studied; same screen as screen_ops2.",
+ "created": "2026-10-15 08:24:41",
+ "git": "71c42b7",
+ "n_tasks": 16,
+ "tasks": [
+  {
+   "key": "S-cosacos-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "cosacos",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-cosacos-1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-cosacos-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "cosacos",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-cosacos-0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-cosacos-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "cosacos",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-cosacos-m1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-cosacos-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "cosacos",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-cosacos-e"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esubl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esubl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esubl-0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esubl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esubl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esubl-m1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-esubl-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "esubl",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-esubl-e"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edivl-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edivl",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edivl-1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edivl-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edivl",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edivl-0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-edivl-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "edivl",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-edivl-m1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsube-1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsube",
+    "--const",
+    "1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsube-1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsube-0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsube",
+    "--const",
+    "0",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsube-0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsube-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsube",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsube-m1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-lsube-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "lsube",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-lsube-e"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldive-m1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldive",
+    "--const",
+    "m1",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldive-m1"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "S-ldive-e",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.screen_op",
+    "--form",
+    "ldive",
+    "--const",
+    "e",
+    "--k1",
+    "21",
+    "--k2",
+    "17",
+    "--max_gb",
+    "6"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "grammar": "S-ldive-e"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

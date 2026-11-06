@@ -1,0 +1,9 @@
+[
+ "budget_calc+stop_on+exact|F-NEML_calc_-x|A|3200|1966049850",
+ "budget_calc+stop_on+exact|F-PLI_calc_1/x|A|3200|1250301191",
+ "budget_calc+stop_on+exact|F-PLI_calc_x^x|A|3200|1256056108",
+ "budget_calc+stop_on+exact|F-PLI_calc_x^x|A|3200|1678899513",
+ "budget_calc+stop_on+exact|F-PLI_calc_x^x|A|3200|377620559",
+ "budget_calc+stop_on+exact|F-PLM_calc_exp(x)|A|3200|1966049850",
+ "budget_calc2+stop_on+exact|F2-PLM_calc_x^y|A|3200|1446398125"
+]

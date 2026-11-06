@@ -1,0 +1,18 @@
+{
+ "grammar": "S2-lpowx-m1",
+ "ceiling": 17,
+ "table": {
+  "x+y": null,
+  "x-y": null,
+  "x*y": null,
+  "x/y": null,
+  "x^y": {
+   "K": 17,
+   "expr": "lpowx(lpowx(lpowx(x, lpowx(lpowx(x, lpowx(y, x)), -1)), lpowx(lpowx(y, -1), -1)), y)",
+   "verified": true
+  },
+  "log_x(y)": null,
+  "(x+y)/2": null,
+  "sqrt(x^2+y^2)": null
+ }
+}

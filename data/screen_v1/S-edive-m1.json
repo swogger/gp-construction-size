@@ -1,0 +1,22 @@
+{
+ "form": "edive",
+ "const": "m1",
+ "one": {
+  "exp(x)": {
+   "K": 11,
+   "expr": "edive(x, edive(x, edive(edive(edive(x, x), -1), x)))",
+   "grid_ok": true,
+   "ext_ok": false,
+   "ext_finite": 0.8833333333333333
+  },
+  "ln(x)": null,
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 15,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

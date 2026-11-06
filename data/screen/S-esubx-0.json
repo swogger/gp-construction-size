@@ -1,0 +1,28 @@
+{
+ "form": "esubx",
+ "const": "0",
+ "one": {
+  "exp(x)": {
+   "K": 3,
+   "expr": "esubx(x, 0)",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": null,
+  "-x": {
+   "K": 13,
+   "expr": "esubx(esubx(x, esubx(esubx(esubx(0, 0), esubx(0, x)), 0)), x)",
+   "grid_ok": true,
+   "ext_ok": false,
+   "ext_finite": 0.8166666666666667
+  }
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "budget_exhausted"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

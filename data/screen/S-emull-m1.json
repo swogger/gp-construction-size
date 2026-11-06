@@ -1,0 +1,22 @@
+{
+ "form": "emull",
+ "const": "m1",
+ "one": {
+  "exp(x)": null,
+  "ln(x)": {
+   "K": 13,
+   "expr": "emull(emull(emull(x, emull(emull(emull(-1, -1), -1), x)), x), x)",
+   "grid_ok": true,
+   "ext_ok": false,
+   "ext_finite": 0.9666666666666667
+  },
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 19,
+  "state": "budget_exhausted"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

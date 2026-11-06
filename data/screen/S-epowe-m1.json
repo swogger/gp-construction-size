@@ -1,0 +1,22 @@
+{
+ "form": "epowe",
+ "const": "m1",
+ "one": {
+  "exp(x)": {
+   "K": 11,
+   "expr": "epowe(x, epowe(-1, epowe(epowe(-1, -1), epowe(-1, -1))))",
+   "grid_ok": true,
+   "ext_ok": true,
+   "ext_finite": 1.0
+  },
+  "ln(x)": null,
+  "-x": null
+ },
+ "enum1": {
+  "k_reached": 21,
+  "state": "completed"
+ },
+ "two": null,
+ "enum2": null,
+ "passed": false
+}

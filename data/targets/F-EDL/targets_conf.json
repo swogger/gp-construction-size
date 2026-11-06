@@ -1,0 +1,2045 @@
+[
+ {
+  "expression": "edl(2.718281828459045, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 4.985532712113488,
+  "target_scale": 21.708319485281216,
+  "target_id": "F-EDL_c_K03_00"
+ },
+ {
+  "expression": "edl(x, 2.718281828459045)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 12.935998848502534,
+  "target_scale": 19.887651468491836,
+  "target_id": "F-EDL_c_K03_01"
+ },
+ {
+  "expression": "edl(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 4.798965232439269,
+  "target_scale": 18.157156429550078,
+  "target_id": "F-EDL_c_K03_02"
+ },
+ {
+  "expression": "edl(x, edl(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 1.1540478389482995,
+  "target_scale": 6.860023145658834,
+  "target_id": "F-EDL_c_K05_00"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, x), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 4.802097628908308e+17,
+  "target_scale": 3836142841.2814407,
+  "target_id": "F-EDL_c_K05_01"
+ },
+ {
+  "expression": "edl(edl(x, x), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 191598249404663.3,
+  "target_scale": 70148304.61936435,
+  "target_id": "F-EDL_c_K05_02"
+ },
+ {
+  "expression": "edl(edl(x, 2.718281828459045), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 4427436836515369.0,
+  "target_scale": 395878235.2638277,
+  "target_id": "F-EDL_c_K05_03"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, 2.718281828459045), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 315839840047.609,
+  "target_scale": 5463914.250178937,
+  "target_id": "F-EDL_c_K05_04"
+ },
+ {
+  "expression": "edl(edl(x, 2.718281828459045), 2.718281828459045)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 5252163430033231.0,
+  "target_scale": 433608004.5042443,
+  "target_id": "F-EDL_c_K05_05"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.12291298915750692,
+  "target_scale": 6.396052840417974,
+  "target_id": "F-EDL_c_K05_06"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.05971288535559264,
+  "target_scale": 5.768113469471479,
+  "target_id": "F-EDL_c_K05_07"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, 2.718281828459045))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.5091769317007915,
+  "target_scale": 7.539805351671949,
+  "target_id": "F-EDL_c_K05_08"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 2.213579020646521,
+  "target_scale": 7.569766741766792,
+  "target_id": "F-EDL_c_K05_09"
+ },
+ {
+  "expression": "edl(edl(x, x), 2.718281828459045)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 226247920813149.1,
+  "target_scale": 76833894.05100165,
+  "target_id": "F-EDL_c_K05_10"
+ },
+ {
+  "expression": "edl(x, edl(x, 2.718281828459045))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.7288172365331884,
+  "target_scale": 6.651168206349919,
+  "target_id": "F-EDL_c_K05_11"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, x), 2.718281828459045)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 2.4146053345069715e+17,
+  "target_scale": 2677955548.423201,
+  "target_id": "F-EDL_c_K05_12"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 1.7506970681105856,
+  "target_scale": 7.316258108441191,
+  "target_id": "F-EDL_c_K05_13"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 5.3455710674638865,
+  "target_scale": 12.024746365865605,
+  "target_id": "F-EDL_c_K07_00"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, x)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 154147.6307220017,
+  "target_scale": 1769.9958987989937,
+  "target_id": "F-EDL_c_K07_01"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, x), edl(x, 2.718281828459045))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 5.8466158591561336e+16,
+  "target_scale": 1332381824.5849423,
+  "target_id": "F-EDL_c_K07_02"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, 2.718281828459045), edl(2.718281828459045, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 3782887255.6923823,
+  "target_scale": 1451815.6232159403,
+  "target_id": "F-EDL_c_K07_03"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, 2.718281828459045), 2.718281828459045))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.05632878342130245,
+  "target_scale": 1.3123470579819219,
+  "target_id": "F-EDL_c_K07_04"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, x)), 2.718281828459045)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 53753.30112345381,
+  "target_scale": 953.3891340554435,
+  "target_id": "F-EDL_c_K07_05"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 1.2701236103124018,
+  "target_scale": 10.327434060187663,
+  "target_id": "F-EDL_c_K07_06"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(x, 2.718281828459045)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.28582791961353277,
+  "target_scale": 9.337333710950597,
+  "target_id": "F-EDL_c_K07_07"
+ },
+ {
+  "expression": "edl(edl(x, x), edl(2.718281828459045, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 32580193016464.27,
+  "target_scale": 29245014.513109427,
+  "target_id": "F-EDL_c_K07_08"
+ },
+ {
+  "expression": "edl(edl(x, 2.718281828459045), edl(x, 2.718281828459045))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 594700427818795.6,
+  "target_scale": 145014597.5328764,
+  "target_id": "F-EDL_c_K07_09"
+ },
+ {
+  "expression": "edl(edl(x, x), edl(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 27263141623758.195,
+  "target_scale": 26502993.19635758,
+  "target_id": "F-EDL_c_K07_10"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 4.3842058487287785,
+  "target_scale": 15.005691043033387,
+  "target_id": "F-EDL_c_K07_11"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(2.718281828459045, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.06077844605427634,
+  "target_scale": 9.506464819384618,
+  "target_id": "F-EDL_c_K07_12"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(2.718281828459045, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.2644493317102032,
+  "target_scale": 9.82512712822449,
+  "target_id": "F-EDL_c_K07_13"
+ },
+ {
+  "expression": "edl(x, edl(edl(x, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.015336334503778755,
+  "target_scale": 1.1008256920004984,
+  "target_id": "F-EDL_c_K07_14"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(x, 2.718281828459045)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 1.0783045650327445,
+  "target_scale": 11.552129029724378,
+  "target_id": "F-EDL_c_K07_15"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(2.718281828459045, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 7.12887777274241,
+  "target_scale": 17.109543169047942,
+  "target_id": "F-EDL_c_K07_16"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(2.718281828459045, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 3.732244397019108,
+  "target_scale": 11.349163920939414,
+  "target_id": "F-EDL_c_K07_17"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, x), edl(2.718281828459045, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 2.575790927592634e+16,
+  "target_scale": 870117100.4335325,
+  "target_id": "F-EDL_c_K07_18"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(x, x)), 2.718281828459045)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 15506.905256326441,
+  "target_scale": 599.4741416949588,
+  "target_id": "F-EDL_c_K07_19"
+ },
+ {
+  "expression": "edl(x, edl(edl(x, 2.718281828459045), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.00020482689671658504,
+  "target_scale": 1.0045984741828682,
+  "target_id": "F-EDL_c_K07_20"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.6157717499891382,
+  "target_scale": 9.993297504068037,
+  "target_id": "F-EDL_c_K07_21"
+ },
+ {
+  "expression": "edl(edl(x, 2.718281828459045), edl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 710803025408526.6,
+  "target_scale": 159515470.38448566,
+  "target_id": "F-EDL_c_K07_22"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, x)), 2.718281828459045)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 182723.17649566825,
+  "target_scale": 1938.688013872368,
+  "target_id": "F-EDL_c_K07_23"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, x), edl(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 4.277629452165145e+16,
+  "target_scale": 1130265856.5009317,
+  "target_id": "F-EDL_c_K07_24"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.026114711831997744,
+  "target_scale": 1.371491237043023,
+  "target_id": "F-EDL_c_K07_25"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, x), edl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 3.26781296850137e+16,
+  "target_scale": 985164790.6358906,
+  "target_id": "F-EDL_c_K07_26"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(2.718281828459045, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.01460554045145893,
+  "target_scale": 1.102561013097036,
+  "target_id": "F-EDL_c_K07_27"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, 2.718281828459045), edl(x, 2.718281828459045))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 32257006412.487373,
+  "target_scale": 1897744.776260008,
+  "target_id": "F-EDL_c_K07_28"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 2.29422605364915,
+  "target_scale": 13.208628398200032,
+  "target_id": "F-EDL_c_K07_29"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(x, edl(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.7180083050872028,
+  "target_scale": 8.51791101105318,
+  "target_id": "F-EDL_c_K09_00"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(edl(2.718281828459045, 2.718281828459045), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 224176.64709017568,
+  "target_scale": 3309.7469938728746,
+  "target_id": "F-EDL_c_K09_01"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(x, x)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.6362554888481228,
+  "target_scale": 3.8720108802032933,
+  "target_id": "F-EDL_c_K09_02"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(x, 2.718281828459045))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 2.474322992108175,
+  "target_scale": 11.597298154652742,
+  "target_id": "F-EDL_c_K09_03"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(x, edl(2.718281828459045, 2.718281828459045))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 4.128855204769894,
+  "target_scale": 9.796402430573906,
+  "target_id": "F-EDL_c_K09_04"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, 2.718281828459045)), edl(x, 2.718281828459045))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 3791.9271290824863,
+  "target_scale": 258.7498347200566,
+  "target_id": "F-EDL_c_K09_05"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(edl(x, 2.718281828459045), 2.718281828459045)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 234992.27350445828,
+  "target_scale": 3374.776781150732,
+  "target_id": "F-EDL_c_K09_06"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(x, edl(2.718281828459045, 2.718281828459045))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0954187624269485,
+  "target_scale": 7.576946646122881,
+  "target_id": "F-EDL_c_K09_07"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(2.718281828459045, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.4016683987561153,
+  "target_scale": 7.52772696674416,
+  "target_id": "F-EDL_c_K09_08"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, 2.718281828459045), 2.718281828459045)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.09823310198929798,
+  "target_scale": 3.391637437602794,
+  "target_id": "F-EDL_c_K09_09"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, x), 2.718281828459045)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.26845334067954846,
+  "target_scale": 3.843517758903532,
+  "target_id": "F-EDL_c_K09_10"
+ },
+ {
+  "expression": "edl(x, edl(edl(x, edl(2.718281828459045, 2.718281828459045)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.00997801315428346,
+  "target_scale": 2.752530829780688,
+  "target_id": "F-EDL_c_K09_11"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, edl(2.718281828459045, x))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 262035887.12080038,
+  "target_scale": 77507.47696651296,
+  "target_id": "F-EDL_c_K09_12"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(2.718281828459045, edl(x, 2.718281828459045))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 2.2690689678269877,
+  "target_scale": 8.902178524333534,
+  "target_id": "F-EDL_c_K09_13"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(2.718281828459045, x)), edl(2.718281828459045, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 507.0907274721261,
+  "target_scale": 121.77519890104779,
+  "target_id": "F-EDL_c_K09_14"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.4697577100944633,
+  "target_scale": 3.626547717050206,
+  "target_id": "F-EDL_c_K09_15"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, edl(2.718281828459045, 2.718281828459045))), 2.718281828459045)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 25913665.62160672,
+  "target_scale": 21879.327146348787,
+  "target_id": "F-EDL_c_K09_16"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(edl(x, 2.718281828459045), 2.718281828459045)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 235190.85847417588,
+  "target_scale": 3389.9651190973,
+  "target_id": "F-EDL_c_K09_17"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(x, 2.718281828459045)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 7.411929914935738e-05,
+  "target_scale": 1.077908097921072,
+  "target_id": "F-EDL_c_K09_18"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(2.718281828459045, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.0707468885198304,
+  "target_scale": 9.81753581321793,
+  "target_id": "F-EDL_c_K09_19"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, edl(x, x)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.3716932660626583,
+  "target_scale": 4.318571141005764,
+  "target_id": "F-EDL_c_K09_20"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(x, 2.718281828459045)), edl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 27448.987295291747,
+  "target_scale": 692.1518387253608,
+  "target_id": "F-EDL_c_K09_21"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(edl(x, 2.718281828459045), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 246843.51918949935,
+  "target_scale": 3458.21783385657,
+  "target_id": "F-EDL_c_K09_22"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, 2.718281828459045), edl(2.718281828459045, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.20779399063663306,
+  "target_scale": 2.3908665689778874,
+  "target_id": "F-EDL_c_K09_23"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(x, 2.718281828459045), x)), 2.718281828459045)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0014624477927302729,
+  "target_scale": 2.7308105617195233,
+  "target_id": "F-EDL_c_K09_24"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.892274458977038,
+  "target_scale": 10.889426787290711,
+  "target_id": "F-EDL_c_K09_25"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(2.718281828459045, edl(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.5942188532337849,
+  "target_scale": 7.9967501295047265,
+  "target_id": "F-EDL_c_K09_26"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, edl(x, x))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 852628499.1327673,
+  "target_scale": 152315.93045635492,
+  "target_id": "F-EDL_c_K09_27"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(edl(2.718281828459045, x), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 121241.82223829106,
+  "target_scale": 2425.192897838492,
+  "target_id": "F-EDL_c_K09_28"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(2.718281828459045, edl(x, 2.718281828459045))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.44428001967782854,
+  "target_scale": 7.936527452905923,
+  "target_id": "F-EDL_c_K09_29"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(2.718281828459045, edl(edl(2.718281828459045, x), x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.6369504714546569,
+  "target_scale": 3.123655194303949,
+  "target_id": "F-EDL_c_K11_00"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(x, edl(x, edl(2.718281828459045, 2.718281828459045)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 1.098206402274753,
+  "target_scale": 9.222797606920722,
+  "target_id": "F-EDL_c_K11_01"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(edl(x, x), x)), edl(2.718281828459045, x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.01589250685440087,
+  "target_scale": 1.2805761713471733,
+  "target_id": "F-EDL_c_K11_02"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, edl(x, edl(2.718281828459045, x)))), 2.718281828459045)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 14642126.596866231,
+  "target_scale": 19516.008141338163,
+  "target_id": "F-EDL_c_K11_03"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.1872295447819178,
+  "target_scale": 2.3087451504723457,
+  "target_id": "F-EDL_c_K11_04"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045)), edl(2.718281828459045, 2.718281828459045)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.6180574893049485,
+  "target_scale": 4.347083205512951,
+  "target_id": "F-EDL_c_K11_05"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(edl(x, x), edl(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 4287083.768267815,
+  "target_scale": 19499.293949232957,
+  "target_id": "F-EDL_c_K11_06"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045)), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 172.9376115351102,
+  "target_scale": 66.1346351726288,
+  "target_id": "F-EDL_c_K11_07"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, x), edl(2.718281828459045, edl(2.718281828459045, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.035079167480436296,
+  "target_scale": 1.4822599907117764,
+  "target_id": "F-EDL_c_K11_08"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(edl(2.718281828459045, 2.718281828459045), edl(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 482233.7430153197,
+  "target_scale": 6333.947933277419,
+  "target_id": "F-EDL_c_K11_09"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, x)), edl(edl(x, x), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 167.10424111096702,
+  "target_scale": 52.77220665824192,
+  "target_id": "F-EDL_c_K11_10"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, x), edl(edl(2.718281828459045, x), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.15713584125380692,
+  "target_scale": 1.7733097794688493,
+  "target_id": "F-EDL_c_K11_11"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(edl(x, x), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 372.58602815312247,
+  "target_scale": 83.28093287014701,
+  "target_id": "F-EDL_c_K11_12"
+ },
+ {
+  "expression": "edl(x, edl(edl(edl(2.718281828459045, edl(2.718281828459045, x)), x), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 7.710438850185147e-05,
+  "target_scale": 1.0,
+  "target_id": "F-EDL_c_K11_13"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 2.5648913833461777,
+  "target_scale": 8.049096259865467,
+  "target_id": "F-EDL_c_K11_14"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(x, edl(x, edl(x, 2.718281828459045)))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 4590249.111807027,
+  "target_scale": 8745.80980814292,
+  "target_id": "F-EDL_c_K11_15"
+ },
+ {
+  "expression": "edl(edl(edl(x, edl(edl(x, 2.718281828459045), x)), x), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 163.62933339555173,
+  "target_scale": 59.05387644849497,
+  "target_id": "F-EDL_c_K11_16"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, 2.718281828459045), x)), edl(2.718281828459045, x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.06349258523043493,
+  "target_scale": 1.425241734295079,
+  "target_id": "F-EDL_c_K11_17"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, x), edl(x, edl(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.11268433699108492,
+  "target_scale": 1.5088874739732254,
+  "target_id": "F-EDL_c_K11_18"
+ },
+ {
+  "expression": "edl(edl(edl(2.718281828459045, edl(edl(2.718281828459045, x), x)), 2.718281828459045), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 5.611241534517854,
+  "target_scale": 18.55678257099602,
+  "target_id": "F-EDL_c_K11_19"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(2.718281828459045, edl(x, edl(x, 2.718281828459045))), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.03547335275893657,
+  "target_scale": 1.9166079954957986,
+  "target_id": "F-EDL_c_K11_20"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, x), edl(x, 2.718281828459045))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.41732679278512336,
+  "target_scale": 4.349085178663706,
+  "target_id": "F-EDL_c_K11_21"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(edl(2.718281828459045, x), edl(x, x))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.0009718421037720421,
+  "target_scale": 2.9908507798475363,
+  "target_id": "F-EDL_c_K11_22"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(x, x)), edl(edl(2.718281828459045, 2.718281828459045), 2.718281828459045))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 67.52359195048808,
+  "target_scale": 39.55812115050491,
+  "target_id": "F-EDL_c_K11_23"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(x, edl(x, edl(2.718281828459045, 2.718281828459045)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 1.6092554853280763,
+  "target_scale": 11.50901735491399,
+  "target_id": "F-EDL_c_K11_24"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, x), edl(2.718281828459045, 2.718281828459045))), 2.718281828459045)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.8056143549442321,
+  "target_scale": 4.708686987944644,
+  "target_id": "F-EDL_c_K11_25"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, 2.718281828459045)), edl(2.718281828459045, edl(2.718281828459045, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 11363.194656698657,
+  "target_scale": 441.5155650326682,
+  "target_id": "F-EDL_c_K11_26"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(edl(x, 2.718281828459045), x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 2.2867914278361012,
+  "target_scale": 6.253346628356351,
+  "target_id": "F-EDL_c_K11_27"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(x, x)), edl(edl(x, x), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 176.73315469508196,
+  "target_scale": 54.253616511803756,
+  "target_id": "F-EDL_c_K11_28"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(2.718281828459045, x), edl(edl(2.718281828459045, 2.718281828459045), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.02687164732393039,
+  "target_scale": 1.3623793075738455,
+  "target_id": "F-EDL_c_K11_29"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(x, x), x)), edl(edl(2.718281828459045, 2.718281828459045), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.0004038364097215965,
+  "target_scale": 1.0,
+  "target_id": "F-EDL_c_K13_00"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(x, edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.06572762113030793,
+  "target_scale": 7.657684223852453,
+  "target_id": "F-EDL_c_K13_01"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(edl(x, 2.718281828459045), 2.718281828459045)), edl(edl(2.718281828459045, 2.718281828459045), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.009916819271837447,
+  "target_scale": 1.0,
+  "target_id": "F-EDL_c_K13_02"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(2.718281828459045, 2.718281828459045))), edl(x, 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.018869221445332346,
+  "target_scale": 1.4514522904059002,
+  "target_id": "F-EDL_c_K13_03"
+ },
+ {
+  "expression": "edl(edl(edl(2.718281828459045, edl(edl(x, x), edl(2.718281828459045, 2.718281828459045))), x), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 84194.22207912621,
+  "target_scale": 1343.4443091946318,
+  "target_id": "F-EDL_c_K13_04"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, edl(2.718281828459045, edl(x, x)))), edl(2.718281828459045, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 73638.40400229377,
+  "target_scale": 1130.9501205584966,
+  "target_id": "F-EDL_c_K13_05"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(x, 2.718281828459045))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 26.606599480723066,
+  "target_scale": 22.336667309278184,
+  "target_id": "F-EDL_c_K13_06"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(edl(x, 2.718281828459045), edl(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.016848251149228607,
+  "target_scale": 3.1471736486192023,
+  "target_id": "F-EDL_c_K13_07"
+ },
+ {
+  "expression": "edl(x, edl(edl(x, edl(edl(x, x), x)), edl(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 9244714.295362355,
+  "target_scale": 21301.83818705379,
+  "target_id": "F-EDL_c_K13_08"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(edl(x, x), edl(2.718281828459045, edl(x, x)))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 1.5508483222115235,
+  "target_scale": 6.4497083483027975,
+  "target_id": "F-EDL_c_K13_09"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(x, edl(2.718281828459045, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.8219293082624417,
+  "target_scale": 5.286339053410155,
+  "target_id": "F-EDL_c_K13_10"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(x, edl(2.718281828459045, 2.718281828459045))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.9400624625659023,
+  "target_scale": 5.5398977395713676,
+  "target_id": "F-EDL_c_K13_11"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(x, 2.718281828459045), edl(edl(2.718281828459045, x), x))), 2.718281828459045)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.3937568673052167,
+  "target_scale": 5.51948799767217,
+  "target_id": "F-EDL_c_K13_12"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(x, 2.718281828459045), x)), edl(edl(x, x), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.0008025643806253355,
+  "target_scale": 1.0,
+  "target_id": "F-EDL_c_K13_13"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(edl(2.718281828459045, x), edl(2.718281828459045, edl(2.718281828459045, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 1370242.0834468782,
+  "target_scale": 9349.021626792666,
+  "target_id": "F-EDL_c_K13_14"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, 2.718281828459045)), edl(2.718281828459045, edl(x, edl(2.718281828459045, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 8813.802604838127,
+  "target_scale": 384.32152636636835,
+  "target_id": "F-EDL_c_K13_15"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(2.718281828459045, x), edl(x, edl(edl(2.718281828459045, 2.718281828459045), x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.010073680839473933,
+  "target_scale": 1.0025088800193878,
+  "target_id": "F-EDL_c_K13_16"
+ },
+ {
+  "expression": "edl(edl(edl(x, edl(edl(x, 2.718281828459045), edl(2.718281828459045, 2.718281828459045))), x), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 926.0487322655667,
+  "target_scale": 134.95925165681416,
+  "target_id": "F-EDL_c_K13_17"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(2.718281828459045, x)))), edl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 29684.542546751378,
+  "target_scale": 683.842047839478,
+  "target_id": "F-EDL_c_K13_18"
+ },
+ {
+  "expression": "edl(edl(edl(2.718281828459045, edl(edl(x, x), x)), edl(x, 2.718281828459045)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 5.173161024458089,
+  "target_scale": 10.178911751233962,
+  "target_id": "F-EDL_c_K13_19"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(edl(x, edl(edl(x, 2.718281828459045), x)), 2.718281828459045), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.006590508397313632,
+  "target_scale": 5.837081680119057,
+  "target_id": "F-EDL_c_K13_20"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(x, x)), edl(x, edl(2.718281828459045, 2.718281828459045))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.8536093070234346,
+  "target_scale": 4.38139981363057,
+  "target_id": "F-EDL_c_K13_21"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(x, 2.718281828459045)), edl(edl(2.718281828459045, edl(2.718281828459045, x)), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 7325.820984954604,
+  "target_scale": 356.1144014598791,
+  "target_id": "F-EDL_c_K13_22"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(edl(x, x), edl(x, 2.718281828459045))), edl(x, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.10852276580424647,
+  "target_scale": 1.923299082686014,
+  "target_id": "F-EDL_c_K13_23"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(edl(x, x), edl(x, 2.718281828459045))), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 34.351829586077606,
+  "target_scale": 24.948083376532203,
+  "target_id": "F-EDL_c_K13_24"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(x, edl(2.718281828459045, edl(x, 2.718281828459045))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.0343816422658258,
+  "target_scale": 7.615128658179165,
+  "target_id": "F-EDL_c_K13_25"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, x)), edl(x, edl(2.718281828459045, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 1.2734072926515712,
+  "target_scale": 5.951988798981686,
+  "target_id": "F-EDL_c_K13_26"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(edl(2.718281828459045, edl(x, x)), x)), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.9791350608193133,
+  "target_scale": 6.740554637458767,
+  "target_id": "F-EDL_c_K13_27"
+ },
+ {
+  "expression": "edl(x, edl(edl(edl(2.718281828459045, edl(2.718281828459045, x)), 2.718281828459045), edl(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 6.523091221535098e-06,
+  "target_scale": 1.0,
+  "target_id": "F-EDL_c_K13_28"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, x)), edl(edl(x, edl(2.718281828459045, x)), 2.718281828459045))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 3335.9921017520187,
+  "target_scale": 256.1093465635476,
+  "target_id": "F-EDL_c_K13_29"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, 2.718281828459045)), edl(x, edl(x, edl(2.718281828459045, edl(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 8045.405001191115,
+  "target_scale": 372.1378143002392,
+  "target_id": "F-EDL_c_K15_00"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(x, x))), x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 1.4283922700867102,
+  "target_scale": 7.274476477401395,
+  "target_id": "F-EDL_c_K15_01"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, edl(x, x)), edl(edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045)), 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 4.418315788364916,
+  "target_scale": 10.58704975417318,
+  "target_id": "F-EDL_c_K15_02"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(edl(2.718281828459045, edl(2.718281828459045, x)), edl(edl(2.718281828459045, x), 2.718281828459045))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.6978535322416445,
+  "target_scale": 10.849507131138065,
+  "target_id": "F-EDL_c_K15_03"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(x, 2.718281828459045), 2.718281828459045)), edl(2.718281828459045, edl(x, edl(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.00584461416740498,
+  "target_scale": 1.3176439105418207,
+  "target_id": "F-EDL_c_K15_04"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045)), edl(2.718281828459045, edl(edl(x, edl(x, x)), 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 2179.592285710087,
+  "target_scale": 332.75773279043494,
+  "target_id": "F-EDL_c_K15_05"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, edl(edl(2.718281828459045, edl(x, x)), 2.718281828459045)), edl(x, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 129.8440760650845,
+  "target_scale": 49.82550381457407,
+  "target_id": "F-EDL_c_K15_06"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(2.718281828459045, edl(2.718281828459045, edl(edl(x, x), edl(2.718281828459045, x))))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 1079.6947800314829,
+  "target_scale": 109.49128936036253,
+  "target_id": "F-EDL_c_K15_07"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(edl(edl(x, edl(edl(x, x), x)), 2.718281828459045), x)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 54723.59332489053,
+  "target_scale": 972.2836495800224,
+  "target_id": "F-EDL_c_K15_08"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(x, edl(x, x)), edl(2.718281828459045, edl(2.718281828459045, x)))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.5715832170391973,
+  "target_scale": 23.114559917569018,
+  "target_id": "F-EDL_c_K15_09"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(2.718281828459045, x)), edl(2.718281828459045, edl(edl(x, x), edl(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 418762914.0931184,
+  "target_scale": 189249.574646794,
+  "target_id": "F-EDL_c_K15_10"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, edl(x, x)), edl(edl(x, edl(2.718281828459045, 2.718281828459045)), 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 1.3262546516287075,
+  "target_scale": 7.082168999365291,
+  "target_id": "F-EDL_c_K15_11"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(edl(x, edl(edl(2.718281828459045, 2.718281828459045), edl(2.718281828459045, 2.718281828459045))), x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.07135762893087555,
+  "target_scale": 6.197598724368581,
+  "target_id": "F-EDL_c_K15_12"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, x), 2.718281828459045)), edl(edl(2.718281828459045, edl(2.718281828459045, x)), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.017153080601676828,
+  "target_scale": 1.0,
+  "target_id": "F-EDL_c_K15_13"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(x, edl(2.718281828459045, x)), edl(x, 2.718281828459045))), edl(x, 2.718281828459045))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 68.76294185625756,
+  "target_scale": 37.48453557178488,
+  "target_id": "F-EDL_c_K15_14"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, x), edl(edl(x, edl(x, edl(x, 2.718281828459045))), 2.718281828459045)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.15303358072907824,
+  "target_scale": 1.7316729306176053,
+  "target_id": "F-EDL_c_K15_15"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(x, edl(2.718281828459045, edl(x, x))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 270.5614281680458,
+  "target_scale": 338.44396558647225,
+  "target_id": "F-EDL_c_K15_16"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(2.718281828459045, edl(edl(x, x), edl(2.718281828459045, 2.718281828459045))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 478628025.6285769,
+  "target_scale": 156117.48104481847,
+  "target_id": "F-EDL_c_K15_17"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(x, edl(2.718281828459045, x)))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 5.766519516401192,
+  "target_scale": 15.194674112008492,
+  "target_id": "F-EDL_c_K15_18"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(edl(x, 2.718281828459045), edl(x, x))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.35359497145115976,
+  "target_scale": 15.273416322972144,
+  "target_id": "F-EDL_c_K15_19"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045)), edl(2.718281828459045, 2.718281828459045))), edl(2.718281828459045, x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 50.01201260034995,
+  "target_scale": 29.404462515904573,
+  "target_id": "F-EDL_c_K15_20"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(edl(x, edl(edl(2.718281828459045, 2.718281828459045), x)), x)), 2.718281828459045))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.11532282576089807,
+  "target_scale": 1.613194695238889,
+  "target_id": "F-EDL_c_K15_21"
+ },
+ {
+  "expression": "edl(edl(edl(2.718281828459045, edl(edl(x, 2.718281828459045), edl(x, edl(2.718281828459045, 2.718281828459045)))), x), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 73572997.82092676,
+  "target_scale": 56617.97673861655,
+  "target_id": "F-EDL_c_K15_22"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, 2.718281828459045), edl(edl(x, edl(x, x)), edl(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.17824239126704552,
+  "target_scale": 2.2838837179277274,
+  "target_id": "F-EDL_c_K15_23"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, edl(x, edl(edl(2.718281828459045, edl(x, x)), x)))), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 577388.5158931284,
+  "target_scale": 3765.8832629038257,
+  "target_id": "F-EDL_c_K15_24"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(x, x)), edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(x, 2.718281828459045)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 1894.0236170885194,
+  "target_scale": 244.60623191451947,
+  "target_id": "F-EDL_c_K15_25"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, x), edl(x, 2.718281828459045))), edl(edl(2.718281828459045, x), 2.718281828459045))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.005740096830478953,
+  "target_scale": 1.0,
+  "target_id": "F-EDL_c_K15_26"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(edl(2.718281828459045, edl(2.718281828459045, x)), edl(2.718281828459045, edl(x, x)))), 2.718281828459045)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 20.408439482944758,
+  "target_scale": 33.77175014919629,
+  "target_id": "F-EDL_c_K15_27"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, edl(x, x))), edl(edl(x, x), edl(2.718281828459045, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 176170.57038162832,
+  "target_scale": 1777.628214193832,
+  "target_id": "F-EDL_c_K15_28"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(edl(x, 2.718281828459045), edl(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 156.38930531208473,
+  "target_scale": 113.95269574589827,
+  "target_id": "F-EDL_c_K15_29"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(x, x))), edl(x, x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 13.432569724979736,
+  "target_scale": 14.627913738181237,
+  "target_id": "F-EDL_c_K17_00"
+ },
+ {
+  "expression": "edl(edl(edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(2.718281828459045, 2.718281828459045))), edl(2.718281828459045, edl(2.718281828459045, x))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 1.3394159117508602,
+  "target_scale": 8.930374701855905,
+  "target_id": "F-EDL_c_K17_01"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, 2.718281828459045)), 2.718281828459045)), edl(x, 2.718281828459045))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 6.220466117225658,
+  "target_scale": 17.087531944984885,
+  "target_id": "F-EDL_c_K17_02"
+ },
+ {
+  "expression": "edl(edl(edl(2.718281828459045, edl(edl(2.718281828459045, x), edl(2.718281828459045, 2.718281828459045))), edl(x, x)), edl(x, x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.0002643813321418054,
+  "target_scale": 1.0781301779559629,
+  "target_id": "F-EDL_c_K17_03"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(2.718281828459045, edl(edl(2.718281828459045, edl(2.718281828459045, x)), x))), edl(x, 2.718281828459045)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.059387834054328445,
+  "target_scale": 1.3869458415223945,
+  "target_id": "F-EDL_c_K17_04"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, 2.718281828459045), edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(x, edl(x, 2.718281828459045)))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.17225800167207173,
+  "target_scale": 2.2295723736894164,
+  "target_id": "F-EDL_c_K17_05"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, edl(x, edl(x, edl(2.718281828459045, edl(x, edl(x, 2.718281828459045)))))), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.33133368058544227,
+  "target_scale": 2.892900150178964,
+  "target_id": "F-EDL_c_K17_06"
+ },
+ {
+  "expression": "edl(x, edl(edl(2.718281828459045, 2.718281828459045), edl(2.718281828459045, edl(x, edl(x, edl(edl(x, 2.718281828459045), x))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.04823034404375357,
+  "target_scale": 1.2686157183875837,
+  "target_id": "F-EDL_c_K17_07"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, edl(x, edl(edl(x, x), edl(x, x))))), edl(x, 2.718281828459045))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 37.315016509087535,
+  "target_scale": 25.09400409703885,
+  "target_id": "F-EDL_c_K17_08"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(edl(x, 2.718281828459045), edl(x, edl(edl(x, 2.718281828459045), edl(x, x))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 30166757.28542409,
+  "target_scale": 55112.943722294905,
+  "target_id": "F-EDL_c_K17_09"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(2.718281828459045, edl(x, edl(x, edl(edl(2.718281828459045, x), edl(x, x))))), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 5.590052787119004,
+  "target_scale": 8.0028703644364,
+  "target_id": "F-EDL_c_K17_10"
+ },
+ {
+  "expression": "edl(x, edl(edl(x, edl(x, 2.718281828459045)), edl(edl(2.718281828459045, edl(x, x)), edl(x, 2.718281828459045))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.0005202852573657534,
+  "target_scale": 3.8008589068988594,
+  "target_id": "F-EDL_c_K17_11"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(2.718281828459045, edl(x, 2.718281828459045))), edl(edl(2.718281828459045, edl(edl(x, x), x)), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 14778168.115955384,
+  "target_scale": 15183.57721492515,
+  "target_id": "F-EDL_c_K17_12"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, 2.718281828459045), edl(x, edl(edl(2.718281828459045, edl(2.718281828459045, x)), x)))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.12266627558842545,
+  "target_scale": 3.4597166516656515,
+  "target_id": "F-EDL_c_K17_13"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(2.718281828459045, edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(2.718281828459045, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 3985.279357336729,
+  "target_scale": 276.65197610409655,
+  "target_id": "F-EDL_c_K17_14"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, edl(x, edl(edl(2.718281828459045, edl(edl(x, 2.718281828459045), x)), 2.718281828459045))), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 0.006920471233354844,
+  "target_scale": 2.8080248820118814,
+  "target_id": "F-EDL_c_K17_15"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, x)), edl(2.718281828459045, 2.718281828459045))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 7.862006317027193,
+  "target_scale": 12.710035551467355,
+  "target_id": "F-EDL_c_K17_16"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, edl(edl(2.718281828459045, edl(x, edl(x, 2.718281828459045))), x)), 2.718281828459045)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 48639102.208499305,
+  "target_scale": 29303.12326240082,
+  "target_id": "F-EDL_c_K17_17"
+ },
+ {
+  "expression": "edl(x, edl(edl(x, edl(x, edl(x, edl(x, edl(x, 2.718281828459045))))), edl(x, 2.718281828459045)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.04570227170907788,
+  "target_scale": 2.419832396438969,
+  "target_id": "F-EDL_c_K17_18"
+ },
+ {
+  "expression": "edl(x, edl(edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(x, edl(x, edl(x, x)))), 2.718281828459045))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.0689305015121013,
+  "target_scale": 1.0,
+  "target_id": "F-EDL_c_K17_19"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(edl(x, 2.718281828459045), edl(edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045)), 2.718281828459045)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.05042649502837716,
+  "target_scale": 3.733622453562556,
+  "target_id": "F-EDL_c_K17_20"
+ },
+ {
+  "expression": "edl(x, edl(edl(edl(x, edl(x, 2.718281828459045)), edl(edl(x, x), edl(2.718281828459045, 2.718281828459045))), 2.718281828459045))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.16221301052446588,
+  "target_scale": 1.7648991688348044,
+  "target_id": "F-EDL_c_K17_21"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(x, edl(x, x)), edl(2.718281828459045, edl(x, 2.718281828459045)))), edl(x, 2.718281828459045))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.6846703279061878,
+  "target_scale": 10.509119222228174,
+  "target_id": "F-EDL_c_K17_22"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(2.718281828459045, edl(edl(x, 2.718281828459045), edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045)))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 631705.8760144715,
+  "target_scale": 7491.129832694853,
+  "target_id": "F-EDL_c_K17_23"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, edl(edl(edl(x, edl(edl(2.718281828459045, 2.718281828459045), x)), x), 2.718281828459045))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 218659560.9697615,
+  "target_scale": 73370.75443449276,
+  "target_id": "F-EDL_c_K17_24"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(x, edl(2.718281828459045, edl(edl(x, x), edl(edl(x, 2.718281828459045), 2.718281828459045))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 13.100923210700087,
+  "target_scale": 28.299613166255543,
+  "target_id": "F-EDL_c_K17_25"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(x, x)), edl(x, edl(edl(x, edl(x, edl(2.718281828459045, 2.718281828459045))), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 315003218.0112023,
+  "target_scale": 130768.7000553613,
+  "target_id": "F-EDL_c_K17_26"
+ },
+ {
+  "expression": "edl(edl(edl(x, edl(edl(2.718281828459045, x), x)), edl(edl(x, edl(2.718281828459045, 2.718281828459045)), x)), 2.718281828459045)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.004116077140885689,
+  "target_scale": 1.800800016029553,
+  "target_id": "F-EDL_c_K17_27"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(x, edl(edl(x, edl(x, edl(x, edl(2.718281828459045, 2.718281828459045)))), x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 1.7489156494839562,
+  "target_scale": 6.887524591805382,
+  "target_id": "F-EDL_c_K17_28"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(edl(x, edl(2.718281828459045, x)), edl(x, x)), edl(2.718281828459045, x))), 2.718281828459045)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 2.5821511292223915,
+  "target_scale": 7.748275183888712,
+  "target_id": "F-EDL_c_K17_29"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(edl(2.718281828459045, edl(x, edl(2.718281828459045, x))), edl(2.718281828459045, edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 60502.4709651889,
+  "target_scale": 1615.638813985653,
+  "target_id": "F-EDL_c_K19_00"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(x, edl(x, edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045))))))), edl(2.718281828459045, x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 57834.14996120177,
+  "target_scale": 1075.6606414622229,
+  "target_id": "F-EDL_c_K19_01"
+ },
+ {
+  "expression": "edl(edl(edl(edl(2.718281828459045, edl(edl(2.718281828459045, x), edl(x, edl(2.718281828459045, 2.718281828459045)))), edl(2.718281828459045, x)), 2.718281828459045), 2.718281828459045)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 34.460380960772184,
+  "target_scale": 28.15299051295235,
+  "target_id": "F-EDL_c_K19_02"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, x), edl(edl(x, x), edl(2.718281828459045, edl(x, edl(edl(x, 2.718281828459045), x))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.05746108042108973,
+  "target_scale": 1.7801070023248533,
+  "target_id": "F-EDL_c_K19_03"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, x)), edl(2.718281828459045, edl(2.718281828459045, x)))), edl(x, 2.718281828459045)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 10.549178960635011,
+  "target_scale": 14.204462430848405,
+  "target_id": "F-EDL_c_K19_04"
+ },
+ {
+  "expression": "edl(edl(edl(x, edl(edl(x, 2.718281828459045), 2.718281828459045)), edl(x, edl(x, x))), edl(2.718281828459045, edl(2.718281828459045, x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 1.4032148035489316,
+  "target_scale": 6.705819934475168,
+  "target_id": "F-EDL_c_K19_05"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(2.718281828459045, edl(x, x)), edl(x, edl(2.718281828459045, edl(2.718281828459045, edl(edl(2.718281828459045, x), x))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.07000767917710057,
+  "target_scale": 3.0856462092054158,
+  "target_id": "F-EDL_c_K19_06"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, x), edl(edl(2.718281828459045, edl(edl(2.718281828459045, edl(x, 2.718281828459045)), edl(2.718281828459045, 2.718281828459045))), 2.718281828459045)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.03743805493039506,
+  "target_scale": 1.5385522301165684,
+  "target_id": "F-EDL_c_K19_07"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, 2.718281828459045)), edl(edl(edl(edl(x, edl(edl(x, 2.718281828459045), 2.718281828459045)), x), x), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 308.7025105778363,
+  "target_scale": 71.43716936156001,
+  "target_id": "F-EDL_c_K19_08"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(edl(x, edl(x, edl(x, x))), 2.718281828459045)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.6753390023820173,
+  "target_scale": 4.413453100449138,
+  "target_id": "F-EDL_c_K19_09"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(x, edl(edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(edl(x, x), x)))), x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 10,
+  "var_target": 4.728979751108522,
+  "target_scale": 9.636719921629927,
+  "target_id": "F-EDL_c_K19_10"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(2.718281828459045, edl(x, edl(edl(2.718281828459045, edl(x, edl(2.718281828459045, 2.718281828459045))), x)))), edl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 742.1798015827035,
+  "target_scale": 91.59328136935999,
+  "target_id": "F-EDL_c_K19_11"
+ },
+ {
+  "expression": "edl(x, edl(2.718281828459045, edl(2.718281828459045, edl(edl(x, edl(edl(2.718281828459045, edl(edl(x, 2.718281828459045), 2.718281828459045)), x)), x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 10,
+  "var_target": 1.2683304774424244,
+  "target_scale": 4.49022679301372,
+  "target_id": "F-EDL_c_K19_12"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(edl(2.718281828459045, 2.718281828459045), edl(x, edl(edl(x, x), edl(2.718281828459045, x))))), edl(x, 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.019162237238830912,
+  "target_scale": 1.2042580501317477,
+  "target_id": "F-EDL_c_K19_13"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(x, edl(2.718281828459045, x))))), edl(2.718281828459045, x))), 2.718281828459045)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 60.26250652425617,
+  "target_scale": 33.77267572117881,
+  "target_id": "F-EDL_c_K19_14"
+ },
+ {
+  "expression": "edl(x, edl(edl(x, edl(x, edl(2.718281828459045, edl(2.718281828459045, x)))), edl(edl(x, edl(2.718281828459045, 2.718281828459045)), 2.718281828459045)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.1364811605419426,
+  "target_scale": 3.2092367886408106,
+  "target_id": "F-EDL_c_K19_15"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, x), edl(x, edl(2.718281828459045, edl(2.718281828459045, edl(x, x)))))), edl(x, x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.0729329819828771,
+  "target_scale": 1.583474949833728,
+  "target_id": "F-EDL_c_K19_16"
+ },
+ {
+  "expression": "edl(edl(x, edl(x, edl(x, 2.718281828459045))), edl(edl(edl(x, edl(edl(2.718281828459045, 2.718281828459045), 2.718281828459045)), x), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 7020051.41517576,
+  "target_scale": 10958.239146874179,
+  "target_id": "F-EDL_c_K19_17"
+ },
+ {
+  "expression": "edl(edl(x, edl(2.718281828459045, 2.718281828459045)), edl(x, edl(edl(x, edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045))), edl(2.718281828459045, x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 296866.0419546445,
+  "target_scale": 2394.008231621866,
+  "target_id": "F-EDL_c_K19_18"
+ },
+ {
+  "expression": "edl(x, edl(x, edl(edl(edl(2.718281828459045, edl(2.718281828459045, x)), edl(edl(2.718281828459045, edl(x, 2.718281828459045)), x)), 2.718281828459045)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 5.769676609716758,
+  "target_scale": 16.952143088333703,
+  "target_id": "F-EDL_c_K19_19"
+ },
+ {
+  "expression": "edl(x, edl(edl(x, 2.718281828459045), edl(2.718281828459045, edl(edl(2.718281828459045, edl(edl(2.718281828459045, edl(x, 2.718281828459045)), x)), x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.00039137780135110894,
+  "target_scale": 1.093684631888472,
+  "target_id": "F-EDL_c_K19_20"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, 2.718281828459045), edl(edl(edl(x, edl(edl(2.718281828459045, x), x)), 2.718281828459045), edl(x, x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.097188909097542,
+  "target_scale": 1.8757170641054117,
+  "target_id": "F-EDL_c_K19_21"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, 2.718281828459045), 2.718281828459045)), edl(x, edl(2.718281828459045, edl(edl(x, edl(2.718281828459045, x)), x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.0016324618642896051,
+  "target_scale": 1.112930160391284,
+  "target_id": "F-EDL_c_K19_22"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(2.718281828459045, edl(edl(x, x), x)), edl(edl(x, 2.718281828459045), x))), edl(2.718281828459045, 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 2.3591726544444793e-10,
+  "target_scale": 1.0,
+  "target_id": "F-EDL_c_K19_23"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(x, x), edl(edl(2.718281828459045, edl(edl(x, 2.718281828459045), edl(2.718281828459045, x))), edl(x, 2.718281828459045))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.061148417301280296,
+  "target_scale": 1.4910195101241737,
+  "target_id": "F-EDL_c_K19_24"
+ },
+ {
+  "expression": "edl(edl(x, edl(edl(edl(x, edl(edl(2.718281828459045, 2.718281828459045), edl(2.718281828459045, 2.718281828459045))), x), edl(x, x))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 784245.3291995313,
+  "target_scale": 2708.3852284926747,
+  "target_id": "F-EDL_c_K19_25"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(edl(2.718281828459045, edl(2.718281828459045, x)), edl(2.718281828459045, 2.718281828459045)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 3.051087394436667,
+  "target_scale": 12.32590894149833,
+  "target_id": "F-EDL_c_K19_26"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(x, edl(2.718281828459045, edl(edl(2.718281828459045, edl(x, x)), edl(2.718281828459045, edl(2.718281828459045, x)))))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 259281.2939717465,
+  "target_scale": 2138.0606301071293,
+  "target_id": "F-EDL_c_K19_27"
+ },
+ {
+  "expression": "edl(edl(2.718281828459045, edl(2.718281828459045, 2.718281828459045)), edl(edl(edl(x, edl(edl(2.718281828459045, edl(x, x)), 2.718281828459045)), 2.718281828459045), 2.718281828459045))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 533.1374274090464,
+  "target_scale": 82.1210237948629,
+  "target_id": "F-EDL_c_K19_28"
+ },
+ {
+  "expression": "edl(2.718281828459045, edl(edl(2.718281828459045, edl(edl(x, 2.718281828459045), x)), edl(edl(2.718281828459045, 2.718281828459045), edl(edl(2.718281828459045, x), x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 23.049474349088698,
+  "target_scale": 27.427802215225704,
+  "target_id": "F-EDL_c_K19_29"
+ }
+]
